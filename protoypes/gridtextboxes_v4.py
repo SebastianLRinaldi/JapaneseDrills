@@ -1,4 +1,13 @@
 """
+
+- so like each part of the sentence that you give the first window will make new menu that basically lets you click each part of the sentence with the 
+    correct colored bg color to tell the differnce and it will allow you to go to that word types trainer
+
+
+Some menu that has all teh verb forms in there from the previous step
+- shows if you marked it as completed or yet to be done 
+- when you double click the 
+
 I would like to be able to shift rows side to side and keep just wrap to other edge of row if it text spills off
 I would like to be able to select rows, copy and paste, shift selected rows, idk if I want the ability to shift rows up
 I would like to be able to copy finished conjugation

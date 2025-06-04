@@ -23,6 +23,10 @@ from application.FrontEnd.D_WindowFolder.windowConfigureation import *
 from .widgets.chunkInput import ChunkInput
 from .widgets.chunkHolder import ChunkHolder 
 
+
+"""
+When you press enter after you type it should either go to the category selection or the next text box below
+"""
 class BasicLayout(LayoutManager):
     def __init__(self):
         super().__init__()
