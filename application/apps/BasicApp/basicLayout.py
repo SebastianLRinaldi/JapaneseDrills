@@ -28,31 +28,51 @@ from .widgets.chunkHolder import ChunkHolder
 When you press enter after you type it should either go to the category selection or the next text box below
 """
 class BasicLayout(LayoutManager):
+
+    label: QLabel
+    chunk_holder: ChunkHolder
+    add_btn: QPushButton
+    remove_btn: QPushButton
+
+
+    
     def __init__(self):
         super().__init__()
+        self.init_widgets()
 
         example_text = """
         Step 1: Identify Each Character / Word
         Character/Word: ______ → What is it? (Kanji, kana, particle, verb form, etc.)
         Example: 猫 → Kanji for “cat”(List all components clearly)
         """
+        self.label.setText(example_text)
+        self.add_btn.setText("ADD")
+        self.remove_btn.setText("REMOVE")
+
+
+
+        layout_data = [
+
+                "label",
+                "chunk_holder",
+                self.group("horizontal",["remove_btn", "add_btn"])
+        ]
         
-        self.label = QLabel(example_text)
         
-        self.chunk_holder = ChunkHolder()
+        self.apply_layout(layout_data )
 
-        addOrRemoveGroup = WidgetGroup(title="Add / Remove")
+        # self.add_widgets_to_window(
+        #     self.label,
+        #     self.chunk_holder,
 
-        self.add_btn = QPushButton("Add")
-        self.remove_btn = QPushButton("Delete")
+        #     addOrRemoveGroup.add_widgets_to_group(
+        #         self.remove_btn,
+        #         self.add_btn,
+        #         layout="H"
+        #     )
+        # )
 
-        self.add_widgets_to_window(
-            self.label,
-            self.chunk_holder,
-
-            addOrRemoveGroup.add_widgets_to_group(
-                self.remove_btn,
-                self.add_btn,
-                layout="H"
-            )
-        )
+    def init_widgets(self):
+        for name, widget_type in self.__annotations__.items():
+            widget = widget_type()
+            setattr(self, name, widget)

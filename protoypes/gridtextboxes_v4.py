@@ -42,7 +42,6 @@ class GridCell(QLabel):
 
     def mousePressEvent(self, event):
         if event.button() == Qt.MouseButton.RightButton:
-            print(f"Right-click on cell with text '{self.text()}'")  # debug
             self.toggle_state()
             event.accept()
         else:

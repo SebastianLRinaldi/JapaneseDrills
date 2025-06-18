@@ -1,12 +1,13 @@
 from typing import Dict, TypedDict
 from application.apps.BasicApp.basicFunctions import*
 from application.apps.SecondApp.mySecondWindowFunctions import*
-from application.apps.WebApp.webFunctions import*
+from application.apps.VocabRanomizer.Functions import *
+
 
 class LogicDict(TypedDict):
     Basic: BasicLogic
     Second:SecondLogic
-    Web: WebLogic
+    VocabRandomizer: VocabRandomizerLogic
 
 class PageController:
     def __init__(self, logic: LogicDict):

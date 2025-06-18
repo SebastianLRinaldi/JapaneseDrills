@@ -1,0 +1,60 @@
+if godan
+just randmize the form
+
+if ichidan
+randomize the stem and from that stem pick a form
+
+
+---
+Be better to just pick a form
+
+plain: (dictionary)
+あ-stem: ない (negative)
+い-stem: ます (polite)
+え-stem:  (potential)
+お-stem: う / よう (volitional)
+てform
+た form:
+いる (progressive):
+
+---
+Will need the random form/combo of forms
+Will need if its a expection 
+Will need if its ichidan or godan
+Maybe alos the ability to write in the extra feild or make a new feild for generatition notes?
+
+---
+Would like a wipe board shortcut for conjugation maker
+
+
+
+
+
+
+
+Dictionary form : 辞書形（じしょけい）
+Negative form : ない形
+Polite form : ます形
+Past polite / Negative polite : ました / ません
+Past form : た形
+Te-form : て形
+Progressive / Resultative (〜ing / has done) : ている形
+Potential form (can do) : 可能形
+Volitional form (let’s / I’ll) : 意向形
+Imperative / Command form : 命令形
+Prohibitive form (don’t do) : 禁止形
+Conditional (if...) : ば形
+Tara-form (if / when...) : たら形
+Passive form (be done) : 受け身形
+Causative form (make/let do) : 使役形
+Causative-passive (be made to do) : 使役受け身形
+Without doing : ないで形
+Don’t have to do : なくてもいい形
+Must do : なければならない形
+Have done / experience : ことがある形
+Hearsay / Looks like : そうだ形（伝聞・様態）
+Thinking of doing : ようと思う形
+Intend to do : つもり形
+Easy / Hard to do : にくい / やすい形
+Want to do : たい形
+Probably / I suppose : でしょう / だろう形

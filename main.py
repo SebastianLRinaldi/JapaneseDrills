@@ -19,7 +19,9 @@ import os
 from application.FrontEnd.E_combiner.PageController import *
 from application.apps.BasicApp.basicConnections import BasicConnections
 from application.apps.SecondApp.mySecondWindowConnections import SecondConnections
-from application.apps.WebApp.webConnections import WebConnections
+
+from application.apps.VocabRanomizer.Connections import VocabRandomizerConnections
+
 
 class Dashboard(QMainWindow):
     def __init__(self):
@@ -34,7 +36,7 @@ class Dashboard(QMainWindow):
         pages = [
             ("Basic", BasicLayout, BasicLogic, BasicConnections),
             ("Second", SecondLayout, SecondLogic, SecondConnections),
-            ("Web", WebLayout, WebLogic, WebConnections),
+            ("VocabRandomizer", VocabRandomizerLayout, VocabRandomizerLogic, VocabRandomizerConnections),
         ]
 
         # Step 1: Create UIs
@@ -73,7 +75,7 @@ class Dashboard(QMainWindow):
         layout.addWidget(self.stack)
         self.setCentralWidget(container)
 
-        self.switch_to("Basic")
+        self.switch_to("VocabRandomizer")
 
     def switch_to(self, app_name):
         self.stack.setCurrentWidget(self.apps[app_name])
