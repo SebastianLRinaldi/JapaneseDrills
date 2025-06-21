@@ -16,18 +16,18 @@ import os
 # Add the root directory of your project to the sys.path
 # sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
-from application.FrontEnd.E_combiner.PageController import *
-from application.apps.BasicApp.basicConnections import BasicConnections
-from application.apps.SecondApp.mySecondWindowConnections import SecondConnections
-
-from application.apps.VocabRanomizer.Connections import VocabRandomizerConnections
-
+from src.core.E_combiner.PageController import *
+from src.apps.BasicApp.basicConnections import BasicConnections
+from src.apps.SecondApp.mySecondWindowConnections import SecondConnections
+from src.apps.VocabRanomizer.Connections import VocabRandomizerConnections
+from src.apps.ConjugationRandomizer.Connections import ConjugationRandomizerConnections
 
 class Dashboard(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Car UI")
+        self.setWindowTitle("Japanese Drills")
         self.resize(800, 480)
+        self.setup_stylesheets()
 
         self.stack = QStackedWidget()
 
@@ -37,6 +37,7 @@ class Dashboard(QMainWindow):
             ("Basic", BasicLayout, BasicLogic, BasicConnections),
             ("Second", SecondLayout, SecondLogic, SecondConnections),
             ("VocabRandomizer", VocabRandomizerLayout, VocabRandomizerLogic, VocabRandomizerConnections),
+            ("ConjugationRandomizer", ConjugationRandomizerLayout, ConjugationRandomizerLogic, ConjugationRandomizerConnections),
         ]
 
         # Step 1: Create UIs
@@ -75,10 +76,37 @@ class Dashboard(QMainWindow):
         layout.addWidget(self.stack)
         self.setCentralWidget(container)
 
-        self.switch_to("VocabRandomizer")
+        self.switch_to("Basic")
 
     def switch_to(self, app_name):
         self.stack.setCurrentWidget(self.apps[app_name])
+
+    def setup_stylesheets(self):
+        # Yu Gothic UI
+        self.setStyleSheet("""
+            QWidget {
+                font-family: "Meiryo";
+                color: #FFFFFF;
+                background-color: #222222;
+            }
+
+            QLineEdit, QListWidget {
+                font-size: 16pt;
+                selection-background-color: #5555aa;
+                selection-color: #ffffff;
+                background-color: #222222;
+            }
+
+            QListWidget::item:selected {
+                background-color: #5555aa;
+                color: white;
+            }
+            
+            QLineEdit:focus, QListWidget:focus {
+                border: 1px solid #88C;
+            }
+
+        """)
 
 
 # ----- Entry Point -----
