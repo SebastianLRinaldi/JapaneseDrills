@@ -8,7 +8,7 @@ from src.core.GUI.UiManager import *
 # from .widgets.CUSTOMWIDGET import YOURWIDGET
 
 
-class VocabRandomizerLayout(UiManager):
+class Layout(UiManager):
     count_nouns_spinbox: QSpinBox       # lets user choose how many random words to grab
     count_verbs_spinbox: QSpinBox       # lets user choose how many random words to grab
     count_grammar_spinbox: QSpinBox       # lets user choose how many random words to grab

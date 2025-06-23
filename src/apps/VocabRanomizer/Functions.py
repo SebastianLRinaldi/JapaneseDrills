@@ -7,11 +7,11 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
-from src.apps.VocabRanomizer.Layout import VocabRandomizerLayout
+from src.apps.VocabRanomizer.Layout import Layout
 
 
-class VocabRandomizerLogic:
-    def __init__(self, ui: VocabRandomizerLayout):
+class Logic:
+    def __init__(self, ui: Layout):
         self.ui = ui
 
     def get_notes_with_tag_and_mastery(self, tag, custom):

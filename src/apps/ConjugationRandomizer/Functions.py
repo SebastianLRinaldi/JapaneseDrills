@@ -7,11 +7,11 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
-from src.apps.ConjugationRandomizer.Layout import ConjugationRandomizerLayout
+from src.apps.ConjugationRandomizer.Layout import Layout
 
 
-class ConjugationRandomizerLogic:
-    def __init__(self, ui: ConjugationRandomizerLayout):
+class Logic:
+    def __init__(self, ui: Layout):
         self.ui = ui
 
 

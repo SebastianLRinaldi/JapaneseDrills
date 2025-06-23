@@ -15,7 +15,6 @@ from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 
 
-
 from src.core.GUI.UiManager import *
 
 from src.core.EventHandlers.delete_key_handler import DeleteKeyHandler

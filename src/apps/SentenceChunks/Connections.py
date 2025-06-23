@@ -1,7 +1,7 @@
-from src.apps.BasicApp.basicFunctions import*
+from src.apps.SentenceChunks.Functions import*
 
-class BasicConnections:
-    def __init__(self, ui: BasicLayout, logic: BasicLogic):
+class Connections:
+    def __init__(self, ui: Layout, logic: Logic):
         self.ui = ui
         self.logic = logic
 

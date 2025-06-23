@@ -8,7 +8,7 @@ from src.core.GUI.UiManager import *
 # from .widgets.CUSTOMWIDGET import YOURWIDGET
 
 
-class ConjugationRandomizerLayout(UiManager):
+class Layout(UiManager):
     count_conjugations_spinbox: QSpinBox
     count_auxiliaries_spinbox: QSpinBox
     count_inflections_spinbox: QSpinBox

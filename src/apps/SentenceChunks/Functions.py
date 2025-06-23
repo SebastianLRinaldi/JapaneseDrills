@@ -2,10 +2,10 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
-from src.apps.BasicApp.basicLayout import BasicLayout, ChunkInput
+from src.apps.SentenceChunks.Layout import Layout, ChunkInput
 
-class BasicLogic:
-    def __init__(self, ui: BasicLayout):
+class Logic:
+    def __init__(self, ui: Layout):
         self.ui = ui
 
     def update_widget(self) -> None:

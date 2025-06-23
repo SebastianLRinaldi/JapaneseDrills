@@ -1,7 +1,7 @@
 from src.apps.ConjugationRandomizer.Functions import*
 
-class ConjugationRandomizerConnections:
-    def __init__(self, ui: ConjugationRandomizerLayout, logic: ConjugationRandomizerLogic):
+class Connections:
+    def __init__(self, ui: Layout, logic: Logic):
         self.ui = ui
         self.logic = logic
 

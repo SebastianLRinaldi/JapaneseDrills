@@ -2,10 +2,10 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
-from src.apps.SecondApp.mySecondWindowLayout import SecondLayout
+from src.apps.ConjugationGrid.Layout import Layout
 
-class SecondLogic:
-    def __init__(self, ui: SecondLayout):
+class Logic:
+    def __init__(self, ui: Layout):
         self.ui = ui
 
     def update_widget(self) -> None:

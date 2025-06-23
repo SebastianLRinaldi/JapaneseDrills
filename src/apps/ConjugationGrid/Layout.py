@@ -20,7 +20,7 @@ from src.core.GUI.UiManager import *
 from .widgets.cursorOverlay import CursorOverlay
 from .widgets.gridCell import GridCell
 
-class SecondLayout(UiManager):
+class Layout(UiManager):
     def __init__(self):
         super().__init__()
 

@@ -202,13 +202,37 @@ class UiManager(QWidget):
         }
 
 
+    # def tabs(self, *children, tab_labels=None):
+    #     return {"tabs": {"children": list(children), "tab_labels": tab_labels}}
+
+    # def splitter(self, *children, orientation="horizontal"):
+    #     return {"splitter": {"orientation": orientation, "children": list(children)}}
+
+    # def group(self, *children, orientation="horizontal"):
+    #     return {"group": {"orientation": orientation, "children": list(children)}}
+
+    # def box(self, *children, orientation="horizontal", title=None):
+    #     return {"box": {"title": title, "orientation": orientation, "children": list(children)}}
+
+    # def grid(self, *children, rows=1, columns=1):
+    #     return {"grid": {"rows": rows, "columns": columns, "children": list(children)}}
+
+    # def stacked(self, *children):
+    #     return {"stacked": {"children": list(children)}}
+
+
     def show_window(self):
         self.show()
 
     def setup_stylesheets(self):
-        # Yu Gothic UI
-        self.setStyleSheet("""
 
+        self.setStyleSheet("""
+            QMainWindow {
+                background-color: #1a0d1c;
+            }
+            QLabel {
+                background-color: #AAAAAA;
+            }
 
         """)
     def print_margins_recursive(self, widget: QWidget):
