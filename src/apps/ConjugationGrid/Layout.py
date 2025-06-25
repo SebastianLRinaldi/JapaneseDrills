@@ -26,7 +26,7 @@ class Layout(UiManager):
 
 
         self.rows = 6  # editable rows only
-        self.cols = 60
+        self.cols = 5
         self.cell_size = QSize(24, 32)
 
         self.grid_layout = QGridLayout()

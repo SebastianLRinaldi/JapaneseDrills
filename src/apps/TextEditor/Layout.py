@@ -1,21 +1,16 @@
+import sys, re
+
+
 from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
+
+from PyQt6.QtWebEngineWidgets import QWebEngineView
 
 from src.core.GUI.UiManager import *
 
 # from .widgets.CUSTOMWIDGET import YOURWIDGET
 
-
-
-
-from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QPlainTextEdit, QTextEdit
-import sys, re
-
-
-from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QPlainTextEdit
-from PyQt6.QtWebEngineWidgets import QWebEngineView
-import sys, re
 
 def convert_brackets(text):
     return re.sub(r'([\u4e00-\u9fff]+)\[(.+?)\]', r'<ruby>\1<rt>\2</rt></ruby>', text)
@@ -28,8 +23,6 @@ def convert_caret(text):
 
 def convert_aozora(text):
     return re.sub(r'｜([\u4e00-\u9fff]+)《(.+?)》', r'<ruby>\1<rt>\2</rt></ruby>', text)
-
-
 
 def is_kana(text):
     return re.fullmatch(r'[ぁ-んァ-ンー]+', text)
@@ -47,90 +40,6 @@ def wrap_in_html(ruby_body):
     ruby rt {{ font-size: 0.5em; }}
     </style></head><body>{ruby_body}</body></html>
     """
-
-
-# def get_kana_for_kanji(commit_text, last_kana):
-#     kanji_regex = re.compile(r'[\u4e00-\u9fff]')
-#     kanji_chars = [c for c in commit_text if kanji_regex.match(c)]
-
-#     # Extremely naive: divide kana evenly per kanji
-#     # Assumes 1 kanji == 1+ kana reading
-#     if not kanji_chars or not last_kana:
-#         return []
-
-#     kana_per_kanji = max(1, len(last_kana) // len(kanji_chars))
-#     chunks = []
-#     i = 0
-#     for k in kanji_chars:
-#         chunk = last_kana[i:i+kana_per_kanji]
-#         chunks.append((k, chunk))
-#         i += kana_per_kanji
-
-#     return chunks
-
-"""
-Doesnt work with katakana
-"""
-def extract_kana_chunks(preedit, last_kana):
-    chunks = []
-    kanji_re = re.compile(r'[\u4e00-\u9fff]')
-    i = 0  # index in last_kana
-    current_chunk = ''
-
-    for c in preedit:
-        if kanji_re.match(c):
-            # Start new chunk
-            current_chunk = ''
-            while i < len(last_kana):
-                k = last_kana[i]
-                if k in preedit:
-                    break
-                current_chunk += k
-                i += 1
-            if current_chunk:
-                chunks.append(current_chunk)
-        else:
-            # Non-kanji in preedit, just move past it in kana
-            if i < len(last_kana) and c == last_kana[i]:
-                i += 1
-
-    return chunks
-
-
-
-"""
-WORKS
-"""
-# def extract_kana_chunks(preedit, last_kana):
-#     chunks = []
-#     kanji_re = re.compile(r'[\u4e00-\u9fff\u30a0-\u30ff]')  # kanji + katakana #re.compile(r'[\u4e00-\u9fff]')
-#     i = 0  # index in last_kana
-#     current_chunk = ''
-
-#     for c in preedit:
-#         if kanji_re.match(c):
-#             # Start new chunk
-#             current_chunk = ''
-#             while i < len(last_kana):
-#                 k = last_kana[i]
-#                 if k in preedit:
-#                     break
-#                 current_chunk += k
-#                 i += 1
-#             if current_chunk:
-#                 chunks.append(current_chunk)
-#         else:
-#             # Non-kanji in preedit, just move past it in kana
-#             if i < len(last_kana) and c == last_kana[i]:
-#                 i += 1
-
-#     return chunks
-
-
-
-
-
-
 
 def _katakana_to_hiragana(s):
     out = ''
@@ -189,40 +98,10 @@ def extract_kana_chunks(preedit, last_kana):
     return chunks
 
 
+"""
+only issue that that when we type and dont commit with spcae and it converts to kanji then we typ eagain we get the kanji converted [g] or whatever the next key press is
+"""
 
-
-
-# def extract_kana_chunks(preedit, last_kana):
-#     chunks = []
-#     kanji_re = re.compile(r'[\u4e00-\u9fff]')
-#     kana_re = re.compile(r'[\u3040-\u309f\u30a0-\u30ff]')  # hiragana + katakana
-#     i = 0  # index in last_kana
-
-#     for c in preedit:
-#         if kanji_re.match(c):
-#             current_chunk = ''
-#             # accumulate kana chunk corresponding to this kanji
-#             while i < len(last_kana):
-#                 k = last_kana[i]
-#                 # Stop if next last_kana char is kanji (unlikely) or when next char in preedit matches kana
-#                 if kanji_re.match(k):
-#                     break
-#                 # Stop accumulating if next preedit char is kana or kanji? No, just accumulate all kana here
-#                 # It's safer to stop accumulating if next preedit char is kanji or end of last_kana
-#                 # So just accumulate until next kanji or end
-#                 current_chunk += k
-#                 i += 1
-#             chunks.append(current_chunk)
-#         elif kana_re.match(c):
-#             # skip kana char in last_kana index as well
-#             if i < len(last_kana) and last_kana[i] == c:
-#                 i += 1
-#         else:
-#             # For other chars (punctuation, spaces), skip if matches
-#             if i < len(last_kana) and last_kana[i] == c:
-#                 i += 1
-
-#     return chunks
 
 """
 TEST SUCCESS 
@@ -236,10 +115,14 @@ TEST SUCCESS
 """
 
 class FuriganaEditor(QTextEdit):
-    def __init__(self, preview_callback):
+    def __init__(self):
         super().__init__()
         self._last_kana = ""
-        self.preview_callback = preview_callback
+        self.viewer = None
+        # self.preview_callback = preview_callback
+
+    def set_viewer(self, viewer: QWebEngineView):
+        self.viewer = viewer
 
     def inputMethodEvent(self, event: QInputMethodEvent):
         commit_text = event.commitString()
@@ -254,50 +137,6 @@ class FuriganaEditor(QTextEdit):
             super().inputMethodEvent(event)
             print("1")
             if contains_kanji(commit_text) and self._last_kana:
-                # Move cursor to end to avoid overwriting
-                # cursor = self.textCursor()
-                # cursor.movePosition(QTextCursor.MoveOperation.End)
-                # self.setTextCursor(cursor)
-                # # Insert just the {kana}
-                # # Change the brackets here we change the converter for ruby
-                # print(f"C: {commit_text} | P:{preedit_text} | LK:{self._last_kana}")
-                # self.textCursor().insertText(f"[{self._last_kana}]")
-                """
-                WORKS
-                """
-                # cursor = self.textCursor()
-                # for chunk in extract_kana_chunks(commit_text, self._last_kana):
-                #     self.textCursor().insertText(f"[{chunk}]")
-                #     print(chunk)
-                
-                # cursor.movePosition(QTextCursor.MoveOperation.End)
-                # self.setTextCursor(cursor)
-
-                """
-                Works on singles kanji[tabe] + hiri not on groups (kanji+kanji+hiri)=kanji[tabetabe]+kanji+hiri
-                """
-                # chunks = extract_kana_chunks(commit_text, self._last_kana)
-                # chunk_index = 0
-                # kanji_re = re.compile(r'[\u4e00-\u9fff]')
-
-                # cursor = self.textCursor()
-                # # Move to beginning of commit_text
-                # cursor.movePosition(QTextCursor.MoveOperation.Left, QTextCursor.MoveMode.MoveAnchor, len(commit_text))
-
-                # for c in commit_text:
-                #     cursor.movePosition(QTextCursor.MoveOperation.Right)
-                #     if kanji_re.match(c) and chunk_index < len(chunks):
-                #         cursor.insertText(f"[{chunks[chunk_index]}]")
-                #         chunk_index += 1
-
-                # # Finally, move cursor to end
-                # cursor.movePosition(QTextCursor.MoveOperation.End)
-                # self.setTextCursor(cursor)
-
-
-                """
-                Works on groups
-                """
                 chunks = extract_kana_chunks(commit_text, self._last_kana)
                 chunk_index = 0
                 kanji_re = re.compile(r'[\u4e00-\u9fff]')
@@ -329,13 +168,18 @@ class FuriganaEditor(QTextEdit):
             super().inputMethodEvent(event)
 
 
-        self.preview_callback(self.toPlainText())
+        self.update_preview(self.toPlainText())
 
         # print("commit:", commit_text, "preedit:", preedit_text, "lastKana:", self._last_kana)
 
     def keyPressEvent(self, event):
         super().keyPressEvent(event)
-        self.preview_callback(self.toPlainText())
+        self.update_preview(self.toPlainText())
+
+    def update_preview(self, text):
+        ruby_html = convert_brackets(text)
+        ruby_html = ruby_html.replace('\n', '<br>')
+        self.viewer.setHtml(wrap_in_html(ruby_html))
 
 
 
@@ -345,25 +189,52 @@ class FuriganaEditor(QTextEdit):
 
 class Layout(UiManager):
 
-
-
+    editor:  FuriganaEditor
+    viewer: QWebEngineView
+    
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Furigana IME Editor with QTextEdit")
+        self.init_widgets()
+        self.set_widgets()
 
-        layout = QVBoxLayout(self)
+        layout_data = [
+            self.splitter('vertical',[
+                "editor",
+                "viewer"
+            ]),
+    
+        ]
 
-        self.editor = FuriganaEditor(self.update_preview)
-        self.viewer = QWebEngineView()
+        self.apply_layout(layout_data)
 
-        layout.addWidget(self.editor)
-        layout.addWidget(self.viewer)
+    def init_widgets(self):
+        annotations = getattr(self.__class__, "__annotations__", {})
+        for name, widget_type in annotations.items():
+            widget = widget_type()
+            setattr(self, name, widget)
 
-        self.update_preview("")
+    def set_widgets(self):
+        self.editor.set_viewer(self.viewer)
+        
 
-    def update_preview(self, text):
-        ruby_html = convert_brackets(text)
-        self.viewer.setHtml(wrap_in_html(ruby_html))
+
+
+    # def __init__(self):
+    #     super().__init__()
+    #     self.setWindowTitle("Furigana IME Editor with QTextEdit")
+
+    #     layout = QVBoxLayout(self)
+
+    #     self.editor = FuriganaEditor()
+    #     self.viewer = QWebEngineView()
+
+    #     layout.addWidget(self.editor)
+    #     layout.addWidget(self.viewer)
+
+
+
+
 
 
 

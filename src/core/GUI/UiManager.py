@@ -134,7 +134,7 @@ class UiManager(QWidget):
                 container.setLayout(layout)
                 return container
 
-        raise TypeError("Invalid layout data")
+        raise TypeError("Invalid layout data (did you do self.widget in the children?)")
 
 
 
