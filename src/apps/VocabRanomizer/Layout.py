@@ -33,6 +33,8 @@ class Layout(UiManager):
 
     get_all_btn: QPushButton
     randomize_btn: QPushButton
+
+    
     
 
     

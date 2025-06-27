@@ -227,12 +227,7 @@ class UiManager(QWidget):
     def setup_stylesheets(self):
 
         self.setStyleSheet("""
-            QMainWindow {
-                background-color: #1a0d1c;
-            }
-            QLabel {
-                background-color: #AAAAAA;
-            }
+
 
         """)
     def print_margins_recursive(self, widget: QWidget):

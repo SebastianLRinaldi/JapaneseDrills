@@ -119,6 +119,14 @@ class Dashboard(QMainWindow):
 
     def setup_stylesheets(self):
         # Yu Gothic UI
+        """
+            QMainWindow {
+                background-color: #1a0d1c;
+            }
+            QLabel {
+                background-color: #AAAAAA;
+            }
+        """
         self.setStyleSheet("""
             QWidget {
                 font-family: "Meiryo";

@@ -16,16 +16,84 @@ CONJUGATION_TYPES = [
 
         # Conjugation mappings for each category
 # Your vocab and conjugations data
-vocab_map = {
-    "Godan": ["書く", "話す", "飲む"],
-    "Ichidan": ["食べる", "見る"],
-    "Irregular": ["する", "来る"],
-    "Godan + Ichidan": ["書く", "話す", "飲む", "食べる", "見る"],
-    "All Verb Types": ["書く", "話す", "飲む", "食べる", "見る", "する", "来る"],
-    "い-Adjective": ["高い", "速い"],
-    "な-Adjective": ["静か", "便利"],
-    "い-Adjective + な-Adjective": ["高い", "静か"],
-}
+# vocab_map = {
+#     "Godan": ["書く", "話す", "飲む"],
+#     "Ichidan": ["食べる", "見る"],
+#     "Irregular": ["する", "来る"],
+#     "Godan + Ichidan": ["書く", "話す", "飲む", "食べる", "見る"],
+#     "All Verb Types": ["書く", "話す", "飲む", "食べる", "見る", "する", "来る"],
+#     "い-Adjective": ["高い", "速い"],
+#     "な-Adjective": ["静か", "便利"],
+#     "い-Adjective + な-Adjective": ["高い", "静か"],
+# }
+
+# vocab_map = {
+#     "Godan": [
+#         "書く",   # -く
+#         "話す",   # -す
+#         "飲む",   # -む
+#         "待つ",   # -つ
+#         "遊ぶ",   # -ぶ
+#         "死ぬ",   # -ぬ
+#         "泳ぐ",   # -ぐ
+#         "買う",   # -う
+#         "打つ",   # -つ
+#         "要る",   # -る (Godan-る)
+#     ],
+#     "Ichidan": [
+#         "食べる",  # -る Ichidan
+#         "見る",    # -る Ichidan
+#         "起きる",  # -る Ichidan
+#     ],
+#     "Irregular": [
+#         "する",
+#         "来る",
+#         "勉強する",
+#     ],
+#     "Godan + Ichidan": [
+#         "書く", "話す", "飲む", "待つ", "遊ぶ", "死ぬ", "泳ぐ", "買う", "打つ", "要る",
+#         "食べる", "見る", "起きる"
+#     ],
+#     "All Verb Types": [
+#         "書く", "話す", "飲む", "待つ", "遊ぶ", "死ぬ", "泳ぐ", "買う", "打つ", "要る",
+#         "食べる", "見る", "起きる",
+#         "する", "来る", "勉強する"
+#     ],
+#     "い-Adjective": [
+#         "高い",    # high
+#         "新しい",  # new
+#         "美味しい" # delicious
+#     ],
+#     "な-Adjective": [
+#         "静か",    # quiet
+#         "便利",    # convenient
+#         "有名"     # famous
+#     ],
+#     "い-Adjective + な-Adjective": [
+#         "高い", "新しい", "美味しい",
+#         "静か", "便利", "有名"
+#     ],
+# }
+
+
+
+# vocab_map = {
+#     "Godan": [],
+#     "Ichidan": [],
+#     "Irregular": ["する", "来る"],
+#     "Godan + Ichidan": [],
+#     "All Verb Types": [],
+#     "い-Adjective": [],
+#     "な-Adjective": [],
+#     "い-Adjective + な-Adjective": [],
+# }
+
+
+
+
+
+
+
 
 verb_conjugations = [
     # "Dictionary Form",
@@ -65,9 +133,17 @@ conjugations_map = {
 }
 
 import random
+
+from .widgets.Web.Functions import Logic as webAppLogic
+
 class Logic:
     def __init__(self, ui: Layout):
         self.ui = ui
+        self.web_app_logic = webAppLogic(self.ui.web_app)
+
+        self.vocab_map = {
+        }
+
 
     def handle_good(self):
         self.ui.input_field.setStyleSheet("color: green")
@@ -77,7 +153,7 @@ class Logic:
 
 
     def update_labels(self, selected_type):
-        vocab_list = vocab_map.get(selected_type, [])
+        vocab_list = self.vocab_map.get(selected_type, [])
         conjugation_list = conjugations_map.get(selected_type, [])
 
         if not vocab_list or not conjugation_list:
@@ -96,7 +172,7 @@ class Logic:
     def randomize(self):
         selected_type = self.ui.word_type_combo.currentText()
 
-        vocab_list = vocab_map.get(selected_type, [])
+        vocab_list = self.vocab_map.get(selected_type, [])
         conjugation_list = conjugations_map.get(selected_type, [])
 
         if not vocab_list or not conjugation_list:
@@ -111,5 +187,3 @@ class Logic:
         self.ui.conjugation_label.setText(f"→ {conj_type}")
         self.ui.input_field.clear()
         self.ui.input_field.setStyleSheet("")
-
-        
