@@ -132,6 +132,27 @@ conjugations_map = {
     "い-Adjective + な-Adjective": adj_conjugations,
 }
 
+
+
+class ShuffleQueue:
+    def __init__(self, items):
+        self.items = items
+        self.queue = []
+
+    def refill(self):
+        self.queue = self.items[:]
+        random.shuffle(self.queue)
+
+    def next(self):
+        if not self.queue:
+            self.refill()
+        return self.queue.pop()
+
+    def __repr__(self):
+        return f"ShuffleQueue(size={len(self.queue)}, items={self.queue})"
+
+
+
 import random
 
 from .widgets.Web.Functions import Logic as webAppLogic
@@ -140,6 +161,12 @@ class Logic:
     def __init__(self, ui: Layout):
         self.ui = ui
         self.web_app_logic = webAppLogic(self.ui.web_app)
+
+        # Lazy init of queues
+
+        self.vocab_queues = {}
+
+        self.conj_queues = {}
 
         self.vocab_map = {
         }
@@ -169,6 +196,26 @@ class Logic:
         self.ui.input_field.clear()
         self.ui.input_field.setStyleSheet("")
 
+    # def randomize(self):
+        # selected_type = self.ui.word_type_combo.currentText()
+
+        # vocab_list = self.vocab_map.get(selected_type, [])
+        # conjugation_list = conjugations_map.get(selected_type, [])
+
+        # if not vocab_list or not conjugation_list:
+        #     self.ui.vocab_label.setText("No vocab")
+        #     self.ui.conjugation_label.setText("No conjugations")
+        #     return
+
+        # vocab = random.choice(vocab_list)
+        # conj_type = random.choice(conjugation_list)
+
+        # self.ui.vocab_label.setText(vocab)
+        # self.ui.conjugation_label.setText(f"→ {conj_type}")
+        # self.ui.input_field.clear()
+        # self.ui.input_field.setStyleSheet("")
+
+
     def randomize(self):
         selected_type = self.ui.word_type_combo.currentText()
 
@@ -180,10 +227,19 @@ class Logic:
             self.ui.conjugation_label.setText("No conjugations")
             return
 
-        vocab = random.choice(vocab_list)
-        conj_type = random.choice(conjugation_list)
+        if selected_type not in self.vocab_queues:
+            self.vocab_queues[selected_type] = ShuffleQueue(vocab_list)
+        if selected_type not in self.conj_queues:
+            self.conj_queues[selected_type] = ShuffleQueue(conjugation_list)
+
+        vocab = self.vocab_queues[selected_type].next()
+        conj_type = self.conj_queues[selected_type].next()
+
+        print(f"VQUE: {self.vocab_queues[selected_type]}")
+        print(f"VQUE: {self.conj_queues[selected_type]}")
 
         self.ui.vocab_label.setText(vocab)
         self.ui.conjugation_label.setText(f"→ {conj_type}")
         self.ui.input_field.clear()
         self.ui.input_field.setStyleSheet("")
+
