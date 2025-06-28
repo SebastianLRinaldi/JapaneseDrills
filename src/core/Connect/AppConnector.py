@@ -156,7 +156,6 @@ class AppConnector:
             drills_map["い-Adjective"] = result["い-Adjective"]
             drills_map["な-Adjective"] = result["な-Adjective"]
             drills_map["い-Adjective + な-Adjective"] = drills_map["い-Adjective"] + drills_map["な-Adjective"]
-            print(drills_map)
 
         # Launch async fetch
         self.vocabranomizer_logic.verbs_logic.fetch_from_anki(get_all_vocab_map, set_vocab_map)

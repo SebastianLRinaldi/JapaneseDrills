@@ -196,25 +196,6 @@ class Logic:
         self.ui.input_field.clear()
         self.ui.input_field.setStyleSheet("")
 
-    # def randomize(self):
-        # selected_type = self.ui.word_type_combo.currentText()
-
-        # vocab_list = self.vocab_map.get(selected_type, [])
-        # conjugation_list = conjugations_map.get(selected_type, [])
-
-        # if not vocab_list or not conjugation_list:
-        #     self.ui.vocab_label.setText("No vocab")
-        #     self.ui.conjugation_label.setText("No conjugations")
-        #     return
-
-        # vocab = random.choice(vocab_list)
-        # conj_type = random.choice(conjugation_list)
-
-        # self.ui.vocab_label.setText(vocab)
-        # self.ui.conjugation_label.setText(f"→ {conj_type}")
-        # self.ui.input_field.clear()
-        # self.ui.input_field.setStyleSheet("")
-
 
     def randomize(self):
         selected_type = self.ui.word_type_combo.currentText()
