@@ -4,15 +4,9 @@ from PyQt6.QtGui import *
 
 from .Layout import Layout
 
-ADJECTIVES = ["たかい", "おおきい", "ちいさい", "あたらしい", "ふるい"]
 
-CONJUGATION_TYPES = [
-    "present affirmative",
-    "present negative",
-    "past affirmative",
-    "past negative",
-    "te-form"
-]
+
+
 
         # Conjugation mappings for each category
 # Your vocab and conjugations data
@@ -97,15 +91,14 @@ CONJUGATION_TYPES = [
 
 verb_conjugations = [
     # "Dictionary Form",
-    "ます Form",
+    "ます Form/Polite",
     "て: Te-Form",
     "た : Past",
     "ない : Negative",
     "なかった : Past Negative",
-    # "ます : Polite",
-    # "ません : Polite Negative",
-    # "ました : Polite Past",
-    # "ませんでした : Polite Past Negative"
+    "ません : Polite Negative",
+    "ました : Polite Past",
+    "ませんでした : Polite Past Negative"
     # "Potential",
     # "Passive",
     # "Causative",
@@ -113,9 +106,18 @@ verb_conjugations = [
     # "Imperative",
 ]
 
+# CONJUGATION_TYPES = [
+#     "present affirmative",
+#     "present negative",
+#     "past affirmative",
+#     "past negative",
+#     "te-form"
+# ]
+
 adj_conjugations = [
     # "Plain",
     "Negative",
+    "Negative Past",
     "Past",
     "Te-form",
     "Adverbial",
@@ -188,14 +190,21 @@ class Logic:
             self.ui.conjugation_label.setText("No conjugations")
             return
 
-        vocab = random.choice(vocab_list)
-        conj_type = random.choice(conjugation_list)
+        if selected_type not in self.vocab_queues:
+            self.vocab_queues[selected_type] = ShuffleQueue(vocab_list)
+        if selected_type not in self.conj_queues:
+            self.conj_queues[selected_type] = ShuffleQueue(conjugation_list)
+
+        vocab = self.vocab_queues[selected_type].next()
+        conj_type = self.conj_queues[selected_type].next()
+
+        print(f"VQUE: {self.vocab_queues[selected_type]}")
+        print(f"VQUE: {self.conj_queues[selected_type]}")
 
         self.ui.vocab_label.setText(vocab)
         self.ui.conjugation_label.setText(f"→ {conj_type}")
         self.ui.input_field.clear()
         self.ui.input_field.setStyleSheet("")
-
 
     def randomize(self):
         selected_type = self.ui.word_type_combo.currentText()
