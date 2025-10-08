@@ -15,10 +15,9 @@ class LayoutBuilder():
 
     def apply_layout(self, component:ComponentInterface, structure: StructureInterface):
         layout = self.build_layout(structure.layout_data)
-        
         layout.setContentsMargins(0, 0, 0, 0)
         component.setLayout(layout)
-
+    
     def build_layout(self, data) -> QWidget | QLayout:
         if isinstance(data, QWidget):
             return data

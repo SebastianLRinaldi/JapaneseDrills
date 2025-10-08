@@ -1,4 +1,9 @@
+from .adjective_list import Component as AdjectiveList
+from .adverb_list import Component as AdverbList
 from .basic_new import Component as BasicNew
 from .blank_new import Component as BlankNew
+from .noun_list import Component as NounList
 from .second import Component as Second
+from .temp import Component as Temp
+from .verb_list import Component as VerbList
 from .web import Component as Web

@@ -2,12 +2,11 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
-from src.components import *
-
-class BluePrint:
-    btn1: QPushButton
-    another_widget: BasicNew
-    web_widget: Web
+class Blueprint:
+    adjective_spinbox: QSpinBox       # lets user choose how many random adjectives to grab
+    adjective_list: QListWidget
+    adjective_set_all_btn: QPushButton
+    adjective_random_btn: QPushButton
 
     def _map_widgets(self, source):
         """

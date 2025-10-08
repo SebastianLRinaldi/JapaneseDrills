@@ -1,1 +1,1 @@
-from .app0 import Component as App0
+from .VocabRandomizer import Component as VocabRandomizer

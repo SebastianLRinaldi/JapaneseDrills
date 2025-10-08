@@ -10,19 +10,24 @@ class Structure(LayoutBuilder, BluePrint):
         super().__init__()
         self._map_widgets(component)
         self.set_widgets()
-
-
         self.layout_data = [
-            self.box("vertical", "Apps Widgets", [self.btn1]),
-
-            self.box("vertical", "External App", [self.another_widget]),
-
-            self.box("vertical", "WEB", [self.web_widget]),
+            self.splitter("horizontal", [
+                self.noun_list,
+                self.verb_list,
+                self.adjective_list,
+                self.adverb_list,
+            ]),
+            
+            self.group("vertical", [
+                "get_all_btn",
+                "randomize_btn"
+            ])
         ]
 
         self.apply_layout(component, self)
 
-
     def set_widgets(self):
-        self.btn1.setText("Push Me!")
+        self.get_all_btn.setText("SET ALL")
+        self.randomize_btn.setText("RANDOMIZE ALL")
+
         
