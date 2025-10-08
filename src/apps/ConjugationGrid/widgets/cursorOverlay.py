@@ -10,7 +10,7 @@ class CursorOverlay(QWidget):
         self.color = color
         self.cursor_visible = True
         self.cursor_pos = (0, 0)
-        self.is_summary = is_summary  # 🔥 Add this
+        self.is_summary = is_summary  
         self.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents, True)
         self.timer = QTimer()
         self.timer.timeout.connect(self.blink)
@@ -37,7 +37,7 @@ class CursorOverlay(QWidget):
         r, c = self.cursor_pos
         if 0 <= c < parent.cols:
             if self.is_summary:
-                cell_widget = parent.summary_widgets[c]  # 🔥 Use summary row
+                cell_widget = parent.summary_widgets[c] 
             elif 0 <= r < parent.rows:
                 cell_widget = parent.cells_widgets[r][c]
             else:

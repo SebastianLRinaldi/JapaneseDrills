@@ -25,8 +25,8 @@ class Layout(UiManager):
         super().__init__()
 
 
-        self.rows = 6  # editable rows only
-        self.cols = 5
+        self.rows = 12  # editable rows only
+        self.cols = 8
         self.cell_size = QSize(24, 32)
 
         self.grid_layout = QGridLayout()
@@ -48,6 +48,7 @@ class Layout(UiManager):
             row_widgets = []
             for c in range(self.cols):
                 cell = GridCell()
+                cell.setStyleSheet("border: 1px solid gray; color: white;")
                 self.grid_layout.addWidget(cell, r+1, c)  # +1 for summary offset
                 row_widgets.append(cell)
             self.cells_widgets.append(row_widgets)
@@ -88,7 +89,7 @@ class Layout(UiManager):
         for r in range(self.rows):
             for c in range(self.cols):
                 self.cells_widgets[r][c].setText(self.cells_data[r][c])
-                self.cells_widgets[r][c].setStyleSheet("border: 1px solid gray; color: black; padding: 0px; margin: 0px;")
+                # self.cells_widgets[r][c].setStyleSheet("border: 1px solid gray; color: black; padding: 0px; margin: 0px;")
         self.update_summary_row()
 
     def clear_preview(self):

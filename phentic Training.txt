@@ -1,0 +1,55 @@
+Where do I embed the meaning so that the input can drive the meaning automaticaly
+
+Reading
+- based on the way the kanji is drawn is where I embed meaning
+- I can see a  scene in the kanji or potently a scene of by looking at the lines in the kanji
+
+Typing
+- phonetic
+
+
+Listening
+- Encode the feeling:
+- Focus not on the definition, but on the meaing you feel when hearing it.
+
+
+
+for web we should do something like if we find a core list table to basicaly 
+grab the table, show/hide columns 
+print rows to a list only check boxed rows
+
+
+
+
+
+input --> imbed somthing to make path to recall meaning easier
+
+
+defintion --> reading --> meaning
+- phentic memomentic that matches reading or creates some mental picture of reading and meaning
+
+kanji vocab --> reading --> meaning
+- What it looks like we can create a image or scene and attact meaning and or reading to kanji
+
+reading (no text only audio) --> reading --> meaning
+
+
+img defintion --> meaning --> reading
+- already gives us mental img of thing so its eaier to recall 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

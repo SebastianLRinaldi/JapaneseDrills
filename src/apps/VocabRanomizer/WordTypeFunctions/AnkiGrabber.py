@@ -23,7 +23,8 @@ class AnkiGrabberLogic:
             "action": "findNotes",
             "version": 6,
             "params": {
-                "query": f'tag:{tag} (tag:status::understandable OR prop:cdn:{custom})'
+                # "query": f'tag:{tag} (tag:status::understandable OR prop:cdn:{custom})'
+                "query": f'"deck:Jap Mastery::Graduated" tag:{tag}'
             }
         }
         response = requests.post("http://localhost:8765", json=payload)

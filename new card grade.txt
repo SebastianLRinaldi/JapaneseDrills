@@ -1,0 +1,12 @@
+grab sentence audio from anki and try and dictate the words and or 
+another app where I try and guess verb tense from audio only
+
+All note that reach the sateg of being a genrational card, then we suspend them
+then we can grab them in out japanese drills of real word usage and such in chatgpt quizes instead
+
+All card types should be 
+Different cue - same output 
+1) immedate regoniztion for the word being seen, doesnt feel like idk what this is
+2) do we get the meaning of the word naturally either as a defintion/phrae/image or 
+	some type of sounds that lets use know the deinftion
+3) Can we type the reading from memory or some conjugation of the word

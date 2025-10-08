@@ -9,7 +9,8 @@ from PyQt6.QtWebEngineWidgets import QWebEngineView
 
 from src.core.GUI.UiManager import *
 
-# from .widgets.CUSTOMWIDGET import YOURWIDGET
+from src.core.EventHandlers.enter_key_handler import EnterKeyHandler
+from .widgets.Web.Layout import Layout as webAppLayout
 
 
 def convert_brackets(text):
@@ -120,6 +121,9 @@ class FuriganaEditor(QTextEdit):
         self._last_kana = ""
         self.viewer = None
         # self.preview_callback = preview_callback
+        font = self.font()
+        font.setPointSize(32)  # bigger text
+        self.setFont(font)
 
     def set_viewer(self, viewer: QWebEngineView):
         self.viewer = viewer
@@ -183,14 +187,15 @@ class FuriganaEditor(QTextEdit):
 
 
 
-
-
+from src.core.EventHandlers.enter_key_handler import EnterKeyHandler
+from .widgets.Web.Layout import Layout as webAppLayout
 
 
 class Layout(UiManager):
 
     editor:  FuriganaEditor
     viewer: QWebEngineView
+    web_app: webAppLayout
     
     def __init__(self):
         super().__init__()
@@ -199,11 +204,16 @@ class Layout(UiManager):
         self.set_widgets()
 
         layout_data = [
-            self.splitter('vertical',[
-                "editor",
-                "viewer"
-            ]),
-    
+            self.splitter("horizontal", [
+
+                self.splitter('vertical',[
+                    "editor",
+                    "viewer"
+                ]),
+
+                "web_app",
+
+                ]),
         ]
 
         self.apply_layout(layout_data)
@@ -216,6 +226,8 @@ class Layout(UiManager):
 
     def set_widgets(self):
         self.editor.set_viewer(self.viewer)
+        self.enter_handler = EnterKeyHandler(self)
+        self.installEventFilter(self.enter_handler)
         
 
 

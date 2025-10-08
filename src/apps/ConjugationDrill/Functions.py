@@ -89,22 +89,22 @@ from .Layout import Layout
 
 
 
-verb_conjugations = [
-    # "Dictionary Form",
-    "ます Form/Polite",
-    "て: Te-Form",
-    "た : Past",
-    "ない : Negative",
-    "なかった : Past Negative",
-    "ません : Polite Negative",
-    "ました : Polite Past",
-    "ませんでした : Polite Past Negative"
-    # "Potential",
-    # "Passive",
-    # "Causative",
-    # "Volitional",
-    # "Imperative",
-]
+# verb_conjugations = [
+#     # "Dictionary Form",
+#     "ます Form/Polite",
+#     "て: Te-Form",
+#     "た : Past",
+#     "ない : Negative",
+#     "なかった : Past Negative",
+#     "ません : Polite Negative",
+#     "ました : Polite Past",
+#     "ませんでした : Polite Past Negative"
+#     # "Potential",
+#     # "Passive",
+#     # "Causative",
+#     # "Volitional",
+#     # "Imperative",
+# ]
 
 # CONJUGATION_TYPES = [
 #     "present affirmative",
@@ -113,6 +113,111 @@ verb_conjugations = [
 #     "past negative",
 #     "te-form"
 # ]
+
+
+verb_conjugations = [
+    # ─── Basic Forms ───
+    # "Dictionary Form",
+    # "ます Form / Polite",
+
+    # ─── Te-form ───
+    # "て Form",
+
+    # ─── Tense / Polarity ───
+    # "た : Past",
+    # "ない : Negative",
+    # "なかった : Past Negative",
+    # "ません : Polite Negative",
+    # "ました : Polite Past",
+    # "ませんでした : Polite Past Negative",
+
+    # ─── Desire / Intention ───
+    # "たい : Want to / Desiderative",
+    # "たくない : Don't want to /  Negative Desiderative",
+    # "たかった : Wanted to",
+    # "たくなかった : Didn't want to"
+
+    # "てほしい : Want (someone) to do",
+    # "てほしくない : Don’t want (someone) to do",
+    # "てほしかった : Wanted (someone) to do",
+    # "てほしくなかった : Didn’t want (someone) to do",
+    
+    # "たがる : Someone Else's Desire",
+    
+
+    # ─── Progressive / Resulting State ───
+    "ている : Progressive / Resulting State",         # is doing / has done (result state)
+    # "ていない : Negative Progressive",                # isn’t doing / hasn’t done
+    # "ていた : Past Progressive",                      # was doing / had done
+    # "ていなかった : Past Negative Progressive",       # wasn’t doing / hadn’t done
+
+    # "ています : Polite Progressive",
+    # "ていません : Polite Negative Progressive",
+    # "ていました : Polite Past Progressive",
+    # "ていませんでした : Polite Past Negative Progressive",
+
+    # ─── Connective Forms ───
+    # "ながら Form : Simultaneous 'while doing'",
+    # "たり Form : Example listing of Actions",
+    # "Conditional (〜ば / 〜たら / 〜なら)",
+
+
+    # ─── Volitional ─── # "Volitional (〜う / 〜よう)",
+    # "よう : Volitional (casual)",
+    # "ましょう : Polite Volitional",
+
+    # ─── Imperative ───
+    # "ろ / え : Imperative (casual)",
+    # "なさい : Polite Imperative",
+    # "な : Negative Command",
+
+    # ─── Conditional ───
+    # "ば : Conditional",
+    # "たら : Past Conditional",
+    # "なら : Hypothetical Conditional",
+
+    # ─── Potential ───     # "Potential (〜れる / 〜られる)",
+    # "られる / える : Potential",
+
+    # ─── Passive ───     # "Passive (〜れる / 〜られる)", 
+    # "られる : Passive", #Can do (ability)
+
+    # ─── Causative ───
+    # "せる / させる : Causative",
+
+    # ─── Causative-Passive ───
+    # "させられる : Causative-Passive", # Be made to do
+
+
+
+    # ─── Auxiliary Constructions ───
+    # "やすい : Easy to do",
+    # "やすくない : Not easy to do",
+    # "やすかった : Was easy to do",
+    # "やすくなかった : Wasn’t easy to do",
+
+    # "にくい : Hard to do",
+    # "にくくない : Not hard to do",
+    # "にくかった : Was hard to do",
+    # "にくくなかった : Wasn’t hard to do",
+
+
+    # ─── Optional Extras ───
+    # "Completion (〜てしまう)",
+    # "すぎる : Overdo / too much",
+    # "てみる : Try doing",
+    # "てしまう : Finish doing / Do completely",
+    # "ちゃう : Finish doing (casual)",
+    # "なければならない : Must do",
+    # "ておく : Do in advance / prepare",
+    # "とく : Do in advance (casual)",
+    # "たりする : Do things like / etc.",
+    # "たりする : Do things like / etc.",
+    # etc.
+]
+
+
+
 
 adj_conjugations = [
     # "Plain",
