@@ -1,0 +1,1 @@
+from .app0 import Component as App0
