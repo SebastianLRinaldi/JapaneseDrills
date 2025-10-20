@@ -2,6 +2,7 @@ from .adjective_list import Component as AdjectiveList
 from .adverb_list import Component as AdverbList
 from .basic_new import Component as BasicNew
 from .blank_new import Component as BlankNew
+from .furigana_editor import Component as FuriganaEditor
 from .noun_list import Component as NounList
 from .second import Component as Second
 from .temp import Component as Temp
