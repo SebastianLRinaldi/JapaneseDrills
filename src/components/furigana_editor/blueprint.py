@@ -5,7 +5,12 @@ from PyQt6.QtWebEngineWidgets import QWebEngineView
 
 class Blueprint:
     typing_area: QTextEdit
+    line_count_label: QLabel
+    submit_btn: QPushButton
+    count_down_label:QLabel
     viewer: QWebEngineView
+    toggle_timer_btn: QPushButton
+    reset_timer_btn: QPushButton
 
     def _map_widgets(self, source):
         """
