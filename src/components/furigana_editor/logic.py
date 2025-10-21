@@ -100,6 +100,7 @@ class Logic(Blueprint):
 
     def submit_session(self):
         text = self.typing_area.toPlainText()
+        QApplication.clipboard().setText(self.typing_area.toPlainText())
         self.recall_tracker.process_session(text, self.get_time_str())
         self.typing_area.clear()
 
