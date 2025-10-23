@@ -60,9 +60,20 @@ class MyHighlighter(QSyntaxHighlighter):
 
 """
 Need to add +/- 5 mins to timer
-have default of 10-15-20-25-30 timers
+have default of 10-15-20-25-30 timers to choose from default to 15 or add settings for default
 wpm avg
-way to store prev sessions in simple .txt files that get concat and highlited light blue in a current session
+
+should show the increases in total recalled words, time spent, etc. after submit it pressed 
+    (stats hidden after you press start on the timer then shown when stopped, so not to distract from recall)
+    
+Highest total of words and in what session
+Highest total of unique words and in what session
+
+A way to view stats over the sessions
+A pop up after you submit a a session to show stats of session and maybe a simple compare to other sessions of improvement or decline 
+would want to have an avg new words between sessions
+would want avg word count per session
+
 """
 
 
