@@ -1,0 +1,1 @@
+from .furigana_editor import Component as FuriganaEditor

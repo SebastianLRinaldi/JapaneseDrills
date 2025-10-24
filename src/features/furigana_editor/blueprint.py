@@ -3,6 +3,8 @@ from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 from PyQt6.QtWebEngineWidgets import QWebEngineView
 
+from src.components import *
+
 class Blueprint:
     typing_area: QTextEdit
     line_count_label: QLabel

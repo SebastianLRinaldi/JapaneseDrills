@@ -4,6 +4,7 @@ import time
 import re
 from pathlib import Path
 from collections import Counter
+from src.helper_functions import sum_durations
 
 # class RecallTracker:
 #     def __init__(self):
@@ -168,29 +169,31 @@ class RecallTracker:
     def process_session(self, session_text:str, session_duration:str):
         self.master_stats["total_sessions"] = self.master_stats.get("total_sessions", 0) + 1
         self.master_stats["total_recall_time"] = self.update_session_time(session_duration)
-        untracked_words, tracked_words = self.process_session_words(session_text)
+        curr_session_name, untracked_words, tracked_words = self.process_session_words(session_text)
+        self.update_performance_stats(curr_session_name, untracked_words, tracked_words)
         self.add_session(session_duration, untracked_words, tracked_words)
         self.update_master()
+        return untracked_words, tracked_words
         
     def process_session_words(self, session_text:str):
         now = datetime.now() 
-        last_recalled = f"{now.strftime(f'session({self.master_stats.get("total_sessions", 0)}) %Y-%m-%d')}"
+        curr_session_name = f"{now.strftime(f'session({self.master_stats.get("total_sessions", 0)}) %Y-%m-%d')}"
 
         # get words from QTextEdit, one per line
         session_words = [w.strip() for w in session_text.split("\n") if w.strip()]
 
         # split words into new vs old
-        new_words = [w for w in session_words if w not in self.master_words]
-        old_words = [w for w in session_words if w in self.master_words]
+        untracked_words = [w for w in session_words if w not in self.master_words]
+        tracked_words = [w for w in session_words if w in self.master_words]
         
         word_counts = Counter(session_words)
         for w, count in word_counts.items():
             if w not in self.master_words:
-                self.master_words[w] = {"count": 0, "first_recalled": last_recalled, "last_recalled": None}
+                self.master_words[w] = {"count": 0, "first_recalled": curr_session_name, "last_recalled": None}
             self.master_words[w]["count"] += count
-            self.master_words[w]["last_recalled"] = last_recalled
+            self.master_words[w]["last_recalled"] = curr_session_name
 
-        return new_words, old_words
+        return curr_session_name, untracked_words, tracked_words
 
     def add_session(self, session_duration, untracked_words, tracked_words):
         today = str(date.today())
@@ -201,7 +204,7 @@ class RecallTracker:
             "session_num": self.master_stats.get("total_sessions", 0),
             "date": today,
             "time":now.strftime('%I:%M%p'),
-            "session_duration":self.sum_durations([session_duration]),
+            "session_duration":sum_durations([session_duration]),
             "total_count": len(untracked_words) + len(tracked_words),
             "new_count": len(untracked_words),
             "old_count": len(tracked_words),
@@ -226,7 +229,7 @@ class RecallTracker:
 
         least_recalled = {w: v["count"] for w, v in all_words_resorted[:20]}
         most_recalled  = {w: v["count"] for w, v in all_words_resorted[:-20:-1]}
-        
+        # self. update_performance_stats()
         self.master_stats.update({
             "total_words": len(all_words_resorted),
             "total_recall_count": sum(word["count"] for word in self.master_words.values()),
@@ -235,50 +238,43 @@ class RecallTracker:
             "most_recalled": most_recalled, # last 20 (highest counts)
         })
 
-        
         self.save_json(self.master, self.master_path)
 
+
+    def update_performance_stats(self, curr_session_name:str, untracked_words:list[str], tracked_words:list[str]):
+        """
+        best session unique words total
+        best session total words total
+
+        best_unq_total: {session_name: "name", unq_total:000}
+        best_total: {session_name: "name", total:000}
+
+        if curr_session is better > than saved session:
+            replace saved_session with curr_session (name:total)
+        
+        """
+        curr_stats = {
+            "best_total_word_count": len(untracked_words) + len(tracked_words),
+            "best_new_word_count": len(untracked_words),
+            "best_old_word_count": len(tracked_words),
+        }
+
+        for key, curr_count in curr_stats.items():
+            stat = self.master_stats.setdefault(key, {"count": 0, "session": ""})
+            if curr_count > stat.get("count", 0):
+                stat["count"] = curr_count
+                stat["session"] = curr_session_name
+
+        self.save_json(self.master, self.master_path)
+
+    
     def update_session_time(self, session_duration):
         stats:dict = self.master.get("stats", {})
         
         total_recall_time = stats.get("total_recall_time", "") 
 
-        return self.sum_durations([total_recall_time, session_duration])
+        return sum_durations([total_recall_time, session_duration])
 
-    def sum_durations(self, durations:list[str]):
-        total_seconds = 0
-
-        for duration in durations:
-            total_seconds += self.parse_duration(duration)
-
-        return self.format_duration(total_seconds)
-
-    def format_duration(self, total_seconds):
-        days, rem = divmod(total_seconds, 86400)
-        hrs, rem = divmod(rem, 3600)
-        mins, secs = divmod(rem, 60)
-
-        parts = []
-        if days > 0:
-            parts.append(f"{days}d")
-        if hrs > 0 or days > 0:  # show hours if any days or hours exist
-            parts.append(f"{hrs}h")
-        if mins > 0 or hrs > 0 or days > 0:  # show minutes if any larger units exist
-            parts.append(f"{mins}m")
-        parts.append(f"{secs}s")  # always show seconds
-
-        return ":".join(parts)
-
-    def parse_duration(self, duration):
-        # Matches optional D,H,M,S parts
-        pattern = r'(?:(\d+)d:)?(?:(\d+)h:)?(?:(\d+)m:)?(\d+)s'
-        match = re.fullmatch(pattern, duration)
-        if not match:
-            raise ValueError(f"Invalid duration format: {duration}")
-        
-        days, hrs, mins, secs = match.groups(default='0')
-        total_seconds = int(days)*86400 + int(hrs)*3600 + int(mins)*60 + int(secs)
-        return total_seconds
 
     def save_json(self, obj_data, obj_path):
         with open(obj_path, "w", encoding="utf-8") as f:

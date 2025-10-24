@@ -2,11 +2,9 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
-from src.features import *
 class Blueprint:
-    editor:  FuriganaEditor
-    # viewer: QWebEngineView
-    ## web_app: webAppLayout
+    stats_table: QTableWidget
+    close_button: QPushButton
 
     def _map_widgets(self, source):
         """
@@ -16,10 +14,10 @@ class Blueprint:
         for name in self.__annotations__:
             setattr(self, name, getattr(source, name))
 
-    def _init_widgets(self):
+    def _init_widgets(self, parent=None):
         """
         Instantiate all widgets defined in type hints.
         Call this manually when you want actual widget instances.
         """
         for name, typ in self.__annotations__.items():
-            setattr(self, name, typ())
+            setattr(self, name, typ(parent))

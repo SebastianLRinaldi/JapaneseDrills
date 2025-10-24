@@ -1,4 +1,6 @@
 from multiprocessing.reduction import duplicate
+import pprint
+import copy
 import re
 import os
 from time import sleep
@@ -8,13 +10,14 @@ from PyQt6.QtGui import *
 from enum import Enum
 from collections import Counter
 
+from src.components import stats_window
 from src.core.event_handlers.enter_key_handler import EnterKeyHandler
 from src.core.event_handlers.ime_handler import *
 from src.core.event_handlers.space_key_handler import *
 from src.helper_functions import *
 from src.helper_classes import *
 from .blueprint import Blueprint
-
+from src.components import *
 """
 Close methods
 Ctrl+k + Ctrl+0
@@ -74,8 +77,9 @@ A pop up after you submit a a session to show stats of session and maybe a simpl
 would want to have an avg new words between sessions
 would want avg word count per session
 
-"""
+** Becauce the recall tracker is its own things now, we need to make a seperate app for the sentences and word writing with the [] for anki **
 
+"""
 
 class Logic(Blueprint):
 
@@ -110,10 +114,19 @@ class Logic(Blueprint):
 
 
     def submit_session(self):
+        self.prev_stats = copy.deepcopy(self.recall_tracker.master_stats)
         text = self.typing_area.toPlainText()
         QApplication.clipboard().setText(self.typing_area.toPlainText())
-        self.recall_tracker.process_session(text, self.get_time_str())
+        untracked_words, tracked_words = self.recall_tracker.process_session(text, self.get_time_str())
         self.typing_area.clear()
+
+        msg = StatsWindow(self.component)
+        msg.logic.prepare_stats(self.prev_stats, self.recall_tracker.master_stats)
+        msg.logic.prepare_best_stats(self.prev_stats, untracked_words, tracked_words)
+        msg.logic.build_table()
+        msg.show()
+        
+
 
 
     def stop_timer(self):
@@ -156,11 +169,6 @@ class Logic(Blueprint):
         self.seconds_left = self.count_down_label.text()
         self.timer_count = TimerPreset.FIFTEEN.value
         self.count_down_label.setText("Ready?")
-        
-
-
-
-
 
 
     def on_ime_event1(self, event: QInputMethodEvent):
