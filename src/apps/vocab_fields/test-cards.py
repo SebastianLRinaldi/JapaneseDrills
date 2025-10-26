@@ -897,9 +897,6 @@ class Card(QGraphicsRectItem):
         label.setDefaultTextColor(QColor(30, 30, 30))
         label.setPos(0, 20)
 
-        # Fetch definition in background
-        # threading.Thread(target=self.fetch_definition, daemon=True).start()
-
     def itemChange(self, change, value):
         if change == QGraphicsItem.GraphicsItemChange.ItemPositionHasChanged:
             parent = self.parentItem()
@@ -912,17 +909,21 @@ class Card(QGraphicsRectItem):
             word = Word()
             result = word.request(self.text)
             self.definition = result.data[0].senses
+            for sense in self.definition:
+                print(sense.english_definitions)
         except Exception as e:
             print(f"Failed to fetch definition for {self.text}: {e}")
 
     def mouseDoubleClickEvent(self, event):
         os.system("cls")
         print(f"Definitions for {self.text}:")
-        if self.definition:
+        # Fetch definition in background
+        if not self.definition:
+            threading.Thread(target=self.fetch_definition, daemon=True).start()
+        else: 
             for sense in self.definition:
                 print(sense.english_definitions)
-        else:
-            print("Loading definition…")
+
         event.accept()
 
 
@@ -1071,14 +1072,11 @@ class View(QGraphicsView):
 
         super().keyReleaseEvent(event)
 
-
     def mousePressEvent(self, event: QMouseEvent):
         if event.button() == Qt.MouseButton.MiddleButton:
             self.setCursor(Qt.CursorShape.ClosedHandCursor)  # Hand or move cursor
         else:
             super().mousePressEvent(event)
-
-                
 
     def mouseReleaseEvent(self, event: QMouseEvent):
         super().mouseReleaseEvent(event)
@@ -1089,41 +1087,6 @@ class View(QGraphicsView):
         # Separate cards and clusters
         selected_cards = [item for item in selected_items if isinstance(item, Card)]
         selected_clusters = [item for item in selected_items if isinstance(item, ClusterGroup)]
-
-        # # --- Merge clusters if multiple selected ---
-        # if len(selected_clusters) > 1:
-        #     merged_cards = []
-        #     for cluster in selected_clusters:
-        #         merged_cards.extend(cluster.cards)
-        #         scene.removeItem(cluster)
-        #     new_group = ClusterGroup(merged_cards)
-        #     scene.addItem(new_group)
-
-        # # --- Handle splitting cards from cluster with Alt ---
-        # if event.modifiers() & Qt.KeyboardModifier.AltModifier:
-        #     # Cards that already belong to a cluster
-        #     cards_to_split = [c for c in selected_cards if isinstance(c.parentItem(), ClusterGroup)]
-        #     if cards_to_split:
-        #         # Remove from original cluster(s)
-        #         for card in cards_to_split:
-        #             card.parentItem().remove_card(card)
-        #         # Make a new cluster with them
-        #         new_group = ClusterGroup(cards_to_split)
-        #         scene.addItem(new_group)
-
-        # # --- Handle creating new cluster from unclustered cards with Shift ---
-        # if event.modifiers() & Qt.KeyboardModifier.ShiftModifier:
-        #     new_cards = [c for c in selected_cards if c.parentItem() is None]
-        #     if new_cards:
-        #         group = ClusterGroup(new_cards)
-        #         scene.addItem(group)
-
-        # # --- Handle removing cards from clusters with Control ---
-        # if event.modifiers() & Qt.KeyboardModifier.ControlModifier:
-        #     for card in selected_cards:
-        #         if isinstance(card.parentItem(), ClusterGroup):
-        #             card.parentItem().remove_card(card)
-
 
         # --- Merge clusters if multiple selected ---
         if len(selected_clusters) > 1:
@@ -1172,8 +1135,6 @@ class View(QGraphicsView):
         #TODO Zoom in should happen on the point where the mouse is
         zoom = 1.2 if event.angleDelta().y() > 0 else 1/1.2
         self.scale(zoom, zoom)
-
-
 
 # --- Application ---
 app = QApplication([])

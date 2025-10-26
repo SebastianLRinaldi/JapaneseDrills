@@ -155,6 +155,9 @@ class RecallTracker:
         self.master_words = {}
         self.init_mastery_file()
 
+    def get_stored_words(self):
+        return list(self.master_words.keys())
+
     def init_mastery_file(self):
         # load and init master data
         if self.master_path.exists():
