@@ -917,13 +917,12 @@ class Card(QGraphicsRectItem):
     def mouseDoubleClickEvent(self, event):
         os.system("cls")
         print(f"Definitions for {self.text}:")
-        # Fetch definition in background
+        # Fetch definition in background if there is no definition saved on the card
         if not self.definition:
             threading.Thread(target=self.fetch_definition, daemon=True).start()
         else: 
             for sense in self.definition:
                 print(sense.english_definitions)
-
         event.accept()
 
 

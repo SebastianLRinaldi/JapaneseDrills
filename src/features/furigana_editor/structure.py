@@ -35,6 +35,7 @@ class Structure(LayoutBuilder, Blueprint):
         self.reset_timer_btn.setText("Reset")
         self.count_down_label.setText("Ready?")
         self.count_down_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.typing_area.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
 
 
