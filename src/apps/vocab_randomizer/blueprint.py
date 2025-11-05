@@ -1,0 +1,31 @@
+from PyQt6.QtCore import *
+from PyQt6.QtWidgets import * 
+from PyQt6.QtGui import *
+
+from src.components import *
+
+class BluePrint:
+
+    get_all_btn: QPushButton
+    randomize_btn: QPushButton
+
+    noun_list: NounList
+    verb_list: VerbList
+    adjective_list: AdjectiveList
+    adverb_list: AdverbList
+
+    def _map_widgets(self, source):
+        """
+        Copy existing widget instances from source to self.
+        """
+        # source is some object that already has the widgets as attributes
+        for name in self.__annotations__:
+            setattr(self, name, getattr(source, name))
+
+    def _init_widgets(self):
+        """
+        Instantiate all widgets defined in type hints.
+        Call this manually when you want actual widget instances.
+        """
+        for name, typ in self.__annotations__.items():
+            setattr(self, name, typ())
