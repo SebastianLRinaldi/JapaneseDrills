@@ -36,11 +36,11 @@ class Logic(Blueprint):
             "Total Recall Count": (prev_stats["total_recall_count"], current_stats["total_recall_count"])
         }
 
-    def prepare_best_stats(self, prev_stats:dict,  untracked_words:list[str], tracked_words:list[str]):
+    def prepare_best_stats(self, prev_stats:dict,  current_session_old_word_count, current_session_new_word_count,):
         self.best_stats = {
-            "Best Total Count": (prev_stats["best_total_word_count"]["count"], len(untracked_words) + len(tracked_words)),
-            "Best New Count": (prev_stats["best_new_word_count"]["count"], len(untracked_words)),
-            "Best Old Count": (prev_stats["best_old_word_count"]["count"], len(tracked_words)),
+            "Best Total Count": (prev_stats["best_total_word_count"]["count"], current_session_old_word_count + current_session_new_word_count),
+            "Best New Count": (prev_stats["best_new_word_count"]["count"], current_session_new_word_count),
+            "Best Old Count": (prev_stats["best_old_word_count"]["count"], current_session_old_word_count),
         }
 
     def create_item(self, text="") -> QTableWidgetItem:

@@ -6,8 +6,18 @@ class Connections(Blueprint):
         super().__init__()
         self._map_widgets(component)
         self.logic = logic
-        self.typing_area.textChanged.connect(self.logic.update_line_count)
-        self.submit_btn.pressed.connect(self.logic.submit_session)
+
+
+
+        # self.typing_area.cursorPositionChanged.connect(self.logic.update_line_count)
+        # self.typing_area.textChanged.connect(self.logic.update_line_count)
+
+        self.typing_area.returnPressed.connect(self.logic.add_word)
+        self.typing_area.textChanged.connect(self.logic.update_color)
+
+
+        
+        self.session_submit_btn.pressed.connect(self.logic.submit_session)
 
         self.toggle_timer_btn.pressed.connect(self.logic.toggle_timer)
         self.reset_timer_btn.pressed.connect(self.logic.reset_count_down_timer)

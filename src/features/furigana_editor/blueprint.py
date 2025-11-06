@@ -1,18 +1,21 @@
 from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
-from PyQt6.QtWebEngineWidgets import QWebEngineView
 
 from src.components import *
 
 class Blueprint:
-    typing_area: QTextEdit
-    line_count_label: QLabel
-    submit_btn: QPushButton
-    count_down_label:QLabel
-    viewer: QWebEngineView
     toggle_timer_btn: QPushButton
+    count_down_label:QLabel
     reset_timer_btn: QPushButton
+    
+    typing_history: QListWidget
+    typing_area: QLineEdit
+    word_count_label: QLabel
+    
+    session_submit_btn: QPushButton
+
+
 
     def _map_widgets(self, source):
         """
