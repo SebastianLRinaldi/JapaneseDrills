@@ -12,8 +12,29 @@ class Connections(Blueprint):
         # self.typing_area.cursorPositionChanged.connect(self.logic.update_line_count)
         # self.typing_area.textChanged.connect(self.logic.update_line_count)
 
+        
+        self.logic.undo_handler.undoPressed.connect(self.logic.remove_word_from_history)
         self.typing_area.returnPressed.connect(self.logic.add_word)
+
+
+
+
+        
         self.typing_area.textChanged.connect(self.logic.update_color)
+        
+        # self.typing_area.selectionChanged.connect(self.logic.update_color)
+        # self.typing_area.editingFinished.connect(self.logic.update_color)
+        # self.typing_area.returnPressed.connect(self.logic.update_color)
+        # self.typing_area.cursorPositionChanged.connect(self.logic.update_color)
+        # self.typing_area.textEdited.connect(self.logic.update_color)
+
+
+
+
+
+
+
+        
 
 
         
@@ -21,8 +42,5 @@ class Connections(Blueprint):
 
         self.toggle_timer_btn.pressed.connect(self.logic.toggle_timer)
         self.reset_timer_btn.pressed.connect(self.logic.reset_count_down_timer)
-        # self.logic.count_down_timer.timeout.connect(self.logic.update_timer)
-        # self.logic.count_down_timer.start(1000)  # tick every second
-
-        # self.typing_area.cursorPositionChanged.connect(lambda: print(self.typing_area.textCursor().position()))
+ 
 

@@ -219,10 +219,17 @@ class RecallTracker:
             word_type = "new"
         event = { "timestamp": timestamp, "word": word, "type": word_type }
         print(event)
-        
-        self.current_session_data["events"].append(event)
-        pprint.pprint(self.current_session_data)
+        if self.current_session_data:
+            self.current_session_data["events"].append(event)
+            # pprint.pprint(self.current_session_data)
         # self.save_json(self.current_session_data, self.current_session_path)
+
+    def remove_event_from_session(self, word:str):
+        if self.current_session_data:
+            self.current_session_data["events"] = [
+                event for event in self.current_session_data["events"]
+                if event["word"] != word
+            ]
 
     def sort_session_words(self):
         new_words = [event["word"] for event in self.current_session_data["events"] if event["type"] == "new"]
