@@ -8,18 +8,14 @@ class Connections(Blueprint):
         self.logic = logic
 
 
-
-        # self.typing_area.cursorPositionChanged.connect(self.logic.update_line_count)
-        # self.typing_area.textChanged.connect(self.logic.update_line_count)
-
         
         self.logic.undo_handler.undoPressed.connect(self.logic.remove_word_from_history)
         self.typing_area.returnPressed.connect(self.logic.add_word)
 
 
-
-
-        
+        """
+        Want to figure out which would be best as teh signal
+        """
         self.typing_area.textChanged.connect(self.logic.update_color)
         
         # self.typing_area.selectionChanged.connect(self.logic.update_color)

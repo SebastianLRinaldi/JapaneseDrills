@@ -104,8 +104,6 @@ class Logic(Blueprint):
         self.undo_handler = UndoKeyHandler(self.typing_area)
         self.typing_area.installEventFilter(self.undo_handler )
 
-
-
     def get_time_str(self) -> str:
         minutes, seconds = divmod(self.timer_count, 60)
         return f"{minutes:02d}m:{seconds:02d}s" 
@@ -166,37 +164,6 @@ class Logic(Blueprint):
         self.timer_count = TimerPreset.ZERO.value
         self.count_down_label.setText("Ready?")
 
-    # def add_word(self):
-    #     word = self.typing_area.text()
-    #     if word and self.count_down_timer.isActive():
-    #         if word not in self.submitted_words:
-    #             item = QListWidgetItem(word)
-    #             item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
-
-    #             if word in self.recall_tracker.master_words:
-    #                 color = QColor(173, 216, 230)
-    #             else:
-    #                 color = QColor("white")
-
-    #             item.setForeground(QBrush(color))
-
-    #             # Set large font
-    #             font = QFont()
-    #             font.setPointSize(16)
-    #             font.setBold(True)
-    #             item.setFont(font)
-
-    #             # Add item
-    #             self.typing_history.addItem(item)
-    #             self.submitted_words.add(word)
-    #             self.recall_tracker.add_event_to_session(self.timer_count, word)
-
-    #             # Scroll to bottom automatically
-    #             self.typing_history.scrollToBottom()
-    #             self.typing_area.clear()
-    #         else:
-    #             self.shake_line_edit(self.typing_area)
-
     def add_word(self):
         if self.count_down_timer.isActive() and (word := self.typing_area.text()):
 
@@ -231,6 +198,7 @@ class Logic(Blueprint):
         self.recall_tracker.add_event_to_session(self.timer_count, word)
         self.typing_history.scrollToBottom()
         self.typing_area.clear()
+        self.update_history_word_count()
 
     def remove_word_from_history(self):
         count = self.typing_history.count()
@@ -248,8 +216,7 @@ class Logic(Blueprint):
 
         self.recall_tracker.remove_event_from_session(word)
         self.update_color()
-
-
+        self.update_history_word_count()
 
 
     def shake_line_edit(self):
@@ -291,3 +258,7 @@ class Logic(Blueprint):
             self.typing_area.setStyleSheet(f"color: rgb(173, 216, 230); ; font-size: 64pt;")
         else:
             self.typing_area.setStyleSheet("color:white; font-size: 64pt;")
+
+    def update_history_word_count(self):
+        count = self.typing_history.count()
+        self.word_count_label.setText(f"Word Count: {count}")
