@@ -17,26 +17,36 @@ class Structure(LayoutBuilder, Blueprint):
         self.set_widgets()
         
         self.layout_data = [
-            self.group("horizontal",[
-                self.toggle_timer_btn,
-                self.count_down_label, 
-                self.reset_timer_btn,
+            self.typing_history,
+            self.typing_area, 
+            self.timer,
+            self.word_count_label,
+            self.group("horizontal", [
+                    self.session_start_btn, 
+                    self.session_submit_btn
             ]),
-                            self.typing_area, 
-                            self.line_count_label, 
-                            self.submit_btn]
+        ]
 
         self.apply_layout(component, self)
 
 
     def set_widgets(self):
-        self.submit_btn.setText("Submit Session")
-        self.toggle_timer_btn.setText("Start")
-        self.reset_timer_btn.setText("Reset")
-        self.count_down_label.setText("Ready?")
-        self.count_down_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.timer.logic.disable_all()
+        self.session_start_btn.setText("Start Session")
+        self.session_submit_btn.setText("Submit Session")
+        self.session_submit_btn.setDisabled(True)
         self.typing_area.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.typing_area.setMinimumHeight(250)
+        
+        self.typing_history.setFlow(QListWidget.Flow.TopToBottom)
+        self.typing_history.setWrapping(True)
+        self.typing_history.setMinimumHeight(165+5)
+        self.typing_history.setMaximumHeight(165*2+5) # 165 +5 = 170 which is 5 items at 16 font size 
+        self.typing_history.setSpacing(0) # words closer together
+        self.typing_history.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.typing_history.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
 
+        self.typing_area.setStyleSheet("font-size: 64pt;")
 
 
 

@@ -6,5 +6,6 @@ from .noun_list import Component as NounList
 from .second import Component as Second
 from .stats_window import Component as StatsWindow
 from .temp import Component as Temp
+from .timer import Component as Timer
 from .verb_list import Component as VerbList
 from .web import Component as Web

@@ -2,15 +2,10 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
-from src.components import *
-
 class Blueprint:
-    timer: Timer
-    typing_history: QListWidget
-    typing_area: QLineEdit
-    word_count_label: QLabel
-    session_start_btn: QPushButton
-    session_submit_btn: QPushButton
+    toggle_timer_btn: QPushButton
+    count_down_label:QLabel
+    reset_timer_btn: QPushButton
 
     def _map_widgets(self, source):
         """
