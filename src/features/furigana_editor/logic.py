@@ -10,10 +10,10 @@ from PyQt6.QtGui import *
 from enum import Enum
 from collections import Counter
 
-from src.components import stats_window
-from src.core.event_handlers.enter_key_handler import EnterKeyHandler
-from src.core.event_handlers.ime_handler import *
+
+
 from src.core.event_handlers.undo_key_handler import UndoKeyHandler
+from src.core.event_handlers.start_key_handler import StartKeyHandler
 from src.helper_functions import *
 from src.helper_classes import *
 from .blueprint import Blueprint
@@ -25,47 +25,11 @@ Ctrl+k + Ctrl+0
 Open Methods 
 Ctrl+k + Ctrl+J
 """
-class TimerPreset(Enum):
-    ZERO = 0
-    TEST_FIVE = 5
-    TEST_TEN = 10
-    THIRTY = 30 * 60
-    TWENTY_FIVE = 25 * 60
-    FIFTEEN = 15 * 60
-    TEN = 10 * 60
 
 WORD_COLOR_MAP = {
     True: QColor(173, 216, 230),  # old word color
     False: QColor("white"),      # new word color
 }
-
-class MyHighlighter(QSyntaxHighlighter):
-    def __init__(self, parent, recall_tracker: RecallTracker):
-        super().__init__(parent)
-        self.recall_tracker = recall_tracker
-
-    def highlightBlock(self, text):
-        whole = self.document().toPlainText()
-        parsed_whole = whole.split()
-        word_counts = Counter(parsed_whole)
-        duplicates = {w for w, c in word_counts.items() if c > 1}
-        non_unique = self.recall_tracker.master_words
-
-        if duplicates:
-            end = self.currentBlock().length()
-            if text in duplicates:
-                fmt = QTextCharFormat()
-                fmt.setForeground(QColor("red"))
-                self.setFormat(0, end, fmt)
-
-        elif non_unique:
-            end = self.currentBlock().length()
-            if text in non_unique:
-                fmt = QTextCharFormat()
-                fmt.setForeground(QColor(173, 216, 230))
-                self.setFormat(0, end, fmt)
-
-
 
 """
 Need to add +/- 5 mins to timer
@@ -93,27 +57,31 @@ class Logic(Blueprint):
         super().__init__()
         self._map_widgets(component)
         self.component = component
-        
-        self.count_down_timer = QTimer()
-        self.timer_count = TimerPreset.ZERO.value
 
         self.submitted_words = set()
 
         self.recall_tracker = RecallTracker()
         
         self.undo_handler = UndoKeyHandler(self.typing_area)
-        self.typing_area.installEventFilter(self.undo_handler )
+        self.typing_area.installEventFilter(self.undo_handler)
 
-    def get_time_str(self) -> str:
-        minutes, seconds = divmod(self.timer_count, 60)
-        return f"{minutes:02d}m:{seconds:02d}s" 
+        self.start_handler = StartKeyHandler(self.typing_area)
+        self.component.installEventFilter(self.start_handler)
 
-    def submit_session(self):
-        self.prev_stats = copy.deepcopy(self.recall_tracker.master_stats)
-        # QApplication.clipboard().setText(self.typing_area.toPlainText())
+    def start_session(self):
+        self.recall_tracker.make_blank_session()
+        self.session_start_btn.setDisabled(True)
+        self.session_submit_btn.setDisabled(False)
+        self.timer.logic.start_timer()
+        self.timer.logic.enable_all()
+        self.typing_area.setFocus()
 
-        self.recall_tracker.process_session( self.get_time_str())
+    def end_session(self):
+        self.session_start_btn.setDisabled(False)
+        self.session_submit_btn.setDisabled(True)
+        self.timer.logic.disable_all()
 
+    def show_stats_window(self):
         old_count, new_count = self.recall_tracker.get_session_word_type_count()
         msg = StatsWindow(self.component)
         msg.logic.prepare_stats(self.prev_stats, self.recall_tracker.master_stats)
@@ -121,51 +89,25 @@ class Logic(Blueprint):
         msg.logic.build_table()
         msg.show()
 
+    def submit_session(self):
+        self.prev_stats = copy.deepcopy(self.recall_tracker.master_stats)
+
+        # TODO add back in something like "\n".join(self.typing_area.text())
+        # QApplication.clipboard().setText(self.typing_area.toPlainText())
+
+        self.recall_tracker.process_session( self.timer.logic.get_time_str())
+
+        self.show_stats_window()
+
         self.typing_area.clear()
         self.typing_history.clear()
         self.submitted_words.clear()
         self.recall_tracker.clear()
+        self.end_session()
 
-    def stop_timer(self):
-        if self.count_down_timer.isActive():
-            self.count_down_timer.stop()
-            self.count_down_timer.timeout.disconnect(self.update_timer)
-            self.toggle_timer_btn.setText("Start")
-
-    def start_timer(self):
-        if not self.count_down_timer.isActive():
-            self.recall_tracker.make_blank_session()
-            self.count_down_timer.start(1000)
-            self.count_down_timer.timeout.connect(self.update_timer)
-            self.toggle_timer_btn.setText("Stop")
-
-    def update_timer(self):
-        self.count_down_label.setText(self.get_time_str())
-        if self.timer_count < TimerPreset.FIFTEEN.value:
-            self.timer_count += 1
-        else:
-            self.reset_count_down_timer()
-            msg = QMessageBox()
-            msg.setWindowTitle("END OF SESSION")
-            msg.setText("Time's up!")
-            msg.setIcon(QMessageBox.Icon.Information)
-            QTimer.singleShot(2000, msg.close)
-            msg.exec()
-
-    def toggle_timer(self):
-        if self.count_down_timer.isActive():
-            self.stop_timer()
-        else:
-            self.start_timer()
-
-    def reset_count_down_timer(self):
-        self.stop_timer()
-        self.seconds_left = self.count_down_label.text()
-        self.timer_count = TimerPreset.ZERO.value
-        self.count_down_label.setText("Ready?")
 
     def add_word(self):
-        if self.count_down_timer.isActive() and (word := self.typing_area.text()):
+        if self.timer.logic.time.isActive() and (word := self.typing_area.text()):
 
             already_in_history = word in self.submitted_words
             print(f"already_in_history={already_in_history}")
@@ -195,7 +137,7 @@ class Logic(Blueprint):
         # Add item and finalize
         self.typing_history.addItem(item)
         self.submitted_words.add(word)
-        self.recall_tracker.add_event_to_session(self.timer_count, word)
+        self.recall_tracker.add_event_to_session(self.timer.logic.timer_duration, word)
         self.typing_history.scrollToBottom()
         self.typing_area.clear()
         self.update_history_word_count()

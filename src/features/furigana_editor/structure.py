@@ -17,28 +17,24 @@ class Structure(LayoutBuilder, Blueprint):
         self.set_widgets()
         
         self.layout_data = [
-            
-            self.group("horizontal",[
-                self.toggle_timer_btn,
-                self.count_down_label, 
-                self.reset_timer_btn,
-            ]),
             self.typing_history,
             self.typing_area, 
-            
-            self.word_count_label, 
-            self.session_submit_btn
-            ]
+            self.timer,
+            self.word_count_label,
+            self.group("horizontal", [
+                    self.session_start_btn, 
+                    self.session_submit_btn
+            ]),
+        ]
 
         self.apply_layout(component, self)
 
 
     def set_widgets(self):
+        self.timer.logic.disable_all()
+        self.session_start_btn.setText("Start Session")
         self.session_submit_btn.setText("Submit Session")
-        self.toggle_timer_btn.setText("Start")
-        self.reset_timer_btn.setText("Reset")
-        self.count_down_label.setText("Ready?")
-        self.count_down_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.session_submit_btn.setDisabled(True)
         self.typing_area.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.typing_area.setMinimumHeight(250)
         
