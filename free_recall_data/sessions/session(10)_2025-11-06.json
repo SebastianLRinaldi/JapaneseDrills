@@ -2,7 +2,7 @@
   "session_num": 10,
   "date": "2025-11-06",
   "time": "02:01AM",
-  "session_duration": "0s",
+  "session_duration": "15m:0s",
   "total_count": 129,
   "new_count": 6,
   "old_count": 123,
@@ -94,7 +94,6 @@
     "合う",
     "座る",
     "洗う",
-    "聞く",
     "行く",
     "書く",
     "一",
@@ -112,7 +111,6 @@
     "土曜日",
     "木曜日",
     "火曜日",
-    "木曜日",
     "水曜日",
     "金曜日",
     "来週",
@@ -556,11 +554,6 @@
       "type": "old"
     },
     {
-      "timestamp": 459,
-      "word": "聞く",
-      "type": "old"
-    },
-    {
       "timestamp": 468,
       "word": "行く",
       "type": "old"
@@ -643,11 +636,6 @@
     {
       "timestamp": 583,
       "word": "火曜日",
-      "type": "old"
-    },
-    {
-      "timestamp": 588,
-      "word": "木曜日",
       "type": "old"
     },
     {

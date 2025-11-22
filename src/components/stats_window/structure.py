@@ -32,7 +32,7 @@ class Structure(LayoutBuilder, Blueprint):
         self.stats_table.verticalHeader().setVisible(False)
         self.stats_table.setRowCount(7)
         self.stats_table.setColumnCount(4)
-        self.stats_table.setHorizontalHeaderLabels(["Name", "Prev", "+/-", "Current"])
+        self.stats_table.setHorizontalHeaderLabels(["Name", "Best", "+/-", "This Session"])
         # self.stats_table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
         # self.stats_table.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
         # self.stats_table.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)

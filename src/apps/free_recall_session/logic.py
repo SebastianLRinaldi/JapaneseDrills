@@ -21,11 +21,11 @@ class Logic(Blueprint):
         self._map_widgets(component)
         self.component = component
 
-    def handle_enter_pressed(self):
-        self.logic.web_app_logic.enter_text()
+    # def handle_enter_pressed(self):
+    #     self.logic.web_app_logic.enter_text()
 
 
-    def send_input(self):
-        text = self.ui.editor.toPlainText()
-        text_stripped = re.sub(r"\[[^\]]*\]", "", text)
-        self.logic.web_app_logic.send_input_to_web(text_stripped)
+    # def send_input(self):
+    #     text = self.ui.editor.toPlainText()
+    #     text_stripped = re.sub(r"\[[^\]]*\]", "", text)
+    #     self.logic.web_app_logic.send_input_to_web(text_stripped)

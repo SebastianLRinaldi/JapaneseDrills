@@ -8,7 +8,7 @@ from collections import Counter
 
 from requests import session
 from src.helper_classes import word_type
-from src.helper_functions import sum_durations
+from src.helper_functions import sum_durations_w_format
 
 # class RecallTracker:
 #     def __init__(self):
@@ -172,10 +172,10 @@ from src.helper_functions import sum_durations
 
 class RecallTracker:
     def __init__(self):
-        master_path=r"F:\_Small\344 School Python\JapaneseDrills\free_recall_data_test\master_test.json"
-        sessions_dir=r"F:\_Small\344 School Python\JapaneseDrills\free_recall_data_test\session_test"
-        # master_path=r"F:\_Small\344 School Python\JapaneseDrills\free_recall_data\master.json"
-        # sessions_dir=r"F:\_Small\344 School Python\JapaneseDrills\free_recall_data\sessions"
+        # master_path=r"F:\_Small\344 School Python\JapaneseDrills\free_recall_data_test\master_test.json"
+        # sessions_dir=r"F:\_Small\344 School Python\JapaneseDrills\free_recall_data_test\session_test"
+        master_path=r"F:\_Small\344 School Python\JapaneseDrills\free_recall_data\master.json"
+        sessions_dir=r"F:\_Small\344 School Python\JapaneseDrills\free_recall_data\sessions"
         
         self.master_path = Path(master_path)
         self.sessions_dir = Path(sessions_dir)
@@ -300,7 +300,7 @@ class RecallTracker:
             "session_num": self.master_stats.get("total_sessions", 0),
             "date": today,
             "time":now.strftime('%I:%M%p'),
-            "session_duration":sum_durations([session_duration]),
+            "session_duration":sum_durations_w_format([session_duration]),
             "total_count": old_count + new_count,
             "new_count": new_count,
             "old_count": old_count,
@@ -367,7 +367,7 @@ class RecallTracker:
         
         total_recall_time = stats.get("total_recall_time", "") 
 
-        return sum_durations([total_recall_time, session_duration])
+        return sum_durations_w_format([total_recall_time, session_duration])
 
 
     def save_json(self, obj_data, obj_path):

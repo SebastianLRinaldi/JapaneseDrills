@@ -36,7 +36,7 @@ class Logic(Blueprint):
         
         self.time = QTimer()
 
-        self.timer_duration = 5 #TimeValues.FIFTEEN.value
+        self.timer_duration = TimeValues.FIFTEEN.value
         self.timer_direction = TimerDirection.COUNT_UP
         self.remaining_time = TimeValues.ZERO.value
 

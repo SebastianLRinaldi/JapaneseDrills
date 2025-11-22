@@ -1,6 +1,6 @@
 import re
 
-def sum_durations(durations:list[str]):
+def sum_durations_w_format(durations:list[str]):
         total_seconds = 0
 
         for duration in durations:
@@ -24,18 +24,25 @@ def format_duration(total_seconds):
 
     return ":".join(parts)
 
-def parse_duration(duration):
-    # Matches optional D,H,M,S parts
-    pattern = r'(?:(\d+)d:)?(?:(\d+)h:)?(?:(\d+)m:)?(\d+)s'
-    match = re.fullmatch(pattern, duration)
-    if not match:
-        raise ValueError(f"Invalid duration format: {duration}")
+def parse_duration(duration: int|str):
+    if isinstance(duration, int):
+        total_seconds = duration
+    elif isinstance(duration, str):
+        # Matches optional D,H,M,S parts
+        pattern = r'(?:(\d+)d:)?(?:(\d+)h:)?(?:(\d+)m:)?(\d+)s'
+        match = re.fullmatch(pattern, duration)
+        if not match:
+            raise ValueError(f"Invalid duration format: {duration}")
+        total_seconds = None
+        days, hrs, mins, secs = match.groups(default='0')
+        total_seconds = int(days)*86400 + int(hrs)*3600 + int(mins)*60 + int(secs)
+    else:
+        raise ValueError(f"Invalid duration type: {type(duration)} -> {duration}")
     
-    days, hrs, mins, secs = match.groups(default='0')
-    total_seconds = int(days)*86400 + int(hrs)*3600 + int(mins)*60 + int(secs)
+
     return total_seconds
 
-def compare_prev_to_current(prev: str, current: str):
+def compare_prev_to_current(prev: int|str, current: int|str):
     prev_sec = parse_duration(prev)
     current_sec = parse_duration(current)
     

@@ -2,13 +2,21 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
-from src.apps import *
-
 class Blueprint:
-    stack: QStackedWidget
-    vocabRandomizer: VocabRandomizer
-    freeRecallSession: FreeRecallSession
-    conjugationDrill: ConjugationDrill
+    question_label: QLabel
+    word_type_combo: QComboBox
+
+    vocab_label: QLabel
+    conjugation_label: QLabel
+
+    typing_area: QLineEdit
+
+    grade_btn: QPushButton
+
+    good_btn: QPushButton
+    wrong_btn: QPushButton
+    randomize_btn: QPushButton
+    sync_btn: QPushButton
 
     def _map_widgets(self, source):
         """

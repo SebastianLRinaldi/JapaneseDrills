@@ -1,0 +1,577 @@
+{
+    "vocab": [
+        {
+            "word": "時間",
+            "furigana": "じかん",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "一",
+            "furigana": "ひと",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "国",
+            "furigana": "くに",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "出",
+            "furigana": "だ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "外国",
+            "furigana": "がいこく",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "大人",
+            "furigana": "おとな",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "二",
+            "furigana": "ふた",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "見",
+            "furigana": "み",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "出",
+            "furigana": "で",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "usefulness": 1
+        },
+        {
+            "word": "小学校",
+            "furigana": "しょうがっこう",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "後",
+            "furigana": "うし",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "三",
+            "furigana": "みっ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "天気",
+            "furigana": "てんき",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "白",
+            "furigana": "しろ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "言",
+            "furigana": "い",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "川",
+            "furigana": "かわ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "男",
+            "furigana": "おとこ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "自分",
+            "furigana": "じぶん",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "会社",
+            "furigana": "かいしゃ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "仕事",
+            "furigana": "しごと",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "作",
+            "furigana": "つく",
+            "jlpt": "N2",
+            "usefulness": 1
+        },
+        {
+            "word": "少",
+            "furigana": "すこ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "口",
+            "furigana": "くち",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "四",
+            "furigana": "よっ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "見",
+            "furigana": "み",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "歌",
+            "furigana": "うた",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "広",
+            "furigana": "ひろ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "学校",
+            "furigana": "がっこう",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "大学",
+            "furigana": "だいがく",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "思",
+            "furigana": "おも",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "名前",
+            "furigana": "なまえ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "社会",
+            "furigana": "しゃかい",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "電話",
+            "furigana": "でんわ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "母",
+            "furigana": "かあ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "六",
+            "furigana": "ろく",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "走",
+            "furigana": "はし",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "言葉",
+            "furigana": "ことば",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "午後",
+            "furigana": "ごご",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "音",
+            "furigana": "おと",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "元気",
+            "furigana": "げんき",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "売",
+            "furigana": "う",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "見",
+            "furigana": "み",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "電車",
+            "furigana": "でんしゃ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "毎日",
+            "furigana": "まいにち",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "研究",
+            "furigana": "けんきゅう",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "呼",
+            "furigana": "よ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "左",
+            "furigana": "ひだり",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "地図",
+            "furigana": "ちず",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "大",
+            "furigana": "おお",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "父",
+            "furigana": "とう",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "送",
+            "furigana": "おく",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "少",
+            "furigana": "すく",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "木",
+            "furigana": "き",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "一人",
+            "furigana": "ひとり",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "考",
+            "furigana": "かんが",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "社長",
+            "furigana": "しゃちょう",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "二人",
+            "furigana": "ふたり",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "百",
+            "furigana": "ひゃく",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "usefulness": 1
+        },
+        {
+            "word": "外",
+            "furigana": "そと",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "半分",
+            "furigana": "はんぶん",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "usefulness": 1
+        },
+        {
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "山",
+            "furigana": "やま",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "工場",
+            "furigana": "こうじょう",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "五",
+            "furigana": "いつ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "集",
+            "furigana": "あつ",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "近",
+            "furigana": "ちか",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "場所",
+            "furigana": "ばしょ",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "気",
+            "furigana": "き",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "女",
+            "furigana": "おんな",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "全部",
+            "furigana": "ぜんぶ",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "両親",
+            "furigana": "りょうしん",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "雪",
+            "furigana": "ゆき",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "予定",
+            "furigana": "よてい",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "選",
+            "furigana": "えら",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "文化",
+            "furigana": "ぶんか",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "二",
+            "furigana": "に",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "外国人",
+            "furigana": "がいこくじん",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "最近",
+            "furigana": "さいきん",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "自由",
+            "furigana": "じゆう",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "警察",
+            "furigana": "けいさつ",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "運",
+            "furigana": "はこ",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "安全",
+            "furigana": "あんぜん",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "番組",
+            "furigana": "ばんぐみ",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "例",
+            "furigana": "たと",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "五",
+            "furigana": "ご",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "何",
+            "furigana": "なに",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "三",
+            "furigana": "さん",
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "jlpt": "N5",
+            "usefulness": 1
+        },
+        {
+            "word": "聞",
+            "furigana": "き",
+            "jlpt": "N4",
+            "usefulness": 1
+        },
+        {
+            "word": "母",
+            "furigana": "はは",
+            "jlpt": "N5",
+            "usefulness": 1
+        }
+    ]
+}
