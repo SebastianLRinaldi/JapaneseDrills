@@ -31,7 +31,9 @@ class AnkiGrabber:
         response.raise_for_status()
         return response.json().get("result", [])
 
-    def get_fields(self, note_ids, field_name):
+
+
+    def get_field(self, note_ids, field_name):
         if not note_ids:
             return {}
 
@@ -53,6 +55,34 @@ class AnkiGrabber:
             if field_name in fields:
                 result[note["noteId"]] = fields[field_name]["value"]
         return result
+
+    def get_fields(self, note_ids, field_name):
+            """
+            Returns a dict mapping note_id -> {"value": field_value, "tags": note_tags}
+            """
+            if not note_ids:
+                return {}
+
+            payload = {
+                "action": "notesInfo",
+                "version": 6,
+                "params": {
+                    "notes": note_ids
+                }
+            }
+            response = requests.post("http://localhost:8765", json=payload)
+            response.raise_for_status()
+            notes_info = response.json().get("result", [])
+
+            result = {}
+            for note in notes_info:
+                fields = note.get("fields", {})
+                if field_name in fields:
+                    result[note["noteId"]] = {
+                        "value": fields[field_name]["value"],
+                        "tags": note.get("tags", [])
+                    }
+            return result
 
     def remove_anki_ruby(self, text):
         return re.sub(r'\[.*?\]', '', text)
@@ -90,6 +120,7 @@ class AnkiGrabber:
         self._threads.append((thread, fetcher))
 
         thread.start()
+        return fetcher
 
 
 class Fetcher(QObject):

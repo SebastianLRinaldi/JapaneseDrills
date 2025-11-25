@@ -17,22 +17,18 @@ class Structure(LayoutBuilder, Blueprint):
         self.set_widgets()
         
         self.layout_data = [
-
-            self.splitter("horizontal",[
-
-            self.group("vertical", [
-                "sync_btn",
-                self.group("horizontal",["word_type_combo"]),
-                self.box("horizontal","Word To Conjugation", ["vocab_label", "conjugation_label" ]),
-                self.typing_area,
-                "randomize_btn",
-                # self.box("horizontal","SUBMIT", ["wrong_btn", "good_btn" ]),
-                
-            ]),
-
-
-            ]),
-            
+            self.group("horizontal", [
+                    self.vocab_label,                
+                    self.group("vertical",[
+                        self.verb_class_combo,
+                        self.polarity_combo,
+                        self.base_form_combo,
+                        ]),
+                    ]),
+            self.typing_area,
+            # self.grade_btn,
+            # self.randomize_btn,
+            # self.sync_btn,
 
         ]
 
@@ -40,10 +36,6 @@ class Structure(LayoutBuilder, Blueprint):
 
 
     def set_widgets(self):
-        self.question_label.setText("Select word type and conjugation")
-        self.question_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-
-
         categories = [
             "Godan",
             "Ichidan",
@@ -59,21 +51,32 @@ class Structure(LayoutBuilder, Blueprint):
 
         self.vocab_label.setText("VOCAB")
         self.vocab_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.vocab_label.setStyleSheet("font-size: 32px;")
+        self.vocab_label.setStyleSheet("font-size: 128px;")
 
         self.conjugation_label.setText("CONJUGATION")
         self.conjugation_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.conjugation_label.setStyleSheet("font-size: 32px;")
+
 
         self.typing_area.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.good_btn.setText("GOOD")
-        self.wrong_btn.setText("WRONG")
         self.randomize_btn.setText("RANDOMIZE")
         self.sync_btn.setText("Sync With Anki")
 
+        font = QFont()
+        font.setPointSize(32)  # increase the number to make text bigger
+        font.setBold(True)      # optional, makes text bold
 
-        # self.enter_handler = EnterKeyHandler(self)
-        # self.installEventFilter(self.enter_handler)
+        self.set_widgets_font(font, [
+            self.verb_class_combo,
+            self.base_form_combo,
+            self.polarity_combo,
+            self.formality_combo,
+        ])
+
+
+    def set_widgets_font(self, font: QFont, widgets: list[QWidget]):
+        for w in widgets:
+            w.setFont(font)
+
 
 
 

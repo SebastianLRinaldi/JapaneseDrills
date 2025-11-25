@@ -51,6 +51,33 @@ class LayoutBuilder():
 
                 return layout
 
+            if "frame" in data:
+                info = data["frame"]
+                orient = info.get("orientation", "vertical")
+                children = info.get("children", [])
+
+                layout = QVBoxLayout() if orient == "vertical" else QHBoxLayout()
+                for item in children:
+                    w = self.build_layout(item)
+                    if isinstance(w, QWidget):
+                        w.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
+                        layout.addWidget(w)
+                    else:
+                        container = QWidget()
+                        container.setLayout(w)
+                        container.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
+                        layout.addWidget(container)
+
+                frame = QFrame()
+                # frame.setFrameShape(QFrame.Shape.Box)
+                # frame.setFrameShadow(QFrame.Shadow.Plain)
+                frame.setLayout(layout)
+                frame.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
+                frame.adjustSize() 
+
+
+                return frame
+
             if "box" in data:
                 info = data["box"]
                 title = info.get("title", "")
@@ -72,6 +99,7 @@ class LayoutBuilder():
                 # layout.setSpacing(0)
                 # groupbox.setFlat(True)  # Optional: removes border if you want
                 # groupbox.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+                # groupbox.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
 
                 groupbox.setLayout(layout)
 
@@ -178,6 +206,14 @@ class LayoutBuilder():
         """
         return {
             "group": {
+                "orientation": orientation,
+                "children": children
+            }
+        }
+
+    def frame(self, orientation: Orientation = None, children: list | None = None):
+        return {
+            "frame": {
                 "orientation": orientation,
                 "children": children
             }

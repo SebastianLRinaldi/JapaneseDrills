@@ -1,12 +1,15 @@
+from enum import Enum
 from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
+from numpy import empty
 
 from src.helper_classes.shuffle_que import ShuffleQueue
 from .blueprint import Blueprint
 
-from japanese_verb_conjugator_v2 import Formality, Polarity, Tense, VerbClass, JapaneseVerbFormGenerator as jvfg
-
+import random
+from japanese_verb_conjugator_v2 import Formality, Polarity, Tense, VerbClass, BaseForm, Formality, JapaneseVerbFormGenerator as jvfg
+from japanese_verb_conjugator_v2 import generate_japanese_verb_form
 
 """
 Close methods
@@ -140,10 +143,10 @@ conjugations_map = {
 
 
 
+
+
 """
-Instead of needing to sumbit words with enter if the word is 
-correct it will show as green play a nice ding sounds 
-then wait like 1 second then load a new conjugation
+Load all conjugations 
 """
 class Logic(Blueprint):
 
@@ -151,41 +154,146 @@ class Logic(Blueprint):
         super().__init__()
         self._map_widgets(component)
         self.component = component
+
+        self.current_word = ""
+        self.current_word_tag = ""
         self.current_conjugation = ""
 
+        self.verb_word_queue = []
+        self.base_form_queue = []
+        self.polarity_queue = []
+
+        self.base_form_idx = 0
+        self.polarity_idx = 0
+        
+        self.populate_combo_from_enum()
+        self.set_up_queues()
+        self.reset_typing_area()
+
+
+    def reset_typing_area(self):
+        self.typing_area.setStyleSheet(f"color: white; font-size: 128pt;")
+        self.typing_area.clear()
+    
+    def populate_combo_from_enum(self):
+        combos = {
+            self.verb_class_combo : VerbClass, # Based on the input word
+            self.base_form_combo:BaseForm, # what base conjugation you want
+            self.polarity_combo: Polarity, # pos, neg
+            self.formality_combo: Formality, # plain vs polite but will be set as option
+            
+        }
+
+        for combo, enum_cls in combos.items():
+            combo.clear()
+            for member in enum_cls:
+                combo.addItem(member.name, member)
+    def grab_vocab_words(self):
+        fetcher = self.verb_list.logic.update_words_taged()
+        fetcher.finished.connect(self.set_up_word_queue)
+        return fetcher
+
+
+    def set_up_word_queue(self):
+        words = self.verb_list.logic.word_dict_tagged
+        print(words)
+        self.verb_word_queue = ShuffleQueue(words)
+
+    def set_up_queues(self):
+        count = self.base_form_combo.count()
+        self.base_form_queue = ShuffleQueue([0, 2, 3])#ShuffleQueue(random.sample(range(count), count))
+
+        count = self.polarity_combo.count()
+        self.polarity_queue = ShuffleQueue(random.sample(range(count), count))
+
+        self.base_form_idx = self.base_form_queue.next()
+        self.polarity_idx = self.polarity_queue.next()
+
+    def check_conjugation_to_input(self):
+        text = self.typing_area.text()
+        if text == self.current_conjugation:
+            self.correct_anwser_animation()
+        else:
+            self.wrong_anwser_animation()
+
+    def check_then_next_conjugation(self):
+        if not self.verb_word_queue:
+            self.vocab_label.setText("SYNCING")
+            fetecher = self.grab_vocab_words()
+            fetecher.finished.connect( self.next_conjugation)
+        else:
+            self.next_conjugation()
+
+
+
+    def next_conjugation(self):
+        self.current_word, self.current_word_tag = self.verb_word_queue.next()
+        if self.current_word_tag == "godan":
+            self.verb_class_combo.setCurrentIndex(0)
+        elif self.current_word_tag == "ichidan":
+            self.verb_class_combo.setCurrentIndex(1)
+        elif self.current_word_tag == "irregular":
+            self.verb_class_combo.setCurrentIndex(2)
+        else:
+            print(f"{self.current_word_tag}: is NOT A VALID TAG")
+
+
+        self.vocab_label.setText(self.current_word)
+
+        self.base_form_idx = self.base_form_queue.next()
+        
+        self.base_form_combo.setCurrentIndex(self.base_form_idx)
+
+        self.make_conjugation()
 
 
     def make_conjugation(self):
-        self.current_conjugation = jvfg.generate_plain_form("飲む", VerbClass.GODAN, Tense.PAST, Polarity.POSITIVE) 
-        self.conjugation_label.setText(self.current_conjugation )
+        verb_class = self.verb_class_combo.currentData()
+        base_form = self.base_form_combo.currentData()
 
-    def update_color(self):
-        text = self.typing_area.text()
-        # if text ==  :
-        #     self.typing_area.setStyleSheet("color:red; font-size: 64pt;")
-        if text == self.current_conjugation:
-            self.typing_area.setStyleSheet(f"color: green; ; font-size: 64pt;")
-        else:
-            self.typing_area.setStyleSheet("color:white; font-size: 64pt;")
-            self.shake_line_edit()
+        self.polarity_combo.setCurrentIndex(self.polarity_idx)
+        self.polarity_idx = self.polarity_queue.next()
 
-    
-    def shake_line_edit(self):
-        """
-        Shakes the text inside a QLineEdit horizontally for a short animation effect.
-        """
-        # Define the horizontal shake pattern
-        # shake_offsets = [0, 4, -4, 4, -4, 2, -2, 0] # OG
-        shake_offsets = [0, 16, -16, 16, -16, 6, -6, 0]
+        if base_form in {BaseForm.PLAIN, BaseForm.POLITE}:
+            self.polarity_combo.setCurrentIndex(1)
+            kwargs = {
+                "polarity": self.polarity_combo.currentData(),
+                "tense": Tense.NONPAST
+            }
+
+        elif base_form in {BaseForm.TE, BaseForm.TA}:
+            kwargs = {
+                "formality": Formality.PLAIN,
+                "polarity": self.polarity_combo.currentData()
+            }
+
+        self.current_conjugation = generate_japanese_verb_form(
+            verb=self.current_word,
+            verb_class=verb_class,
+            base_form=base_form,
+            **kwargs
+        )
+        print(f"{self.current_word} : {self.current_word_tag} | {verb_class} | {self.current_conjugation} | kwargs:{kwargs}")
+
+
+
         
-        # Create a QVariantAnimation to animate the text margins
+    def wrong_anwser_animation(self):
+        """
+        Shows red text, performs a shake animation,
+        then restores white text and normal margins.
+        """
+        # Turn text red immediately
+        self.typing_area.setStyleSheet("color: red; font-size: 128pt;")
+
+        shake_offsets = [0, 16, -16, 16, -16, 6, -6, 0]
+
         animation = QVariantAnimation()
-        animation.setDuration(300)  # total duration in milliseconds
+        animation.setDuration(300)
         animation.setStartValue(0)
         animation.setEndValue(len(shake_offsets) - 1)
         animation.setEasingCurve(QEasingCurve.Type.InOutSine)
 
-        # Update the left margin of the text for each animation step
         def on_value_changed(value):
             index = int(value)
             offset = shake_offsets[index]
@@ -193,14 +301,64 @@ class Logic(Blueprint):
 
         animation.valueChanged.connect(on_value_changed)
 
-        # Reset margins to zero at the end
-        animation.finished.connect(lambda: self.typing_area.setTextMargins(0, 0, 0, 0))
+        # Cleanup occurs AFTER shake
+        def cleanup():
+            self.typing_area.setTextMargins(0, 0, 0, 0)
+            self.typing_area.setStyleSheet("color: white; font-size: 128pt;")
 
-        # Start the animation and keep a reference alive
+        animation.finished.connect(cleanup)
+
         animation.start()
-        self.typing_area._animation = animation
+        self.typing_area._wrong_animation = animation
 
 
+    def correct_anwser_animation(self):
+        """
+        Fast green flash + tiny pulse for a correct answer.
+        """
+        base_size = 128
+        peak_size = 134  # small pulse, very quick
+
+        animation = QVariantAnimation()
+        animation.setDuration(400)  
+        animation.setStartValue(0.0)
+        animation.setEndValue(1.0)
+        animation.setEasingCurve(QEasingCurve.Type.InOutQuad)
+
+        def on_value_changed(v):
+            # v = 0.0 → 1.0
+            # Interpolate font size
+            size = base_size + (peak_size - base_size) * v
+
+            self.typing_area.setStyleSheet(
+                f"color: green; font-size: {int(size)}pt;"
+            )
+
+        animation.valueChanged.connect(on_value_changed)
+
+        # Reverse at the end (returns to base size + white)
+        def reverse_animation():
+            rev = QVariantAnimation()
+            rev.setDuration(140)
+            rev.setStartValue(1.0)
+            rev.setEndValue(0.0)
+            rev.setEasingCurve(QEasingCurve.Type.InOutQuad)
+            rev.valueChanged.connect(on_value_changed)
+
+            def cleanup():
+                self.reset_typing_area()
+                self.check_then_next_conjugation()
+
+            rev.finished.connect(cleanup)
+
+            rev.start()
+            self.typing_area._correct_flash_reverse = rev
+
+        animation.finished.connect(reverse_animation)
+
+
+        animation.start()
+        self.typing_area._correct_flash = animation
 
 
 

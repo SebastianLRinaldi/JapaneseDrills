@@ -11,6 +11,9 @@ from PyQt6.QtGui import *
 ! Need to make it warn if anki is not open
 ! Need to make it auto open if not open
 ! Need to add option to where anki.exe is to open it
+
+
+prop:cdn:notesct=21
 """
 
 class AnkiGrabberLogic:

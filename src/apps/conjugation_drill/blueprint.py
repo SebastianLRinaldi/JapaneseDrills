@@ -2,9 +2,20 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
+from src.components import *
+
 class Blueprint:
     question_label: QLabel
     word_type_combo: QComboBox
+
+    verb_list: VerbList
+    verb_class_combo : QComboBox
+    base_form_combo : QComboBox
+    tense_combo : QComboBox
+    polarity_combo : QComboBox
+    formality_combo : QComboBox
+
+    
 
     vocab_label: QLabel
     conjugation_label: QLabel

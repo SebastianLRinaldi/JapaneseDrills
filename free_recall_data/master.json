@@ -1,64 +1,64 @@
 {
   "stats": {
-    "total_sessions": 18,
-    "total_recall_time": "4h:30m:0s",
-    "total_words": 275,
-    "total_recall_count": 2378,
-    "last_session_date": "2025-11-21",
+    "total_sessions": 21,
+    "total_recall_time": "5h:15m:0s",
+    "total_words": 289,
+    "total_recall_count": 2861,
+    "last_session_date": "2025-11-25",
     "least_recalled": {
       "全然": 1,
       "お願い": 1,
       "押す": 1,
-      "止まる": 1,
-      "電車": 1,
       "辛い": 1,
       "とこどこ": 1,
       "売れる": 1,
       "おしした": 1,
       "暮れる": 1,
       "ほとんど": 1,
-      "時々": 1,
       "必死": 1,
-      "注文": 1,
       "面白い": 1,
       "暑う": 1,
       "自転車": 1,
       "穴の人": 1,
       "醜い": 1,
-      "涼む": 1
+      "涼む": 1,
+      "遅い": 1,
+      "曲がる": 1,
+      "学ぶ": 1,
+      "どう": 1
     },
     "most_recalled": {
-      "木曜日": 19,
-      "本": 18,
-      "書く": 18,
-      "金曜日": 18,
-      "土曜日": 18,
-      "日曜日": 18,
-      "学校": 17,
-      "聞く": 17,
-      "降りる": 17,
-      "豚肉": 17,
-      "鶏肉": 17,
-      "その": 17,
-      "この": 17,
-      "あの": 17,
-      "あれ": 17,
-      "それ": 17,
-      "これ": 17,
-      "飲む": 17,
-      "月曜日": 17
+      "木曜日": 22,
+      "本": 21,
+      "書く": 21,
+      "金曜日": 21,
+      "土曜日": 21,
+      "日曜日": 21,
+      "学校": 20,
+      "豚肉": 20,
+      "鶏肉": 20,
+      "その": 20,
+      "この": 20,
+      "あの": 20,
+      "あれ": 20,
+      "それ": 20,
+      "これ": 20,
+      "飲む": 20,
+      "月曜日": 20,
+      "降りる": 19,
+      "聞く": 19
     },
     "best_total_word_count": {
-      "count": 150,
-      "session": "session(13) 2025-11-12"
+      "count": 169,
+      "session": "session(20) 2025-11-23"
     },
     "best_new_word_count": {
       "count": 99,
       "session": "Session(1) 2025-10-21"
     },
     "best_old_word_count": {
-      "count": 146,
-      "session": "session(13) 2025-11-12"
+      "count": 165,
+      "session": "session(20) 2025-11-23"
     }
   },
   "words": {
@@ -76,16 +76,6 @@
       "count": 1,
       "first_recalled": "session(1) 2025-10-21",
       "last_recalled": "session(1) 2025-10-21"
-    },
-    "止まる": {
-      "count": 1,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(2) 2025-10-22"
-    },
-    "電車": {
-      "count": 1,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(2) 2025-10-22"
     },
     "辛い": {
       "count": 1,
@@ -117,20 +107,10 @@
       "first_recalled": "session(7) 2025-10-29",
       "last_recalled": "session(7) 2025-10-29"
     },
-    "時々": {
-      "count": 1,
-      "first_recalled": "session(7) 2025-10-29",
-      "last_recalled": "session(7) 2025-10-29"
-    },
     "必死": {
       "count": 1,
       "first_recalled": "session(7) 2025-10-29",
       "last_recalled": "session(7) 2025-10-29"
-    },
-    "注文": {
-      "count": 1,
-      "first_recalled": "session(9) 2025-11-04",
-      "last_recalled": "session(9) 2025-11-04"
     },
     "面白い": {
       "count": 1,
@@ -172,11 +152,6 @@
       "first_recalled": "session(11) 2025-11-10",
       "last_recalled": "session(11) 2025-11-10"
     },
-    "動く": {
-      "count": 1,
-      "first_recalled": "session(11) 2025-11-10",
-      "last_recalled": "session(11) 2025-11-10"
-    },
     "学ぶ": {
       "count": 1,
       "first_recalled": "session(15) 2025-11-13",
@@ -212,17 +187,7 @@
       "first_recalled": "session(17) 2025-11-20",
       "last_recalled": "session(17) 2025-11-20"
     },
-    "九": {
-      "count": 1,
-      "first_recalled": "session(18) 2025-11-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
     "毎曜日": {
-      "count": 1,
-      "first_recalled": "session(18) 2025-11-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "多い": {
       "count": 1,
       "first_recalled": "session(18) 2025-11-21",
       "last_recalled": "session(18) 2025-11-21"
@@ -232,25 +197,95 @@
       "first_recalled": "session(18) 2025-11-21",
       "last_recalled": "session(18) 2025-11-21"
     },
-    "どこ": {
+    "毎晩": {
+      "count": 1,
+      "first_recalled": "session(19) 2025-11-22",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "誕生日": {
+      "count": 1,
+      "first_recalled": "session(19) 2025-11-22",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "近い": {
+      "count": 1,
+      "first_recalled": "session(20) 2025-11-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "屋っと": {
+      "count": 1,
+      "first_recalled": "session(20) 2025-11-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "毎月": {
+      "count": 1,
+      "first_recalled": "session(20) 2025-11-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "一緒に": {
+      "count": 1,
+      "first_recalled": "session(20) 2025-11-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "中": {
+      "count": 1,
+      "first_recalled": "session(21) 2025-11-25",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "牛": {
+      "count": 1,
+      "first_recalled": "session(21) 2025-11-25",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "台所": {
+      "count": 1,
+      "first_recalled": "session(21) 2025-11-25",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "運動": {
+      "count": 1,
+      "first_recalled": "session(21) 2025-11-25",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "取る": {
+      "count": 1,
+      "first_recalled": "session(21) 2025-11-25",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "九": {
       "count": 2,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(18) 2025-11-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "豚": {
+      "count": 2,
+      "first_recalled": "session(19) 2025-11-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "注文": {
+      "count": 2,
+      "first_recalled": "session(9) 2025-11-04",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "止まる": {
+      "count": 2,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "電車": {
+      "count": 2,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "時々": {
+      "count": 2,
+      "first_recalled": "session(7) 2025-10-29",
+      "last_recalled": "session(19) 2025-11-22"
     },
     "国": {
       "count": 2,
       "first_recalled": "session(17) 2025-11-20",
       "last_recalled": "session(18) 2025-11-21"
-    },
-    "止める": {
-      "count": 2,
-      "first_recalled": "session(17) 2025-11-20",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "毎朝": {
-      "count": 2,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(17) 2025-11-20"
     },
     "少ない": {
       "count": 2,
@@ -262,25 +297,10 @@
       "first_recalled": "session(10) 2025-11-06",
       "last_recalled": "session(16) 2025-11-14"
     },
-    "写真": {
-      "count": 2,
-      "first_recalled": "session(13) 2025-11-12",
-      "last_recalled": "session(16) 2025-11-14"
-    },
-    "長い": {
-      "count": 2,
-      "first_recalled": "session(15) 2025-11-13",
-      "last_recalled": "session(16) 2025-11-14"
-    },
     "学": {
       "count": 2,
       "first_recalled": "session(9) 2025-11-04",
       "last_recalled": "session(15) 2025-11-13"
-    },
-    "近く": {
-      "count": 2,
-      "first_recalled": "session(13) 2025-11-12",
-      "last_recalled": "session(14) 2025-11-13"
     },
     "開ける": {
       "count": 2,
@@ -312,10 +332,35 @@
       "first_recalled": "session(1) 2025-10-21",
       "last_recalled": "session(2) 2025-10-22"
     },
-    "来る": {
+    "歌う": {
       "count": 3,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(19) 2025-11-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "歌": {
+      "count": 3,
+      "first_recalled": "session(19) 2025-11-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "写真": {
+      "count": 3,
+      "first_recalled": "session(13) 2025-11-12",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "近く": {
+      "count": 3,
+      "first_recalled": "session(13) 2025-11-12",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "どこ": {
+      "count": 3,
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "止める": {
+      "count": 3,
+      "first_recalled": "session(17) 2025-11-20",
+      "last_recalled": "session(19) 2025-11-22"
     },
     "出身": {
       "count": 3,
@@ -325,11 +370,6 @@
     "財布": {
       "count": 3,
       "first_recalled": "session(12) 2025-11-11",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "自電車": {
-      "count": 3,
-      "first_recalled": "session(2) 2025-10-22",
       "last_recalled": "session(17) 2025-11-20"
     },
     "呼ぶ": {
@@ -352,11 +392,6 @@
       "first_recalled": "session(9) 2025-11-04",
       "last_recalled": "session(15) 2025-11-13"
     },
-    "細い": {
-      "count": 3,
-      "first_recalled": "session(8) 2025-11-03",
-      "last_recalled": "session(15) 2025-11-13"
-    },
     "分かる": {
       "count": 3,
       "first_recalled": "session(3) 2025-10-23",
@@ -377,44 +412,24 @@
       "first_recalled": "session(3) 2025-10-23",
       "last_recalled": "session(6) 2025-10-28"
     },
-    "決める": {
+    "動く": {
       "count": 4,
-      "first_recalled": "session(15) 2025-11-13",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(11) 2025-11-10",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "何": {
+    "多い": {
       "count": 4,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "海": {
-      "count": 4,
-      "first_recalled": "session(8) 2025-11-03",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "銀行": {
-      "count": 4,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
+      "first_recalled": "session(18) 2025-11-21",
+      "last_recalled": "session(21) 2025-11-25"
     },
     "悪い": {
       "count": 4,
       "first_recalled": "session(7) 2025-10-29",
       "last_recalled": "session(16) 2025-11-14"
     },
-    "涼しい": {
-      "count": 4,
-      "first_recalled": "session(10) 2025-11-06",
-      "last_recalled": "session(16) 2025-11-14"
-    },
     "東京": {
       "count": 4,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(15) 2025-11-13"
-    },
-    "笑う": {
-      "count": 4,
-      "first_recalled": "session(11) 2025-11-10",
       "last_recalled": "session(15) 2025-11-13"
     },
     "左右": {
@@ -426,11 +441,6 @@
       "count": 4,
       "first_recalled": "session(4) 2025-10-24",
       "last_recalled": "session(15) 2025-11-13"
-    },
-    "日本人": {
-      "count": 4,
-      "first_recalled": "session(7) 2025-10-29",
-      "last_recalled": "session(14) 2025-11-13"
     },
     "そこ": {
       "count": 4,
@@ -457,60 +467,60 @@
       "first_recalled": "session(3) 2025-10-23",
       "last_recalled": "session(7) 2025-10-29"
     },
-    "歩く": {
+    "毎朝": {
       "count": 5,
-      "first_recalled": "session(13) 2025-11-12",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "長い": {
+      "count": 5,
+      "first_recalled": "session(15) 2025-11-13",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "来る": {
+      "count": 5,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "涼しい": {
+      "count": 5,
+      "first_recalled": "session(10) 2025-11-06",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "笑う": {
+      "count": 5,
+      "first_recalled": "session(11) 2025-11-10",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "決める": {
+      "count": 5,
+      "first_recalled": "session(15) 2025-11-13",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "何": {
+      "count": 5,
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "海": {
+      "count": 5,
+      "first_recalled": "session(8) 2025-11-03",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "銀行": {
+      "count": 5,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(19) 2025-11-22"
     },
     "新聞": {
       "count": 5,
       "first_recalled": "session(2) 2025-10-22",
       "last_recalled": "session(18) 2025-11-21"
     },
-    "強い": {
-      "count": 5,
-      "first_recalled": "session(11) 2025-11-10",
-      "last_recalled": "session(17) 2025-11-20"
-    },
     "美味しい": {
       "count": 5,
       "first_recalled": "session(1) 2025-10-21",
       "last_recalled": "session(17) 2025-11-20"
-    },
-    "若い": {
-      "count": 5,
-      "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(16) 2025-11-14"
-    },
-    "毎日": {
-      "count": 5,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(16) 2025-11-14"
-    },
-    "ぐらい": {
-      "count": 5,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(15) 2025-11-13"
-    },
-    "くらい": {
-      "count": 5,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(15) 2025-11-13"
-    },
-    "円": {
-      "count": 5,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(13) 2025-11-12"
-    },
-    "出来る": {
-      "count": 5,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(10) 2025-11-06"
-    },
-    "落とす": {
-      "count": 5,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(10) 2025-11-06"
     },
     "スマホ": {
       "count": 5,
@@ -522,75 +532,30 @@
       "first_recalled": "session(3) 2025-10-23",
       "last_recalled": "session(7) 2025-10-29"
     },
-    "喧嘩": {
+    "自電車": {
       "count": 6,
-      "first_recalled": "session(13) 2025-11-12",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "集める": {
+    "細い": {
       "count": 6,
-      "first_recalled": "session(9) 2025-11-04",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(8) 2025-11-03",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "日本人": {
+      "count": 6,
+      "first_recalled": "session(7) 2025-10-29",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "落とす": {
+      "count": 6,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
     },
     "合う": {
       "count": 6,
       "first_recalled": "session(8) 2025-11-03",
       "last_recalled": "session(18) 2025-11-21"
-    },
-    "千": {
-      "count": 6,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "狭い": {
-      "count": 6,
-      "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "場所": {
-      "count": 6,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "学生": {
-      "count": 6,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "顔": {
-      "count": 6,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "ゴミ箱": {
-      "count": 6,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "言う": {
-      "count": 6,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "子供": {
-      "count": 6,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(16) 2025-11-14"
-    },
-    "足": {
-      "count": 6,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(16) 2025-11-14"
-    },
-    "人": {
-      "count": 6,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(14) 2025-11-13"
-    },
-    "白い": {
-      "count": 6,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(9) 2025-11-04"
     },
     "話す": {
       "count": 6,
@@ -607,184 +572,174 @@
       "first_recalled": "session(1) 2025-10-21",
       "last_recalled": "session(7) 2025-10-29"
     },
-    "ある": {
+    "若い": {
       "count": 7,
-      "first_recalled": "session(12) 2025-11-11",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(5) 2025-10-27",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "深い": {
-      "count": 7,
-      "first_recalled": "session(7) 2025-10-29",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "交差点": {
-      "count": 7,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "毎週": {
-      "count": 7,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "色": {
-      "count": 7,
-      "first_recalled": "session(9) 2025-11-04",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "背中": {
-      "count": 7,
-      "first_recalled": "session(9) 2025-11-04",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "閉める": {
-      "count": 7,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "高い": {
-      "count": 7,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "育てる": {
-      "count": 7,
-      "first_recalled": "session(7) 2025-10-29",
-      "last_recalled": "session(16) 2025-11-14"
-    },
-    "座る": {
-      "count": 7,
-      "first_recalled": "session(9) 2025-11-04",
-      "last_recalled": "session(16) 2025-11-14"
-    },
-    "願い": {
-      "count": 7,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(16) 2025-11-14"
-    },
-    "古い": {
+    "ぐらい": {
       "count": 7,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(16) 2025-11-14"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "寒い": {
+    "くらい": {
       "count": 7,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(16) 2025-11-14"
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "円": {
+      "count": 7,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "強い": {
+      "count": 7,
+      "first_recalled": "session(11) 2025-11-10",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "顔": {
+      "count": 7,
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "出来る": {
+      "count": 7,
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "場所": {
+      "count": 7,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "言う": {
+      "count": 7,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(19) 2025-11-22"
     },
     "泣く": {
       "count": 7,
       "first_recalled": "session(1) 2025-10-21",
       "last_recalled": "session(16) 2025-11-14"
     },
-    "野菜": {
-      "count": 7,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(15) 2025-11-13"
-    },
     "今日": {
       "count": 7,
       "first_recalled": "session(1) 2025-10-21",
       "last_recalled": "session(13) 2025-11-12"
     },
-    "肉まん": {
+    "歩く": {
       "count": 8,
-      "first_recalled": "session(11) 2025-11-10",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(13) 2025-11-12",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "飛行機": {
+    "毎日": {
+      "count": 8,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "人": {
+      "count": 8,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "集める": {
       "count": 8,
       "first_recalled": "session(9) 2025-11-04",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "読む": {
-      "count": 8,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "窓": {
-      "count": 8,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "大学生": {
-      "count": 8,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "電気": {
+    "子供": {
       "count": 8,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "天気": {
+    "育てる": {
+      "count": 8,
+      "first_recalled": "session(7) 2025-10-29",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "ゴミ箱": {
+      "count": 8,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "高い": {
+      "count": 8,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "座る": {
+      "count": 8,
+      "first_recalled": "session(9) 2025-11-04",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "古い": {
       "count": 8,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(20) 2025-11-23"
     },
-    "朝": {
+    "寒い": {
       "count": 8,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(16) 2025-11-14"
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "野菜": {
+      "count": 8,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(20) 2025-11-23"
     },
     "教える": {
       "count": 8,
       "first_recalled": "session(4) 2025-10-24",
       "last_recalled": "session(15) 2025-11-13"
     },
-    "沢山": {
-      "count": 8,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(15) 2025-11-13"
-    },
-    "月": {
+    "喧嘩": {
       "count": 9,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(13) 2025-11-12",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "行く": {
+    "千": {
+      "count": 9,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "狭い": {
       "count": 9,
       "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "寝る": {
+    "学生": {
       "count": 9,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "高校": {
+    "足": {
       "count": 9,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "意味": {
+    "白い": {
       "count": 9,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "飛ぶ": {
+    "深い": {
       "count": 9,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(7) 2025-10-29",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "危ない": {
+    "沢山": {
       "count": 9,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "朝": {
+      "count": 9,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(19) 2025-11-22"
     },
     "綺麗": {
       "count": 9,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "目": {
-      "count": 9,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "駅": {
-      "count": 9,
-      "first_recalled": "session(2) 2025-10-22",
       "last_recalled": "session(17) 2025-11-20"
     },
     "年下": {
@@ -792,650 +747,765 @@
       "first_recalled": "session(3) 2025-10-23",
       "last_recalled": "session(17) 2025-11-20"
     },
-    "お店": {
-      "count": 9,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(15) 2025-11-13"
-    },
     "明日": {
       "count": 9,
       "first_recalled": "session(1) 2025-10-21",
       "last_recalled": "session(14) 2025-11-13"
     },
-    "服": {
-      "count": 9,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(14) 2025-11-13"
-    },
-    "早い": {
-      "count": 9,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(12) 2025-11-11"
-    },
-    "掃除": {
+    "ある": {
       "count": 10,
-      "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(12) 2025-11-11",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "温かい": {
+    "交差点": {
       "count": 10,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "難しい": {
-      "count": 10,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "散歩": {
+    "毎週": {
       "count": 10,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "空っぽ": {
+    "色": {
+      "count": 10,
+      "first_recalled": "session(9) 2025-11-04",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "背中": {
+      "count": 10,
+      "first_recalled": "session(9) 2025-11-04",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "閉める": {
+      "count": 10,
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "願い": {
       "count": 10,
       "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "電気": {
+      "count": 10,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "天気": {
+      "count": 10,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "危ない": {
+      "count": 10,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "飛行機": {
+      "count": 10,
+      "first_recalled": "session(9) 2025-11-04",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "読む": {
+      "count": 10,
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "服": {
+      "count": 10,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "飛ぶ": {
+      "count": 10,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(19) 2025-11-22"
     },
     "遊ぶ": {
       "count": 10,
       "first_recalled": "session(3) 2025-10-23",
       "last_recalled": "session(18) 2025-11-21"
     },
-    "着く": {
-      "count": 10,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "時間": {
-      "count": 10,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "時": {
-      "count": 10,
-      "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "髪": {
-      "count": 10,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
     "洗う": {
       "count": 10,
       "first_recalled": "session(2) 2025-10-22",
       "last_recalled": "session(16) 2025-11-14"
-    },
-    "仕事": {
-      "count": 10,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(14) 2025-11-13"
     },
     "切る": {
       "count": 10,
       "first_recalled": "session(1) 2025-10-21",
       "last_recalled": "session(11) 2025-11-10"
     },
-    "覚える": {
+    "肉まん": {
+      "count": 11,
+      "first_recalled": "session(11) 2025-11-10",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "窓": {
+      "count": 11,
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "大学生": {
       "count": 11,
       "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "暑い": {
-      "count": 11,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "靴": {
-      "count": 11,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "鞄": {
-      "count": 11,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "番号": {
-      "count": 11,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "お金": {
-      "count": 11,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "大きい": {
-      "count": 11,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "勉強": {
-      "count": 11,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "男の人": {
-      "count": 11,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "女の子": {
-      "count": 11,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "女の人": {
+    "目": {
       "count": 11,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(17) 2025-11-20"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "日本": {
+    "意味": {
+      "count": 11,
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "お店": {
+      "count": 11,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "髪": {
+      "count": 11,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "仕事": {
+      "count": 11,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "行く": {
+      "count": 11,
+      "first_recalled": "session(5) 2025-10-27",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "温かい": {
       "count": 11,
       "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(17) 2025-11-20"
+      "last_recalled": "session(20) 2025-11-23"
     },
-    "週末": {
-      "count": 11,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "水曜日": {
+    "月": {
       "count": 12,
-      "first_recalled": "session(7) 2025-10-29",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "誰": {
-      "count": 12,
-      "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "道": {
-      "count": 12,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "楽しい": {
-      "count": 12,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "食べる": {
-      "count": 12,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "空": {
+    "寝る": {
       "count": 12,
       "first_recalled": "session(6) 2025-10-28",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "四": {
-      "count": 12,
-      "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "七": {
-      "count": 12,
-      "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "八": {
-      "count": 12,
-      "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "十": {
-      "count": 12,
-      "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "会社": {
-      "count": 12,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "魚": {
-      "count": 12,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "する": {
+    "高校": {
       "count": 12,
       "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "水": {
+    "駅": {
       "count": 12,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "見る": {
-      "count": 12,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "後": {
-      "count": 12,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "午後": {
-      "count": 12,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "父": {
-      "count": 12,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "母": {
-      "count": 12,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "ゆっくり": {
-      "count": 12,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(14) 2025-11-13"
-    },
-    "休む": {
-      "count": 13,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "開く": {
-      "count": 13,
+    "早い": {
+      "count": 12,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "乗る": {
+    "着く": {
+      "count": 12,
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "散歩": {
+      "count": 12,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "空っぽ": {
+      "count": 12,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "暑い": {
+      "count": 12,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "靴": {
+      "count": 12,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "鞄": {
+      "count": 12,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "大きい": {
+      "count": 12,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "掃除": {
       "count": 13,
       "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "週": {
+    "難しい": {
       "count": 13,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "家族": {
+    "時間": {
       "count": 13,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "売る": {
+    "時": {
       "count": 13,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "着る": {
+    "道": {
       "count": 13,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "覚える": {
+      "count": 13,
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "女の子": {
+      "count": 13,
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "週末": {
+      "count": 13,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(20) 2025-11-23"
     },
     "箸": {
       "count": 13,
       "first_recalled": "session(1) 2025-10-21",
       "last_recalled": "session(17) 2025-11-20"
     },
-    "朝ご飯": {
-      "count": 13,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "晩ご飯": {
-      "count": 13,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "火曜日": {
-      "count": 14,
-      "first_recalled": "session(5) 2025-10-27",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "日本語": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "鳥": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "居る": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "日": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "あなた": {
-      "count": 14,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "外": {
-      "count": 14,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "映画": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "電話": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "電話番号": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "先生": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "五": {
-      "count": 14,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "二": {
-      "count": 14,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "三": {
-      "count": 14,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "六": {
-      "count": 14,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "午前中": {
+    "番号": {
       "count": 14,
       "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "買う": {
+    "お金": {
+      "count": 14,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "勉強": {
+      "count": 14,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "男の人": {
+      "count": 14,
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "女の人": {
       "count": 14,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "日本": {
+      "count": 14,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "楽しい": {
+      "count": 14,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "魚": {
+      "count": 14,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "父": {
+      "count": 14,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "母": {
+      "count": 14,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "ゆっくり": {
+      "count": 14,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "食べる": {
+      "count": 14,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "会社": {
+      "count": 14,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "着る": {
+      "count": 14,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "水曜日": {
+      "count": 15,
+      "first_recalled": "session(7) 2025-10-29",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "誰": {
+      "count": 15,
+      "first_recalled": "session(5) 2025-10-27",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "空": {
+      "count": 15,
+      "first_recalled": "session(6) 2025-10-28",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "四": {
+      "count": 15,
+      "first_recalled": "session(5) 2025-10-27",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "七": {
+      "count": 15,
+      "first_recalled": "session(5) 2025-10-27",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "八": {
+      "count": 15,
+      "first_recalled": "session(5) 2025-10-27",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "十": {
+      "count": 15,
+      "first_recalled": "session(5) 2025-10-27",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "する": {
+      "count": 15,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "水": {
+      "count": 15,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "見る": {
+      "count": 15,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "後": {
+      "count": 15,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "午後": {
+      "count": 15,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
     },
     "走る": {
-      "count": 14,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "ここ": {
-      "count": 14,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "信号": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "図書館": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "家": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "働く": {
-      "count": 14,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(14) 2025-11-13"
-    },
-    "あそこ": {
-      "count": 15,
-      "first_recalled": "session(4) 2025-10-24",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "真っ直ぐ": {
-      "count": 15,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "肉": {
-      "count": 15,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "下": {
       "count": 15,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "上": {
+    "乗る": {
+      "count": 15,
+      "first_recalled": "session(5) 2025-10-27",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "家族": {
       "count": 15,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(20) 2025-11-23"
     },
-    "車": {
+    "朝ご飯": {
       "count": 15,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(20) 2025-11-23"
     },
-    "木": {
+    "晩ご飯": {
       "count": 15,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(20) 2025-11-23"
     },
-    "料理": {
-      "count": 15,
+    "休む": {
+      "count": 16,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "開く": {
+      "count": 16,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "一": {
-      "count": 15,
-      "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
+    "週": {
+      "count": 16,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "公園": {
-      "count": 15,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+    "売る": {
+      "count": 16,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "友達": {
-      "count": 15,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+    "あなた": {
+      "count": 16,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
     },
     "青い": {
-      "count": 15,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "知る": {
       "count": 16,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "居る": {
+      "count": 16,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "料理": {
+      "count": 16,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "下": {
+      "count": 16,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "上": {
+      "count": 16,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(19) 2025-11-22"
+    },
+    "火曜日": {
+      "count": 17,
+      "first_recalled": "session(5) 2025-10-27",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "日本語": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "鳥": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "日": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "外": {
+      "count": 17,
       "first_recalled": "session(3) 2025-10-23",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "映画": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "電話": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "電話番号": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "先生": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "五": {
+      "count": 17,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "二": {
+      "count": 17,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "三": {
+      "count": 17,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "六": {
+      "count": 17,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "午前中": {
+      "count": 17,
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "買う": {
+      "count": 17,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "ここ": {
+      "count": 17,
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "信号": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "図書館": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "家": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "働く": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "公園": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "真っ直ぐ": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "友達": {
+      "count": 17,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(20) 2025-11-23"
     },
     "右": {
-      "count": 16,
+      "count": 17,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(19) 2025-11-22"
     },
     "左": {
-      "count": 16,
+      "count": 17,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(19) 2025-11-22"
     },
-    "赤い": {
-      "count": 16,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+    "あそこ": {
+      "count": 18,
+      "first_recalled": "session(4) 2025-10-24",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "肉": {
+      "count": 18,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "車": {
+      "count": 18,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "木": {
+      "count": 18,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "一": {
+      "count": 18,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
     },
     "私": {
-      "count": 16,
+      "count": 18,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "牛乳": {
-      "count": 16,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "牛肉": {
-      "count": 16,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "泳ぐ": {
-      "count": 16,
-      "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "犬": {
-      "count": 16,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
     "猫": {
-      "count": 16,
+      "count": 18,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "映画館": {
-      "count": 16,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+    "知る": {
+      "count": 19,
+      "first_recalled": "session(3) 2025-10-23",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "黒い": {
-      "count": 16,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "来週": {
-      "count": 16,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "先週": {
-      "count": 16,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "男の子": {
-      "count": 16,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(17) 2025-11-20"
-    },
-    "月曜日": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "飲む": {
-      "count": 17,
+    "赤い": {
+      "count": 19,
       "first_recalled": "session(2) 2025-10-22",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "これ": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+    "牛乳": {
+      "count": 19,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
     },
-    "それ": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "あれ": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "あの": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "この": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "その": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "鶏肉": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "豚肉": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "降りる": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "聞く": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "学校": {
-      "count": 17,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "日曜日": {
-      "count": 18,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "土曜日": {
-      "count": 18,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "金曜日": {
-      "count": 18,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "書く": {
-      "count": 18,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "本": {
-      "count": 18,
-      "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
-    },
-    "木曜日": {
+    "牛肉": {
       "count": 19,
       "first_recalled": "session(1) 2025-10-21",
-      "last_recalled": "session(18) 2025-11-21"
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "泳ぐ": {
+      "count": 19,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "犬": {
+      "count": 19,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "映画館": {
+      "count": 19,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "黒い": {
+      "count": 19,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "来週": {
+      "count": 19,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "先週": {
+      "count": 19,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "男の子": {
+      "count": 19,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "聞く": {
+      "count": 19,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "降りる": {
+      "count": 19,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(20) 2025-11-23"
+    },
+    "月曜日": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "飲む": {
+      "count": 20,
+      "first_recalled": "session(2) 2025-10-22",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "これ": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "それ": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "あれ": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "あの": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "この": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "その": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "鶏肉": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "豚肉": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "学校": {
+      "count": 20,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "日曜日": {
+      "count": 21,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "土曜日": {
+      "count": 21,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "金曜日": {
+      "count": 21,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "書く": {
+      "count": 21,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "本": {
+      "count": 21,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
+    },
+    "木曜日": {
+      "count": 22,
+      "first_recalled": "session(1) 2025-10-21",
+      "last_recalled": "session(21) 2025-11-25"
     }
   }
 }
