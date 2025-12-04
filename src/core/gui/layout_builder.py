@@ -15,7 +15,10 @@ class LayoutBuilder():
 
     def apply_layout(self, component:ComponentInterface, structure: StructureInterface):
         layout = self.build_layout(structure.layout_data)
+        layout.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+
         layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(0) 
         component.setLayout(layout)
     
     def build_layout(self, data) -> QWidget | QLayout:
@@ -26,13 +29,15 @@ class LayoutBuilder():
 
 
         if isinstance(data, list):
-            layout = QVBoxLayout()
+            layout = QVBoxLayout() 
             for item in data:
                 w = self.build_layout(item)
                 if isinstance(w, QWidget):
                     layout.addWidget(w)
+
                 else:
                     layout.addLayout(w)
+
             return layout
 
         if isinstance(data, dict):
@@ -46,8 +51,10 @@ class LayoutBuilder():
                     w = self.build_layout(item)
                     if isinstance(w, QWidget):
                         layout.addWidget(w)
+
                     else:
                         layout.addLayout(w)
+
 
                 return layout
 
@@ -57,22 +64,21 @@ class LayoutBuilder():
                 children = info.get("children", [])
 
                 layout = QVBoxLayout() if orient == "vertical" else QHBoxLayout()
+                layout.setContentsMargins(0, 0, 0, 0)  
+                layout.setSpacing(0)  
                 for item in children:
                     w = self.build_layout(item)
                     if isinstance(w, QWidget):
-                        w.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
                         layout.addWidget(w)
                     else:
                         container = QWidget()
                         container.setLayout(w)
-                        container.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
                         layout.addWidget(container)
 
                 frame = QFrame()
-                # frame.setFrameShape(QFrame.Shape.Box)
-                # frame.setFrameShadow(QFrame.Shadow.Plain)
+                frame.setFrameShape(QFrame.Shape.Box)
+                frame.setFrameShadow(QFrame.Shadow.Plain)
                 frame.setLayout(layout)
-                frame.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
                 frame.adjustSize() 
 
 
@@ -89,17 +95,12 @@ class LayoutBuilder():
                 for item in children:
                     w = self.build_layout(item)
                     if isinstance(w, QWidget):
-                        layout.addWidget(w) # bloats space --> layout.addWidget(w,  stretch=1)
+                        layout.addWidget(w) 
                     else:
                         container = QWidget()
                         container.setLayout(w)
-                        layout.addWidget(container) # bloats space --> layout.addWidget(container, stretch=1)
+                        layout.addWidget(container) 
 
-                # layout.setContentsMargins(0, 0, 0, 0)
-                # layout.setSpacing(0)
-                # groupbox.setFlat(True)  # Optional: removes border if you want
-                # groupbox.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
-                # groupbox.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
 
                 groupbox.setLayout(layout)
 

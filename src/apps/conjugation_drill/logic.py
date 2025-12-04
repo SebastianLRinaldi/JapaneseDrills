@@ -155,6 +155,8 @@ class Logic(Blueprint):
         self._map_widgets(component)
         self.component = component
 
+        self.question_count = 0
+
         self.current_word = ""
         self.current_word_tag = ""
         self.current_conjugation = ""
@@ -201,10 +203,10 @@ class Logic(Blueprint):
 
     def set_up_queues(self):
         count = self.base_form_combo.count()
-        self.base_form_queue = ShuffleQueue([0, 2, 3])#ShuffleQueue(random.sample(range(count), count))
+        self.base_form_queue = ShuffleQueue([2, 3])#ShuffleQueue(random.sample(range(count), count))
 
         count = self.polarity_combo.count()
-        self.polarity_queue = ShuffleQueue(random.sample(range(count), count))
+        self.polarity_queue = ShuffleQueue([0]) #ShuffleQueue(random.sample(range(count), count))
 
         self.base_form_idx = self.base_form_queue.next()
         self.polarity_idx = self.polarity_queue.next()
@@ -245,6 +247,7 @@ class Logic(Blueprint):
         self.base_form_combo.setCurrentIndex(self.base_form_idx)
 
         self.make_conjugation()
+        self.update_words_left()
 
 
     def make_conjugation(self):
@@ -253,6 +256,7 @@ class Logic(Blueprint):
 
         self.polarity_combo.setCurrentIndex(self.polarity_idx)
         self.polarity_idx = self.polarity_queue.next()
+        
 
         if base_form in {BaseForm.PLAIN, BaseForm.POLITE}:
             self.polarity_combo.setCurrentIndex(1)
@@ -275,7 +279,10 @@ class Logic(Blueprint):
         )
         print(f"{self.current_word} : {self.current_word_tag} | {verb_class} | {self.current_conjugation} | kwargs:{kwargs}")
 
-
+    def update_words_left(self):
+        total = len(self.verb_list.logic.word_dict_tagged)
+        self.word_count_label.setText(f"{self.question_count} /{total}")
+        self.question_count += 1
 
         
     def wrong_anwser_animation(self):

@@ -13,5 +13,5 @@ from src.home import Component as Home
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     win = Home()
-    win.show()
+    win.showMaximized()  
     sys.exit(app.exec())

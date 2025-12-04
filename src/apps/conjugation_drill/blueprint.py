@@ -5,6 +5,7 @@ from PyQt6.QtGui import *
 from src.components import *
 
 class Blueprint:
+    word_count_label: QLabel
     question_label: QLabel
     word_type_combo: QComboBox
 

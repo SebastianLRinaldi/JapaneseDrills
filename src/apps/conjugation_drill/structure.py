@@ -25,7 +25,11 @@ class Structure(LayoutBuilder, Blueprint):
                         self.base_form_combo,
                         ]),
                     ]),
+            self.word_count_label,
+            
             self.typing_area,
+
+
             # self.grade_btn,
             # self.randomize_btn,
             # self.sync_btn,
@@ -61,11 +65,17 @@ class Structure(LayoutBuilder, Blueprint):
         self.randomize_btn.setText("RANDOMIZE")
         self.sync_btn.setText("Sync With Anki")
 
+
+
+        self.word_count_label.setText("COUNT")
+        self.word_count_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
         font = QFont()
         font.setPointSize(32)  # increase the number to make text bigger
         font.setBold(True)      # optional, makes text bold
 
         self.set_widgets_font(font, [
+            self.word_count_label,
             self.verb_class_combo,
             self.base_form_combo,
             self.polarity_combo,
@@ -76,6 +86,8 @@ class Structure(LayoutBuilder, Blueprint):
     def set_widgets_font(self, font: QFont, widgets: list[QWidget]):
         for w in widgets:
             w.setFont(font)
+
+
 
 
 
