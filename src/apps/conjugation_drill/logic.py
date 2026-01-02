@@ -150,7 +150,7 @@ Load all conjugations
 """
 class Logic(Blueprint):
 
-    def __init__(self, component):
+    def __init__(self, component:QWidget):
         super().__init__()
         self._map_widgets(component)
         self.component = component
@@ -171,7 +171,6 @@ class Logic(Blueprint):
         self.populate_combo_from_enum()
         self.set_up_queues()
         self.reset_typing_area()
-
 
     def reset_typing_area(self):
         self.typing_area.setStyleSheet(f"color: white; font-size: 128pt;")

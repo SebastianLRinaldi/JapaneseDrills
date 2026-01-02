@@ -3,6 +3,11 @@ class ShuffleQueue:
     def __init__(self, items):
         self.items = items
         self.queue = []
+        self.setup()
+
+    def setup(self):
+        if self.items:
+            self.refill()
 
     def refill(self):
         self.queue = self.items[:]

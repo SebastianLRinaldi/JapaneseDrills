@@ -28,6 +28,8 @@ def parse_duration(duration: int|str):
     if isinstance(duration, int):
         total_seconds = duration
     elif isinstance(duration, str):
+        if not duration:
+            raise ValueError(f"Duration str is len 0: {duration} | len:{len(duration)}")
         # Matches optional D,H,M,S parts
         pattern = r'(?:(\d+)d:)?(?:(\d+)h:)?(?:(\d+)m:)?(\d+)s'
         match = re.fullmatch(pattern, duration)

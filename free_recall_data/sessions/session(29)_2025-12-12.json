@@ -1,0 +1,1047 @@
+{
+  "session_num": 29,
+  "date": "2025-12-12",
+  "time": "03:58AM",
+  "session_duration": "15m:0s",
+  "total_count": 172,
+  "new_count": 3,
+  "old_count": 169,
+  "new_words": [
+    "皆",
+    "鳴る",
+    "お名前"
+  ],
+  "old_words": [
+    "私",
+    "あなた",
+    "誰",
+    "ここ",
+    "あそこ",
+    "この",
+    "それ",
+    "あの",
+    "あれ",
+    "これ",
+    "その",
+    "行く",
+    "開く",
+    "歩く",
+    "聞く",
+    "書く",
+    "そろそろ",
+    "一",
+    "二",
+    "三",
+    "四",
+    "五",
+    "六",
+    "七",
+    "八",
+    "九",
+    "十",
+    "今日",
+    "昨日",
+    "明日",
+    "毎日",
+    "毎朝",
+    "毎晩",
+    "土曜日",
+    "日曜日",
+    "月曜日",
+    "水曜日",
+    "木曜日",
+    "金曜日",
+    "火曜日",
+    "色",
+    "歌",
+    "歌う",
+    "赤い",
+    "背中",
+    "犬",
+    "猫",
+    "白い",
+    "青い",
+    "掃除",
+    "場所",
+    "写真",
+    "信号",
+    "電話",
+    "電話番号",
+    "番号",
+    "自電車",
+    "電車",
+    "車",
+    "飛行機",
+    "駅",
+    "天気",
+    "電気",
+    "人",
+    "日本",
+    "日本語",
+    "本",
+    "日本人",
+    "朝ご飯",
+    "晩ご飯",
+    "図書館",
+    "映画館",
+    "食べる",
+    "見る",
+    "美味しい",
+    "綺麗",
+    "映画",
+    "帰る",
+    "乗る",
+    "降りる",
+    "落とす",
+    "取る",
+    "集める",
+    "知る",
+    "売る",
+    "買う",
+    "お店",
+    "魚",
+    "肉",
+    "肉まん",
+    "注文",
+    "鳥",
+    "牛",
+    "牛肉",
+    "牛乳",
+    "豚",
+    "豚肉",
+    "来週",
+    "週",
+    "道",
+    "誕生日",
+    "先週",
+    "毎週",
+    "家",
+    "友達",
+    "公園",
+    "合う",
+    "会う",
+    "浴びる",
+    "洗う",
+    "座る",
+    "する",
+    "ある",
+    "降る",
+    "遊ぶ",
+    "危ない",
+    "泣く",
+    "深い",
+    "大きい",
+    "狭い",
+    "多い",
+    "沢山",
+    "空っぽ",
+    "財布",
+    "ゴミ箱",
+    "月",
+    "着く",
+    "靴",
+    "教える",
+    "覚える",
+    "真っ直ぐ",
+    "左",
+    "右",
+    "上",
+    "下",
+    "後",
+    "午前中",
+    "台所",
+    "先生",
+    "喧嘩",
+    "意味",
+    "臭味",
+    "交差点",
+    "広い",
+    "静か",
+    "温かい",
+    "暑い",
+    "とても",
+    "くらい",
+    "ぐらい",
+    "顔",
+    "髪",
+    "学校",
+    "お金",
+    "料理",
+    "散歩",
+    "教師",
+    "壁",
+    "水",
+    "泳ぐ",
+    "休む",
+    "寝る",
+    "住む",
+    "飲む",
+    "足",
+    "高い",
+    "古い",
+    "円",
+    "時間"
+  ],
+  "events": [
+    {
+      "timestamp": 2,
+      "word": "私",
+      "type": "old"
+    },
+    {
+      "timestamp": 3,
+      "word": "あなた",
+      "type": "old"
+    },
+    {
+      "timestamp": 6,
+      "word": "誰",
+      "type": "old"
+    },
+    {
+      "timestamp": 10,
+      "word": "ここ",
+      "type": "old"
+    },
+    {
+      "timestamp": 12,
+      "word": "あそこ",
+      "type": "old"
+    },
+    {
+      "timestamp": 14,
+      "word": "この",
+      "type": "old"
+    },
+    {
+      "timestamp": 15,
+      "word": "それ",
+      "type": "old"
+    },
+    {
+      "timestamp": 16,
+      "word": "あの",
+      "type": "old"
+    },
+    {
+      "timestamp": 23,
+      "word": "あれ",
+      "type": "old"
+    },
+    {
+      "timestamp": 26,
+      "word": "これ",
+      "type": "old"
+    },
+    {
+      "timestamp": 39,
+      "word": "その",
+      "type": "old"
+    },
+    {
+      "timestamp": 58,
+      "word": "行く",
+      "type": "old"
+    },
+    {
+      "timestamp": 59,
+      "word": "開く",
+      "type": "old"
+    },
+    {
+      "timestamp": 62,
+      "word": "歩く",
+      "type": "old"
+    },
+    {
+      "timestamp": 64,
+      "word": "聞く",
+      "type": "old"
+    },
+    {
+      "timestamp": 69,
+      "word": "書く",
+      "type": "old"
+    },
+    {
+      "timestamp": 78,
+      "word": "そろそろ",
+      "type": "old"
+    },
+    {
+      "timestamp": 79,
+      "word": "一",
+      "type": "old"
+    },
+    {
+      "timestamp": 81,
+      "word": "二",
+      "type": "old"
+    },
+    {
+      "timestamp": 82,
+      "word": "三",
+      "type": "old"
+    },
+    {
+      "timestamp": 88,
+      "word": "四",
+      "type": "old"
+    },
+    {
+      "timestamp": 90,
+      "word": "五",
+      "type": "old"
+    },
+    {
+      "timestamp": 91,
+      "word": "六",
+      "type": "old"
+    },
+    {
+      "timestamp": 95,
+      "word": "七",
+      "type": "old"
+    },
+    {
+      "timestamp": 98,
+      "word": "八",
+      "type": "old"
+    },
+    {
+      "timestamp": 104,
+      "word": "九",
+      "type": "old"
+    },
+    {
+      "timestamp": 106,
+      "word": "十",
+      "type": "old"
+    },
+    {
+      "timestamp": 109,
+      "word": "今日",
+      "type": "old"
+    },
+    {
+      "timestamp": 111,
+      "word": "昨日",
+      "type": "old"
+    },
+    {
+      "timestamp": 116,
+      "word": "明日",
+      "type": "old"
+    },
+    {
+      "timestamp": 120,
+      "word": "毎日",
+      "type": "old"
+    },
+    {
+      "timestamp": 124,
+      "word": "毎朝",
+      "type": "old"
+    },
+    {
+      "timestamp": 127,
+      "word": "毎晩",
+      "type": "old"
+    },
+    {
+      "timestamp": 141,
+      "word": "土曜日",
+      "type": "old"
+    },
+    {
+      "timestamp": 144,
+      "word": "日曜日",
+      "type": "old"
+    },
+    {
+      "timestamp": 148,
+      "word": "月曜日",
+      "type": "old"
+    },
+    {
+      "timestamp": 153,
+      "word": "水曜日",
+      "type": "old"
+    },
+    {
+      "timestamp": 156,
+      "word": "木曜日",
+      "type": "old"
+    },
+    {
+      "timestamp": 161,
+      "word": "金曜日",
+      "type": "old"
+    },
+    {
+      "timestamp": 168,
+      "word": "火曜日",
+      "type": "old"
+    },
+    {
+      "timestamp": 171,
+      "word": "色",
+      "type": "old"
+    },
+    {
+      "timestamp": 173,
+      "word": "歌",
+      "type": "old"
+    },
+    {
+      "timestamp": 175,
+      "word": "歌う",
+      "type": "old"
+    },
+    {
+      "timestamp": 178,
+      "word": "赤い",
+      "type": "old"
+    },
+    {
+      "timestamp": 180,
+      "word": "背中",
+      "type": "old"
+    },
+    {
+      "timestamp": 183,
+      "word": "犬",
+      "type": "old"
+    },
+    {
+      "timestamp": 186,
+      "word": "猫",
+      "type": "old"
+    },
+    {
+      "timestamp": 201,
+      "word": "白い",
+      "type": "old"
+    },
+    {
+      "timestamp": 203,
+      "word": "青い",
+      "type": "old"
+    },
+    {
+      "timestamp": 212,
+      "word": "掃除",
+      "type": "old"
+    },
+    {
+      "timestamp": 214,
+      "word": "場所",
+      "type": "old"
+    },
+    {
+      "timestamp": 217,
+      "word": "写真",
+      "type": "old"
+    },
+    {
+      "timestamp": 222,
+      "word": "信号",
+      "type": "old"
+    },
+    {
+      "timestamp": 227,
+      "word": "電話",
+      "type": "old"
+    },
+    {
+      "timestamp": 230,
+      "word": "電話番号",
+      "type": "old"
+    },
+    {
+      "timestamp": 232,
+      "word": "番号",
+      "type": "old"
+    },
+    {
+      "timestamp": 239,
+      "word": "自電車",
+      "type": "old"
+    },
+    {
+      "timestamp": 241,
+      "word": "電車",
+      "type": "old"
+    },
+    {
+      "timestamp": 245,
+      "word": "車",
+      "type": "old"
+    },
+    {
+      "timestamp": 248,
+      "word": "飛行機",
+      "type": "old"
+    },
+    {
+      "timestamp": 253,
+      "word": "駅",
+      "type": "old"
+    },
+    {
+      "timestamp": 256,
+      "word": "天気",
+      "type": "old"
+    },
+    {
+      "timestamp": 268,
+      "word": "電気",
+      "type": "old"
+    },
+    {
+      "timestamp": 272,
+      "word": "人",
+      "type": "old"
+    },
+    {
+      "timestamp": 278,
+      "word": "日本",
+      "type": "old"
+    },
+    {
+      "timestamp": 280,
+      "word": "日本語",
+      "type": "old"
+    },
+    {
+      "timestamp": 283,
+      "word": "本",
+      "type": "old"
+    },
+    {
+      "timestamp": 287,
+      "word": "日本人",
+      "type": "old"
+    },
+    {
+      "timestamp": 294,
+      "word": "朝ご飯",
+      "type": "old"
+    },
+    {
+      "timestamp": 297,
+      "word": "晩ご飯",
+      "type": "old"
+    },
+    {
+      "timestamp": 306,
+      "word": "図書館",
+      "type": "old"
+    },
+    {
+      "timestamp": 308,
+      "word": "映画館",
+      "type": "old"
+    },
+    {
+      "timestamp": 313,
+      "word": "食べる",
+      "type": "old"
+    },
+    {
+      "timestamp": 315,
+      "word": "見る",
+      "type": "old"
+    },
+    {
+      "timestamp": 330,
+      "word": "美味しい",
+      "type": "old"
+    },
+    {
+      "timestamp": 335,
+      "word": "綺麗",
+      "type": "old"
+    },
+    {
+      "timestamp": 347,
+      "word": "映画",
+      "type": "old"
+    },
+    {
+      "timestamp": 366,
+      "word": "帰る",
+      "type": "old"
+    },
+    {
+      "timestamp": 368,
+      "word": "乗る",
+      "type": "old"
+    },
+    {
+      "timestamp": 371,
+      "word": "降りる",
+      "type": "old"
+    },
+    {
+      "timestamp": 373,
+      "word": "落とす",
+      "type": "old"
+    },
+    {
+      "timestamp": 376,
+      "word": "取る",
+      "type": "old"
+    },
+    {
+      "timestamp": 390,
+      "word": "集める",
+      "type": "old"
+    },
+    {
+      "timestamp": 393,
+      "word": "知る",
+      "type": "old"
+    },
+    {
+      "timestamp": 395,
+      "word": "売る",
+      "type": "old"
+    },
+    {
+      "timestamp": 399,
+      "word": "買う",
+      "type": "old"
+    },
+    {
+      "timestamp": 403,
+      "word": "お店",
+      "type": "old"
+    },
+    {
+      "timestamp": 409,
+      "word": "魚",
+      "type": "old"
+    },
+    {
+      "timestamp": 412,
+      "word": "肉",
+      "type": "old"
+    },
+    {
+      "timestamp": 417,
+      "word": "肉まん",
+      "type": "old"
+    },
+    {
+      "timestamp": 420,
+      "word": "注文",
+      "type": "old"
+    },
+    {
+      "timestamp": 426,
+      "word": "鳥",
+      "type": "old"
+    },
+    {
+      "timestamp": 427,
+      "word": "牛",
+      "type": "old"
+    },
+    {
+      "timestamp": 430,
+      "word": "牛肉",
+      "type": "old"
+    },
+    {
+      "timestamp": 432,
+      "word": "牛乳",
+      "type": "old"
+    },
+    {
+      "timestamp": 435,
+      "word": "豚",
+      "type": "old"
+    },
+    {
+      "timestamp": 438,
+      "word": "豚肉",
+      "type": "old"
+    },
+    {
+      "timestamp": 452,
+      "word": "来週",
+      "type": "old"
+    },
+    {
+      "timestamp": 453,
+      "word": "週",
+      "type": "old"
+    },
+    {
+      "timestamp": 457,
+      "word": "道",
+      "type": "old"
+    },
+    {
+      "timestamp": 462,
+      "word": "誕生日",
+      "type": "old"
+    },
+    {
+      "timestamp": 467,
+      "word": "先週",
+      "type": "old"
+    },
+    {
+      "timestamp": 469,
+      "word": "毎週",
+      "type": "old"
+    },
+    {
+      "timestamp": 488,
+      "word": "家",
+      "type": "old"
+    },
+    {
+      "timestamp": 495,
+      "word": "友達",
+      "type": "old"
+    },
+    {
+      "timestamp": 498,
+      "word": "皆",
+      "type": "new"
+    },
+    {
+      "timestamp": 506,
+      "word": "公園",
+      "type": "old"
+    },
+    {
+      "timestamp": 511,
+      "word": "合う",
+      "type": "old"
+    },
+    {
+      "timestamp": 515,
+      "word": "会う",
+      "type": "old"
+    },
+    {
+      "timestamp": 521,
+      "word": "浴びる",
+      "type": "old"
+    },
+    {
+      "timestamp": 523,
+      "word": "洗う",
+      "type": "old"
+    },
+    {
+      "timestamp": 525,
+      "word": "座る",
+      "type": "old"
+    },
+    {
+      "timestamp": 535,
+      "word": "する",
+      "type": "old"
+    },
+    {
+      "timestamp": 536,
+      "word": "ある",
+      "type": "old"
+    },
+    {
+      "timestamp": 554,
+      "word": "降る",
+      "type": "old"
+    },
+    {
+      "timestamp": 561,
+      "word": "遊ぶ",
+      "type": "old"
+    },
+    {
+      "timestamp": 565,
+      "word": "危ない",
+      "type": "old"
+    },
+    {
+      "timestamp": 571,
+      "word": "泣く",
+      "type": "old"
+    },
+    {
+      "timestamp": 579,
+      "word": "鳴る",
+      "type": "new"
+    },
+    {
+      "timestamp": 588,
+      "word": "深い",
+      "type": "old"
+    },
+    {
+      "timestamp": 590,
+      "word": "大きい",
+      "type": "old"
+    },
+    {
+      "timestamp": 596,
+      "word": "狭い",
+      "type": "old"
+    },
+    {
+      "timestamp": 599,
+      "word": "多い",
+      "type": "old"
+    },
+    {
+      "timestamp": 601,
+      "word": "沢山",
+      "type": "old"
+    },
+    {
+      "timestamp": 603,
+      "word": "空っぽ",
+      "type": "old"
+    },
+    {
+      "timestamp": 608,
+      "word": "財布",
+      "type": "old"
+    },
+    {
+      "timestamp": 611,
+      "word": "ゴミ箱",
+      "type": "old"
+    },
+    {
+      "timestamp": 614,
+      "word": "月",
+      "type": "old"
+    },
+    {
+      "timestamp": 617,
+      "word": "着く",
+      "type": "old"
+    },
+    {
+      "timestamp": 620,
+      "word": "靴",
+      "type": "old"
+    },
+    {
+      "timestamp": 628,
+      "word": "教える",
+      "type": "old"
+    },
+    {
+      "timestamp": 631,
+      "word": "覚える",
+      "type": "old"
+    },
+    {
+      "timestamp": 641,
+      "word": "真っ直ぐ",
+      "type": "old"
+    },
+    {
+      "timestamp": 647,
+      "word": "左",
+      "type": "old"
+    },
+    {
+      "timestamp": 649,
+      "word": "右",
+      "type": "old"
+    },
+    {
+      "timestamp": 651,
+      "word": "上",
+      "type": "old"
+    },
+    {
+      "timestamp": 652,
+      "word": "下",
+      "type": "old"
+    },
+    {
+      "timestamp": 654,
+      "word": "後",
+      "type": "old"
+    },
+    {
+      "timestamp": 657,
+      "word": "午前中",
+      "type": "old"
+    },
+    {
+      "timestamp": 672,
+      "word": "台所",
+      "type": "old"
+    },
+    {
+      "timestamp": 676,
+      "word": "先生",
+      "type": "old"
+    },
+    {
+      "timestamp": 680,
+      "word": "喧嘩",
+      "type": "old"
+    },
+    {
+      "timestamp": 682,
+      "word": "意味",
+      "type": "old"
+    },
+    {
+      "timestamp": 685,
+      "word": "臭味",
+      "type": "old"
+    },
+    {
+      "timestamp": 694,
+      "word": "交差点",
+      "type": "old"
+    },
+    {
+      "timestamp": 703,
+      "word": "広い",
+      "type": "old"
+    },
+    {
+      "timestamp": 712,
+      "word": "静か",
+      "type": "old"
+    },
+    {
+      "timestamp": 717,
+      "word": "温かい",
+      "type": "old"
+    },
+    {
+      "timestamp": 723,
+      "word": "暑い",
+      "type": "old"
+    },
+    {
+      "timestamp": 727,
+      "word": "とても",
+      "type": "old"
+    },
+    {
+      "timestamp": 730,
+      "word": "くらい",
+      "type": "old"
+    },
+    {
+      "timestamp": 733,
+      "word": "ぐらい",
+      "type": "old"
+    },
+    {
+      "timestamp": 742,
+      "word": "顔",
+      "type": "old"
+    },
+    {
+      "timestamp": 743,
+      "word": "髪",
+      "type": "old"
+    },
+    {
+      "timestamp": 756,
+      "word": "学校",
+      "type": "old"
+    },
+    {
+      "timestamp": 759,
+      "word": "お金",
+      "type": "old"
+    },
+    {
+      "timestamp": 790,
+      "word": "料理",
+      "type": "old"
+    },
+    {
+      "timestamp": 798,
+      "word": "散歩",
+      "type": "old"
+    },
+    {
+      "timestamp": 809,
+      "word": "教師",
+      "type": "old"
+    },
+    {
+      "timestamp": 820,
+      "word": "壁",
+      "type": "old"
+    },
+    {
+      "timestamp": 826,
+      "word": "水",
+      "type": "old"
+    },
+    {
+      "timestamp": 830,
+      "word": "泳ぐ",
+      "type": "old"
+    },
+    {
+      "timestamp": 833,
+      "word": "休む",
+      "type": "old"
+    },
+    {
+      "timestamp": 835,
+      "word": "寝る",
+      "type": "old"
+    },
+    {
+      "timestamp": 838,
+      "word": "住む",
+      "type": "old"
+    },
+    {
+      "timestamp": 840,
+      "word": "飲む",
+      "type": "old"
+    },
+    {
+      "timestamp": 862,
+      "word": "足",
+      "type": "old"
+    },
+    {
+      "timestamp": 868,
+      "word": "高い",
+      "type": "old"
+    },
+    {
+      "timestamp": 871,
+      "word": "古い",
+      "type": "old"
+    },
+    {
+      "timestamp": 879,
+      "word": "円",
+      "type": "old"
+    },
+    {
+      "timestamp": 891,
+      "word": "時間",
+      "type": "old"
+    },
+    {
+      "timestamp": 899,
+      "word": "お名前",
+      "type": "new"
+    }
+  ]
+}

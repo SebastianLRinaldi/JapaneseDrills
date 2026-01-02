@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 
 from enum import Enum
-
+from src.globals.global_signals import global_signal_manager
 # from src.helpers import *
 from .blueprint import Blueprint
 
@@ -39,6 +39,7 @@ class Logic(Blueprint):
         self.timer_duration = TimeValues.FIFTEEN.value
         self.timer_direction = TimerDirection.COUNT_UP
         self.remaining_time = TimeValues.ZERO.value
+        self.endable_endurance_timer = False
 
     def set_timer_duration(self, minutes: int = 0, seconds: int = 0):
         total_seconds = minutes * 60 + seconds
@@ -46,6 +47,9 @@ class Logic(Blueprint):
             raise ValueError("Timer duration must be positive")
         self.timer_duration = total_seconds
 
+    def set_endurance_timer(self, enabled:bool):
+        self.endable_endurance_timer = enabled
+    
     def set_timer_direction(self, count_down: bool):
         if count_down:
             self.timer_direction = TimerDirection.COUNT_DOWN
@@ -61,6 +65,7 @@ class Logic(Blueprint):
 
     def stop_timer(self):
         if self.time.isActive():
+            global_signal_manager.kana_timer_stopped.emit()
             self.time.timeout.disconnect(self.update_tick)
             self.update_timer_label()
             self.time.stop()
@@ -68,6 +73,7 @@ class Logic(Blueprint):
 
     def start_timer(self):
         if not self.time.isActive():
+            global_signal_manager.kana_timer_started.emit()
             self.time.timeout.connect(self.update_tick)
             self.update_timer_label()
             self.time.start(1000)
@@ -91,13 +97,13 @@ class Logic(Blueprint):
         if self.timer_direction.value:  # COUNT_DOWN
             self.remaining_time -= 1
             self.update_timer_label()
-            if self.remaining_time < 0:
+            if self.remaining_time < 0 and not self.endable_endurance_timer:
                 self.reset_count_down_timer()
                 self.end_timer_msg()
         else:  # COUNT_UP
             self.remaining_time += 1
             self.update_timer_label()
-            if self.remaining_time > self.timer_duration:
+            if self.remaining_time > self.timer_duration and not self.endable_endurance_timer:
                 self.reset_count_down_timer()
                 self.end_timer_msg()
 

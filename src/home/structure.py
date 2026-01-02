@@ -177,7 +177,7 @@ class Structure(LayoutBuilder, Blueprint):
         self.load_apps()
         self.add_apps_to_stack()
         self.setup_menu()
-        self.switch_to("conjugationDrill")
+        self.switch_to("kanaDrill")
     
     def add_apps_to_stack(self):
         for name, widget in self.apps.items():

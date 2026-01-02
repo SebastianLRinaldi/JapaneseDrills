@@ -1,0 +1,1257 @@
+{
+  "stats": {
+    "total_sessions": 1,
+    "total_recall_time": "8m:40s",
+    "total_recall_count": 144
+  },
+  "kana": {
+    "あ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 0.753,
+      "best_time": 0.753
+    },
+    "か": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.058,
+      "best_time": 1.058
+    },
+    "さ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.042,
+      "best_time": 1.042
+    },
+    "た": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.148,
+      "best_time": 1.148
+    },
+    "な": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 0.995,
+      "best_time": 0.995
+    },
+    "は": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.88,
+      "best_time": 1.88
+    },
+    "ま": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.09,
+      "best_time": 1.09
+    },
+    "や": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.322,
+      "best_time": 1.322
+    },
+    "ら": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.002,
+      "best_time": 1.002
+    },
+    "わ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 0.962,
+      "best_time": 0.962
+    },
+    "い": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.05,
+      "best_time": 1.05
+    },
+    "き": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.194,
+      "best_time": 1.194
+    },
+    "し": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.23,
+      "best_time": 1.23
+    },
+    "ち": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.112,
+      "best_time": 1.112
+    },
+    "に": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.155,
+      "best_time": 1.155
+    },
+    "ひ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.329,
+      "best_time": 1.329
+    },
+    "み": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.064,
+      "best_time": 1.064
+    },
+    "り": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.403,
+      "best_time": 1.403
+    },
+    "う": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.147,
+      "best_time": 1.147
+    },
+    "く": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.209,
+      "best_time": 1.209
+    },
+    "す": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.196,
+      "best_time": 1.196
+    },
+    "つ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.331,
+      "best_time": 1.331
+    },
+    "ぬ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.42,
+      "best_time": 2.42
+    },
+    "ふ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.681,
+      "best_time": 1.681
+    },
+    "む": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.483,
+      "best_time": 1.483
+    },
+    "ゆ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.291,
+      "best_time": 1.291
+    },
+    "る": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "え": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 0.864,
+      "best_time": 0.864
+    },
+    "け": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.347,
+      "best_time": 1.347
+    },
+    "せ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.066,
+      "best_time": 1.066
+    },
+    "て": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.041,
+      "best_time": 1.041
+    },
+    "ね": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.12,
+      "best_time": 1.12
+    },
+    "へ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.175,
+      "best_time": 1.175
+    },
+    "め": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.553,
+      "best_time": 1.553
+    },
+    "れ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.075,
+      "best_time": 1.075
+    },
+    "お": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.282,
+      "best_time": 1.282
+    },
+    "こ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.656,
+      "best_time": 1.656
+    },
+    "そ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.134,
+      "best_time": 1.134
+    },
+    "と": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.083,
+      "best_time": 1.083
+    },
+    "の": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.076,
+      "best_time": 1.076
+    },
+    "ほ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.699,
+      "best_time": 1.699
+    },
+    "も": {
+      "correct": 0,
+      "wrong": 2,
+      "avg_time": null,
+      "best_time": null
+    },
+    "よ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.26,
+      "best_time": 1.26
+    },
+    "ろ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.08,
+      "best_time": 1.08
+    },
+    "を": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.169,
+      "best_time": 1.169
+    },
+    "ん": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.101,
+      "best_time": 1.101
+    },
+    "が": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.266,
+      "best_time": 1.266
+    },
+    "ざ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "だ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.195,
+      "best_time": 1.195
+    },
+    "ば": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.947,
+      "best_time": 1.947
+    },
+    "ぱ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.522,
+      "best_time": 2.522
+    },
+    "ぎ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.33,
+      "best_time": 2.33
+    },
+    "じ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.521,
+      "best_time": 1.521
+    },
+    "ぢ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.426,
+      "best_time": 3.426
+    },
+    "び": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.224,
+      "best_time": 1.224
+    },
+    "ぴ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ぐ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.612,
+      "best_time": 1.612
+    },
+    "ず": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.423,
+      "best_time": 1.423
+    },
+    "づ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ぶ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.427,
+      "best_time": 1.427
+    },
+    "ぷ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.761,
+      "best_time": 3.761
+    },
+    "げ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.681,
+      "best_time": 1.681
+    },
+    "ぜ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.362,
+      "best_time": 1.362
+    },
+    "で": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.107,
+      "best_time": 1.107
+    },
+    "べ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.196,
+      "best_time": 1.196
+    },
+    "ぺ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ご": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.235,
+      "best_time": 2.235
+    },
+    "ぞ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.345,
+      "best_time": 1.345
+    },
+    "ど": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.13,
+      "best_time": 1.13
+    },
+    "ぼ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 5.194,
+      "best_time": 5.194
+    },
+    "ぽ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 5.953,
+      "best_time": 5.953
+    },
+    "きゃ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "しゃ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.011,
+      "best_time": 2.011
+    },
+    "ちゃ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.778,
+      "best_time": 1.778
+    },
+    "にゃ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.546,
+      "best_time": 1.546
+    },
+    "ひゃ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.701,
+      "best_time": 2.701
+    },
+    "みゃ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "りゃ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.571,
+      "best_time": 1.571
+    },
+    "ぎゃ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.883,
+      "best_time": 1.883
+    },
+    "じゃ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "びゃ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.876,
+      "best_time": 3.876
+    },
+    "ぴゃ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.561,
+      "best_time": 3.561
+    },
+    "きゅ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.209,
+      "best_time": 3.209
+    },
+    "しゅ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.361,
+      "best_time": 3.361
+    },
+    "ちゅ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "にゅ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.777,
+      "best_time": 1.777
+    },
+    "ひゅ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.697,
+      "best_time": 2.697
+    },
+    "みゅ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.777,
+      "best_time": 1.777
+    },
+    "りゅ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.698,
+      "best_time": 1.698
+    },
+    "ぎゅ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.138,
+      "best_time": 2.138
+    },
+    "じゅ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "びゅ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ぴゅ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "きょ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.884,
+      "best_time": 1.884
+    },
+    "しょ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.819,
+      "best_time": 1.819
+    },
+    "ちょ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.649,
+      "best_time": 1.649
+    },
+    "にょ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.906,
+      "best_time": 1.906
+    },
+    "ひょ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.016,
+      "best_time": 2.016
+    },
+    "みょ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "りょ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.04,
+      "best_time": 2.04
+    },
+    "ぎょ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "じょ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "びょ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.191,
+      "best_time": 2.191
+    },
+    "ぴょ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 4.322,
+      "best_time": 4.322
+    },
+    "ア": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 0.938,
+      "best_time": 0.938
+    },
+    "カ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.105,
+      "best_time": 1.105
+    },
+    "サ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "タ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ナ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.217,
+      "best_time": 1.217
+    },
+    "ハ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.96,
+      "best_time": 1.96
+    },
+    "マ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ヤ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ラ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ワ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "イ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.234,
+      "best_time": 1.234
+    },
+    "キ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.363,
+      "best_time": 1.363
+    },
+    "シ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "チ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.569,
+      "best_time": 1.569
+    },
+    "ニ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.13,
+      "best_time": 1.13
+    },
+    "ヒ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ミ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.178,
+      "best_time": 1.178
+    },
+    "リ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.183,
+      "best_time": 2.183
+    },
+    "ウ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ク": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ス": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.727,
+      "best_time": 2.727
+    },
+    "ツ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.648,
+      "best_time": 1.648
+    },
+    "ヌ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "フ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ム": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.314,
+      "best_time": 1.314
+    },
+    "ユ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.537,
+      "best_time": 1.537
+    },
+    "ル": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "エ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.412,
+      "best_time": 1.412
+    },
+    "ケ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "セ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.947,
+      "best_time": 1.947
+    },
+    "テ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ネ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.833,
+      "best_time": 2.833
+    },
+    "ヘ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.226,
+      "best_time": 1.226
+    },
+    "メ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "レ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "オ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.097,
+      "best_time": 2.097
+    },
+    "コ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.156,
+      "best_time": 2.156
+    },
+    "ソ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ト": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.473,
+      "best_time": 1.473
+    },
+    "ノ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.274,
+      "best_time": 1.274
+    },
+    "ホ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.393,
+      "best_time": 1.393
+    },
+    "モ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ヨ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.294,
+      "best_time": 1.294
+    },
+    "ロ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.392,
+      "best_time": 1.392
+    },
+    "ヲ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ン": {
+      "correct": 0,
+      "wrong": 0,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ガ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.473,
+      "best_time": 1.473
+    },
+    "ザ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ダ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.375,
+      "best_time": 1.375
+    },
+    "バ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "パ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 6.193,
+      "best_time": 6.193
+    },
+    "ギ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.258,
+      "best_time": 1.258
+    },
+    "ジ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.682,
+      "best_time": 1.682
+    },
+    "ヂ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ビ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.515,
+      "best_time": 1.515
+    },
+    "ピ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "グ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ズ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.307,
+      "best_time": 1.307
+    },
+    "ヅ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ブ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "プ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ゲ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ゼ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.385,
+      "best_time": 1.385
+    },
+    "デ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ベ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.122,
+      "best_time": 1.122
+    },
+    "ペ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.303,
+      "best_time": 3.303
+    },
+    "ゴ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.771,
+      "best_time": 2.771
+    },
+    "ゾ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ド": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.578,
+      "best_time": 1.578
+    },
+    "ボ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ポ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "キャ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "シャ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.96,
+      "best_time": 1.96
+    },
+    "チャ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.401,
+      "best_time": 1.401
+    },
+    "ニャ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.683,
+      "best_time": 1.683
+    },
+    "ヒャ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ミャ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.504,
+      "best_time": 1.504
+    },
+    "リャ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.68,
+      "best_time": 1.68
+    },
+    "ギャ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ジャ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ビャ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ピャ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 7.698,
+      "best_time": 7.698
+    },
+    "キュ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "シュ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.091,
+      "best_time": 3.091
+    },
+    "チュ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.872,
+      "best_time": 1.872
+    },
+    "ニュ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.903,
+      "best_time": 2.903
+    },
+    "ヒュ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ミュ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.801,
+      "best_time": 1.801
+    },
+    "リュ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 1.706,
+      "best_time": 1.706
+    },
+    "ギュ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ジュ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ビュ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.843,
+      "best_time": 3.843
+    },
+    "ピュ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 3.556,
+      "best_time": 3.556
+    },
+    "キョ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ショ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.475,
+      "best_time": 2.475
+    },
+    "チョ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.563,
+      "best_time": 2.563
+    },
+    "ニョ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.546,
+      "best_time": 2.546
+    },
+    "ヒョ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ミョ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.187,
+      "best_time": 2.187
+    },
+    "リョ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.579,
+      "best_time": 2.579
+    },
+    "ギョ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ジョ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ビョ": {
+      "correct": 0,
+      "wrong": 1,
+      "avg_time": null,
+      "best_time": null
+    },
+    "ピョ": {
+      "correct": 1,
+      "wrong": 0,
+      "avg_time": 2.857,
+      "best_time": 2.857
+    }
+  }
+}
