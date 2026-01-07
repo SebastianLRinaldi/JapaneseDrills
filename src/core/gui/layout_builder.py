@@ -3,7 +3,6 @@ from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 
 from typing import Literal
-from src.contracts.component_interface import *
 
 Orientation = Literal["horizontal", "vertical"]
 LayoutType = Literal["group", "splitter", "tabs", "grid", "stacked"]
@@ -13,7 +12,7 @@ class LayoutBuilder():
     def __init__(self):
         super().__init__()
 
-    def apply_layout(self, component:ComponentInterface, structure: StructureInterface):
+    def apply_layout(self, component, structure):
         layout = self.build_layout(structure.layout_data)
         layout.setAlignment(Qt.AlignmentFlag.AlignVCenter)
 

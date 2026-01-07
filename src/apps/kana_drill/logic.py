@@ -504,13 +504,14 @@ class Logic(Blueprint):
 
         # Compute elapsed time
         elapsed_time = None
+        elapsed_time_to_store = None
         if self.question_start_time is not None:
             elapsed_time = perf_counter() - self.question_start_time
             elapsed_time_rounded = round(elapsed_time, 3)
             self.question_start_time = None  # reset for next question
         
-        # Only store time if correct
-        elapsed_time_to_store = elapsed_time_rounded if input_text == eng else None
+            # Only store time if correct
+            elapsed_time_to_store = elapsed_time_rounded if input_text == eng else None
 
         if input_text == eng:
             self.question_count += 1 

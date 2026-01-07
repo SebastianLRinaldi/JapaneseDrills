@@ -1,0 +1,81 @@
+{
+  "session_num": 5,
+  "date": "2026-01-07",
+  "time": "03:13AM",
+  "summary": {
+    "script": "KATAKANA",
+    "category": "MAIN KANA",
+    "vowels": [
+      "U"
+    ],
+    "session_duration": "39s",
+    "total_count": 9,
+    "correct_count": 8,
+    "wrong_count": 1
+  },
+  "events": [
+    {
+      "timestamp": 2,
+      "elapsed_time": 2.161,
+      "kana": "ム",
+      "ans": "mu",
+      "correct": true
+    },
+    {
+      "timestamp": 4,
+      "elapsed_time": 1.835,
+      "kana": "ル",
+      "ans": "ru",
+      "correct": true
+    },
+    {
+      "timestamp": 7,
+      "elapsed_time": 2.683,
+      "kana": "ツ",
+      "ans": "tsu",
+      "correct": true
+    },
+    {
+      "timestamp": 12,
+      "elapsed_time": 4.292,
+      "kana": "ク",
+      "ans": "ku",
+      "correct": true
+    },
+    {
+      "timestamp": 14,
+      "elapsed_time": 1.155,
+      "kana": "ス",
+      "ans": "su",
+      "correct": true
+    },
+    {
+      "timestamp": 18,
+      "elapsed_time": 3.3,
+      "kana": "ヌ",
+      "ans": "nu",
+      "correct": true
+    },
+    {
+      "timestamp": 20,
+      "elapsed_time": 2.036,
+      "kana": "ユ",
+      "ans": "yu",
+      "correct": true
+    },
+    {
+      "timestamp": 31,
+      "elapsed_time": null,
+      "kana": "ウ",
+      "ans": "ru",
+      "correct": false
+    },
+    {
+      "timestamp": 39,
+      "elapsed_time": 7.249,
+      "kana": "フ",
+      "ans": "fu",
+      "correct": true
+    }
+  ]
+}

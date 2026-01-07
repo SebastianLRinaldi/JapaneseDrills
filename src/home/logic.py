@@ -6,8 +6,6 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import * 
 from PyQt6.QtGui import *
 
-from src.contracts.component_interface import *
-# from src.helpers import *
 from .blueprint import Blueprint
 
 class Logic(Blueprint):

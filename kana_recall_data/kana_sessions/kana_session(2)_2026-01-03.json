@@ -1,0 +1,1479 @@
+{
+  "session_num": 2,
+  "date": "2026-01-03",
+  "time": "04:04AM",
+  "summary": {
+    "script": "ALL",
+    "category": "ALL",
+    "vowels": [
+      "A",
+      "I",
+      "U",
+      "E",
+      "O",
+      "N"
+    ],
+    "session_duration": "9m:7s",
+    "total_count": 208,
+    "correct_count": 165,
+    "wrong_count": 43
+  },
+  "events": [
+    {
+      "timestamp": 2,
+      "elapsed_time": 2.344,
+      "kana": "ホ",
+      "ans": "ho",
+      "correct": true
+    },
+    {
+      "timestamp": 4,
+      "elapsed_time": null,
+      "kana": "シ",
+      "ans": "tsu",
+      "correct": false
+    },
+    {
+      "timestamp": 6,
+      "elapsed_time": 1.644,
+      "kana": "ぬ",
+      "ans": "nu",
+      "correct": true
+    },
+    {
+      "timestamp": 8,
+      "elapsed_time": 1.037,
+      "kana": "へ",
+      "ans": "he",
+      "correct": true
+    },
+    {
+      "timestamp": 9,
+      "elapsed_time": 1.132,
+      "kana": "ノ",
+      "ans": "no",
+      "correct": true
+    },
+    {
+      "timestamp": 16,
+      "elapsed_time": null,
+      "kana": "ビョ",
+      "ans": "dyo",
+      "correct": false
+    },
+    {
+      "timestamp": 18,
+      "elapsed_time": null,
+      "kana": "ヅ",
+      "ans": "ji",
+      "correct": false
+    },
+    {
+      "timestamp": 19,
+      "elapsed_time": 1.26,
+      "kana": "ダ",
+      "ans": "da",
+      "correct": true
+    },
+    {
+      "timestamp": 22,
+      "elapsed_time": 2.436,
+      "kana": "ベ",
+      "ans": "be",
+      "correct": true
+    },
+    {
+      "timestamp": 25,
+      "elapsed_time": 2.546,
+      "kana": "ぺ",
+      "ans": "pe",
+      "correct": true
+    },
+    {
+      "timestamp": 28,
+      "elapsed_time": 1.861,
+      "kana": "ひゅ",
+      "ans": "hyu",
+      "correct": true
+    },
+    {
+      "timestamp": 30,
+      "elapsed_time": 1.361,
+      "kana": "ニャ",
+      "ans": "nya",
+      "correct": true
+    },
+    {
+      "timestamp": 32,
+      "elapsed_time": 2.061,
+      "kana": "しょ",
+      "ans": "sho",
+      "correct": true
+    },
+    {
+      "timestamp": 34,
+      "elapsed_time": 0.987,
+      "kana": "た",
+      "ans": "ta",
+      "correct": true
+    },
+    {
+      "timestamp": 38,
+      "elapsed_time": null,
+      "kana": "ウ",
+      "ans": "ra",
+      "correct": false
+    },
+    {
+      "timestamp": 41,
+      "elapsed_time": 2.106,
+      "kana": "ぎゃ",
+      "ans": "gya",
+      "correct": true
+    },
+    {
+      "timestamp": 43,
+      "elapsed_time": 1.187,
+      "kana": "る",
+      "ans": "ru",
+      "correct": true
+    },
+    {
+      "timestamp": 45,
+      "elapsed_time": null,
+      "kana": "みゃ",
+      "ans": "hya",
+      "correct": false
+    },
+    {
+      "timestamp": 50,
+      "elapsed_time": null,
+      "kana": "デ",
+      "ans": "di",
+      "correct": false
+    },
+    {
+      "timestamp": 52,
+      "elapsed_time": 1.922,
+      "kana": "ロ",
+      "ans": "ro",
+      "correct": true
+    },
+    {
+      "timestamp": 57,
+      "elapsed_time": 4.566,
+      "kana": "ゲ",
+      "ans": "ge",
+      "correct": true
+    },
+    {
+      "timestamp": 59,
+      "elapsed_time": 1.395,
+      "kana": "ば",
+      "ans": "ba",
+      "correct": true
+    },
+    {
+      "timestamp": 62,
+      "elapsed_time": 2.901,
+      "kana": "ぶ",
+      "ans": "bu",
+      "correct": true
+    },
+    {
+      "timestamp": 65,
+      "elapsed_time": null,
+      "kana": "ジャ",
+      "ans": "sha",
+      "correct": false
+    },
+    {
+      "timestamp": 67,
+      "elapsed_time": 1.331,
+      "kana": "ジ",
+      "ans": "ji",
+      "correct": true
+    },
+    {
+      "timestamp": 71,
+      "elapsed_time": 3.737,
+      "kana": "プ",
+      "ans": "pu",
+      "correct": true
+    },
+    {
+      "timestamp": 73,
+      "elapsed_time": null,
+      "kana": "びゃ",
+      "ans": "hya",
+      "correct": false
+    },
+    {
+      "timestamp": 75,
+      "elapsed_time": 1.971,
+      "kana": "ショ",
+      "ans": "sho",
+      "correct": true
+    },
+    {
+      "timestamp": 78,
+      "elapsed_time": 1.693,
+      "kana": "ほ",
+      "ans": "ho",
+      "correct": true
+    },
+    {
+      "timestamp": 80,
+      "elapsed_time": 2.085,
+      "kana": "チュ",
+      "ans": "chu",
+      "correct": true
+    },
+    {
+      "timestamp": 82,
+      "elapsed_time": 1.108,
+      "kana": "が",
+      "ans": "ga",
+      "correct": true
+    },
+    {
+      "timestamp": 84,
+      "elapsed_time": 1.036,
+      "kana": "に",
+      "ans": "ni",
+      "correct": true
+    },
+    {
+      "timestamp": 86,
+      "elapsed_time": 1.686,
+      "kana": "にょ",
+      "ans": "nyo",
+      "correct": true
+    },
+    {
+      "timestamp": 89,
+      "elapsed_time": null,
+      "kana": "ヂ",
+      "ans": "gi",
+      "correct": false
+    },
+    {
+      "timestamp": 92,
+      "elapsed_time": null,
+      "kana": "ワ",
+      "ans": "ra",
+      "correct": false
+    },
+    {
+      "timestamp": 94,
+      "elapsed_time": 1.731,
+      "kana": "ひゃ",
+      "ans": "hya",
+      "correct": true
+    },
+    {
+      "timestamp": 100,
+      "elapsed_time": null,
+      "kana": "みょ",
+      "ans": "hyo",
+      "correct": false
+    },
+    {
+      "timestamp": 102,
+      "elapsed_time": 1.504,
+      "kana": "リャ",
+      "ans": "rya",
+      "correct": true
+    },
+    {
+      "timestamp": 104,
+      "elapsed_time": 1.924,
+      "kana": "ニュ",
+      "ans": "nyu",
+      "correct": true
+    },
+    {
+      "timestamp": 106,
+      "elapsed_time": 0.909,
+      "kana": "え",
+      "ans": "e",
+      "correct": true
+    },
+    {
+      "timestamp": 108,
+      "elapsed_time": null,
+      "kana": "フ",
+      "ans": "ro",
+      "correct": false
+    },
+    {
+      "timestamp": 111,
+      "elapsed_time": 3.075,
+      "kana": "ヌ",
+      "ans": "nu",
+      "correct": true
+    },
+    {
+      "timestamp": 113,
+      "elapsed_time": 1.549,
+      "kana": "ゴ",
+      "ans": "go",
+      "correct": true
+    },
+    {
+      "timestamp": 116,
+      "elapsed_time": 1.971,
+      "kana": "ミュ",
+      "ans": "myu",
+      "correct": true
+    },
+    {
+      "timestamp": 117,
+      "elapsed_time": 1.068,
+      "kana": "ヘ",
+      "ans": "he",
+      "correct": true
+    },
+    {
+      "timestamp": 119,
+      "elapsed_time": 1.436,
+      "kana": "りゃ",
+      "ans": "rya",
+      "correct": true
+    },
+    {
+      "timestamp": 121,
+      "elapsed_time": 0.778,
+      "kana": "あ",
+      "ans": "a",
+      "correct": true
+    },
+    {
+      "timestamp": 123,
+      "elapsed_time": null,
+      "kana": "ヲ",
+      "ans": "yo",
+      "correct": false
+    },
+    {
+      "timestamp": 126,
+      "elapsed_time": null,
+      "kana": "キュ",
+      "ans": "gyu",
+      "correct": false
+    },
+    {
+      "timestamp": 128,
+      "elapsed_time": 1.411,
+      "kana": "ご",
+      "ans": "go",
+      "correct": true
+    },
+    {
+      "timestamp": 130,
+      "elapsed_time": 1.366,
+      "kana": "ユ",
+      "ans": "yu",
+      "correct": true
+    },
+    {
+      "timestamp": 131,
+      "elapsed_time": 1.06,
+      "kana": "で",
+      "ans": "de",
+      "correct": true
+    },
+    {
+      "timestamp": 133,
+      "elapsed_time": 1.58,
+      "kana": "りょ",
+      "ans": "ryo",
+      "correct": true
+    },
+    {
+      "timestamp": 137,
+      "elapsed_time": 3.164,
+      "kana": "りゅ",
+      "ans": "ryu",
+      "correct": true
+    },
+    {
+      "timestamp": 141,
+      "elapsed_time": 3.156,
+      "kana": "リョ",
+      "ans": "ryo",
+      "correct": true
+    },
+    {
+      "timestamp": 143,
+      "elapsed_time": 2.132,
+      "kana": "ぎゅ",
+      "ans": "gyu",
+      "correct": true
+    },
+    {
+      "timestamp": 145,
+      "elapsed_time": 1.221,
+      "kana": "せ",
+      "ans": "se",
+      "correct": true
+    },
+    {
+      "timestamp": 147,
+      "elapsed_time": 1.195,
+      "kana": "の",
+      "ans": "no",
+      "correct": true
+    },
+    {
+      "timestamp": 151,
+      "elapsed_time": 3.141,
+      "kana": "ポ",
+      "ans": "po",
+      "correct": true
+    },
+    {
+      "timestamp": 155,
+      "elapsed_time": null,
+      "kana": "ピュ",
+      "ans": "jyu",
+      "correct": false
+    },
+    {
+      "timestamp": 157,
+      "elapsed_time": 1.21,
+      "kana": "ド",
+      "ans": "do",
+      "correct": true
+    },
+    {
+      "timestamp": 158,
+      "elapsed_time": 1.132,
+      "kana": "オ",
+      "ans": "o",
+      "correct": true
+    },
+    {
+      "timestamp": 160,
+      "elapsed_time": 1.356,
+      "kana": "ちゃ",
+      "ans": "cha",
+      "correct": true
+    },
+    {
+      "timestamp": 162,
+      "elapsed_time": 1.364,
+      "kana": "ゼ",
+      "ans": "ze",
+      "correct": true
+    },
+    {
+      "timestamp": 165,
+      "elapsed_time": null,
+      "kana": "ソ",
+      "ans": "n",
+      "correct": false
+    },
+    {
+      "timestamp": 169,
+      "elapsed_time": 3.803,
+      "kana": "きゃ",
+      "ans": "kya",
+      "correct": true
+    },
+    {
+      "timestamp": 173,
+      "elapsed_time": 2.899,
+      "kana": "ボ",
+      "ans": "bo",
+      "correct": true
+    },
+    {
+      "timestamp": 177,
+      "elapsed_time": 3.813,
+      "kana": "キョ",
+      "ans": "kyo",
+      "correct": true
+    },
+    {
+      "timestamp": 179,
+      "elapsed_time": 1.434,
+      "kana": "け",
+      "ans": "ke",
+      "correct": true
+    },
+    {
+      "timestamp": 181,
+      "elapsed_time": 1.107,
+      "kana": "す",
+      "ans": "su",
+      "correct": true
+    },
+    {
+      "timestamp": 182,
+      "elapsed_time": 1.004,
+      "kana": "だ",
+      "ans": "da",
+      "correct": true
+    },
+    {
+      "timestamp": 184,
+      "elapsed_time": 0.93,
+      "kana": "い",
+      "ans": "i",
+      "correct": true
+    },
+    {
+      "timestamp": 186,
+      "elapsed_time": 1.116,
+      "kana": "を",
+      "ans": "wo",
+      "correct": true
+    },
+    {
+      "timestamp": 187,
+      "elapsed_time": 0.995,
+      "kana": "か",
+      "ans": "ka",
+      "correct": true
+    },
+    {
+      "timestamp": 190,
+      "elapsed_time": 1.947,
+      "kana": "ツ",
+      "ans": "tsu",
+      "correct": true
+    },
+    {
+      "timestamp": 191,
+      "elapsed_time": 0.948,
+      "kana": "ら",
+      "ans": "ra",
+      "correct": true
+    },
+    {
+      "timestamp": 193,
+      "elapsed_time": 1.573,
+      "kana": "チャ",
+      "ans": "cha",
+      "correct": true
+    },
+    {
+      "timestamp": 196,
+      "elapsed_time": null,
+      "kana": "ビュ",
+      "ans": "dyu",
+      "correct": false
+    },
+    {
+      "timestamp": 199,
+      "elapsed_time": null,
+      "kana": "ざ",
+      "ans": "gi",
+      "correct": false
+    },
+    {
+      "timestamp": 202,
+      "elapsed_time": 2.546,
+      "kana": "ぴ",
+      "ans": "pi",
+      "correct": true
+    },
+    {
+      "timestamp": 204,
+      "elapsed_time": 1.436,
+      "kana": "シャ",
+      "ans": "sha",
+      "correct": true
+    },
+    {
+      "timestamp": 206,
+      "elapsed_time": null,
+      "kana": "ク",
+      "ans": "ke",
+      "correct": false
+    },
+    {
+      "timestamp": 211,
+      "elapsed_time": 4.436,
+      "kana": "ギャ",
+      "ans": "gya",
+      "correct": true
+    },
+    {
+      "timestamp": 213,
+      "elapsed_time": null,
+      "kana": "ビ",
+      "ans": "do",
+      "correct": false
+    },
+    {
+      "timestamp": 221,
+      "elapsed_time": 8.234,
+      "kana": "ジョ",
+      "ans": "jo",
+      "correct": true
+    },
+    {
+      "timestamp": 223,
+      "elapsed_time": 1.239,
+      "kana": "キ",
+      "ans": "ki",
+      "correct": true
+    },
+    {
+      "timestamp": 225,
+      "elapsed_time": 1.365,
+      "kana": "にゃ",
+      "ans": "nya",
+      "correct": true
+    },
+    {
+      "timestamp": 227,
+      "elapsed_time": null,
+      "kana": "ラ",
+      "ans": "ru",
+      "correct": false
+    },
+    {
+      "timestamp": 231,
+      "elapsed_time": 3.81,
+      "kana": "じゅ",
+      "ans": "ju",
+      "correct": true
+    },
+    {
+      "timestamp": 234,
+      "elapsed_time": 2.395,
+      "kana": "ぴょ",
+      "ans": "pyo",
+      "correct": true
+    },
+    {
+      "timestamp": 236,
+      "elapsed_time": 1.322,
+      "kana": "コ",
+      "ans": "ko",
+      "correct": true
+    },
+    {
+      "timestamp": 238,
+      "elapsed_time": 0.868,
+      "kana": "ん",
+      "ans": "n",
+      "correct": true
+    },
+    {
+      "timestamp": 240,
+      "elapsed_time": 1.884,
+      "kana": "ちゅ",
+      "ans": "chu",
+      "correct": true
+    },
+    {
+      "timestamp": 242,
+      "elapsed_time": 1.339,
+      "kana": "しゃ",
+      "ans": "sha",
+      "correct": true
+    },
+    {
+      "timestamp": 246,
+      "elapsed_time": 3.212,
+      "kana": "べ",
+      "ans": "be",
+      "correct": true
+    },
+    {
+      "timestamp": 248,
+      "elapsed_time": 1.652,
+      "kana": "リュ",
+      "ans": "ryu",
+      "correct": true
+    },
+    {
+      "timestamp": 251,
+      "elapsed_time": 2.388,
+      "kana": "ネ",
+      "ans": "ne",
+      "correct": true
+    },
+    {
+      "timestamp": 253,
+      "elapsed_time": 1.46,
+      "kana": "さ",
+      "ans": "sa",
+      "correct": true
+    },
+    {
+      "timestamp": 256,
+      "elapsed_time": 2.17,
+      "kana": "ぎょ",
+      "ans": "gyo",
+      "correct": true
+    },
+    {
+      "timestamp": 259,
+      "elapsed_time": 3.157,
+      "kana": "じ",
+      "ans": "ji",
+      "correct": true
+    },
+    {
+      "timestamp": 261,
+      "elapsed_time": 1.643,
+      "kana": "ヨ",
+      "ans": "yo",
+      "correct": true
+    },
+    {
+      "timestamp": 268,
+      "elapsed_time": 5.74,
+      "kana": "は",
+      "ans": "ha",
+      "correct": true
+    },
+    {
+      "timestamp": 270,
+      "elapsed_time": null,
+      "kana": "マ",
+      "ans": "ne",
+      "correct": false
+    },
+    {
+      "timestamp": 274,
+      "elapsed_time": 3.562,
+      "kana": "パ",
+      "ans": "pa",
+      "correct": true
+    },
+    {
+      "timestamp": 281,
+      "elapsed_time": 5.884,
+      "kana": "ヒョ",
+      "ans": "hyo",
+      "correct": true
+    },
+    {
+      "timestamp": 283,
+      "elapsed_time": 2.079,
+      "kana": "テ",
+      "ans": "te",
+      "correct": true
+    },
+    {
+      "timestamp": 286,
+      "elapsed_time": 2.107,
+      "kana": "ヒャ",
+      "ans": "hya",
+      "correct": true
+    },
+    {
+      "timestamp": 288,
+      "elapsed_time": null,
+      "kana": "ザ",
+      "ans": "ze",
+      "correct": false
+    },
+    {
+      "timestamp": 290,
+      "elapsed_time": 1.155,
+      "kana": "や",
+      "ans": "ya",
+      "correct": true
+    },
+    {
+      "timestamp": 293,
+      "elapsed_time": 3.315,
+      "kana": "ぴゃ",
+      "ans": "pya",
+      "correct": true
+    },
+    {
+      "timestamp": 295,
+      "elapsed_time": 1.056,
+      "kana": "と",
+      "ans": "to",
+      "correct": true
+    },
+    {
+      "timestamp": 296,
+      "elapsed_time": 0.796,
+      "kana": "エ",
+      "ans": "e",
+      "correct": true
+    },
+    {
+      "timestamp": 298,
+      "elapsed_time": 1.09,
+      "kana": "ろ",
+      "ans": "ro",
+      "correct": true
+    },
+    {
+      "timestamp": 301,
+      "elapsed_time": null,
+      "kana": "みゅ",
+      "ans": "hyu",
+      "correct": false
+    },
+    {
+      "timestamp": 302,
+      "elapsed_time": 1.139,
+      "kana": "ハ",
+      "ans": "ha",
+      "correct": true
+    },
+    {
+      "timestamp": 303,
+      "elapsed_time": 0.787,
+      "kana": "ア",
+      "ans": "a",
+      "correct": true
+    },
+    {
+      "timestamp": 305,
+      "elapsed_time": 0.947,
+      "kana": "わ",
+      "ans": "wa",
+      "correct": true
+    },
+    {
+      "timestamp": 306,
+      "elapsed_time": 1.012,
+      "kana": "ま",
+      "ans": "ma",
+      "correct": true
+    },
+    {
+      "timestamp": 308,
+      "elapsed_time": 1.152,
+      "kana": "し",
+      "ans": "shi",
+      "correct": true
+    },
+    {
+      "timestamp": 311,
+      "elapsed_time": 2.516,
+      "kana": "ね",
+      "ans": "ne",
+      "correct": true
+    },
+    {
+      "timestamp": 313,
+      "elapsed_time": 1.498,
+      "kana": "ミャ",
+      "ans": "mya",
+      "correct": true
+    },
+    {
+      "timestamp": 315,
+      "elapsed_time": 1.212,
+      "kana": "ト",
+      "ans": "to",
+      "correct": true
+    },
+    {
+      "timestamp": 317,
+      "elapsed_time": 1.251,
+      "kana": "ず",
+      "ans": "zu",
+      "correct": true
+    },
+    {
+      "timestamp": 320,
+      "elapsed_time": 2.434,
+      "kana": "ふ",
+      "ans": "fu",
+      "correct": true
+    },
+    {
+      "timestamp": 322,
+      "elapsed_time": 1.82,
+      "kana": "カ",
+      "ans": "ka",
+      "correct": true
+    },
+    {
+      "timestamp": 327,
+      "elapsed_time": 4.268,
+      "kana": "ブ",
+      "ans": "bu",
+      "correct": true
+    },
+    {
+      "timestamp": 331,
+      "elapsed_time": 3.707,
+      "kana": "ぼ",
+      "ans": "bo",
+      "correct": true
+    },
+    {
+      "timestamp": 334,
+      "elapsed_time": 1.948,
+      "kana": "ヒ",
+      "ans": "hi",
+      "correct": true
+    },
+    {
+      "timestamp": 335,
+      "elapsed_time": 1.265,
+      "kana": "れ",
+      "ans": "re",
+      "correct": true
+    },
+    {
+      "timestamp": 342,
+      "elapsed_time": null,
+      "kana": "ピ",
+      "ans": "pi\\",
+      "correct": false
+    },
+    {
+      "timestamp": 344,
+      "elapsed_time": 1.509,
+      "kana": "り",
+      "ans": "ri",
+      "correct": true
+    },
+    {
+      "timestamp": 345,
+      "elapsed_time": 1.275,
+      "kana": "つ",
+      "ans": "tsu",
+      "correct": true
+    },
+    {
+      "timestamp": 347,
+      "elapsed_time": 1.082,
+      "kana": "う",
+      "ans": "u",
+      "correct": true
+    },
+    {
+      "timestamp": 349,
+      "elapsed_time": 1.324,
+      "kana": "ズ",
+      "ans": "zu",
+      "correct": true
+    },
+    {
+      "timestamp": 351,
+      "elapsed_time": 1.795,
+      "kana": "ニョ",
+      "ans": "nyo",
+      "correct": true
+    },
+    {
+      "timestamp": 353,
+      "elapsed_time": 1.059,
+      "kana": "ケ",
+      "ans": "ke",
+      "correct": true
+    },
+    {
+      "timestamp": 355,
+      "elapsed_time": 1.811,
+      "kana": "レ",
+      "ans": "re",
+      "correct": true
+    },
+    {
+      "timestamp": 358,
+      "elapsed_time": 1.762,
+      "kana": "ミョ",
+      "ans": "myo",
+      "correct": true
+    },
+    {
+      "timestamp": 359,
+      "elapsed_time": 1.036,
+      "kana": "そ",
+      "ans": "so",
+      "correct": true
+    },
+    {
+      "timestamp": 362,
+      "elapsed_time": null,
+      "kana": "ギョ",
+      "ans": "kyo",
+      "correct": false
+    },
+    {
+      "timestamp": 364,
+      "elapsed_time": null,
+      "kana": "づ",
+      "ans": "ji",
+      "correct": false
+    },
+    {
+      "timestamp": 366,
+      "elapsed_time": 1.993,
+      "kana": "ちょ",
+      "ans": "cho",
+      "correct": true
+    },
+    {
+      "timestamp": 372,
+      "elapsed_time": 4.867,
+      "kana": "ピャ",
+      "ans": "pya",
+      "correct": true
+    },
+    {
+      "timestamp": 375,
+      "elapsed_time": null,
+      "kana": "グ",
+      "ans": "ge",
+      "correct": false
+    },
+    {
+      "timestamp": 376,
+      "elapsed_time": 1.401,
+      "kana": "ど",
+      "ans": "do",
+      "correct": true
+    },
+    {
+      "timestamp": 378,
+      "elapsed_time": 0.947,
+      "kana": "セ",
+      "ans": "se",
+      "correct": true
+    },
+    {
+      "timestamp": 380,
+      "elapsed_time": 1.147,
+      "kana": "き",
+      "ans": "ki",
+      "correct": true
+    },
+    {
+      "timestamp": 381,
+      "elapsed_time": 0.985,
+      "kana": "め",
+      "ans": "me",
+      "correct": true
+    },
+    {
+      "timestamp": 383,
+      "elapsed_time": 1.41,
+      "kana": "ナ",
+      "ans": "na",
+      "correct": true
+    },
+    {
+      "timestamp": 385,
+      "elapsed_time": null,
+      "kana": "ル",
+      "ans": "re",
+      "correct": false
+    },
+    {
+      "timestamp": 387,
+      "elapsed_time": 2.057,
+      "kana": "ぷ",
+      "ans": "pu",
+      "correct": true
+    },
+    {
+      "timestamp": 394,
+      "elapsed_time": null,
+      "kana": "ゾ",
+      "ans": "no",
+      "correct": false
+    },
+    {
+      "timestamp": 396,
+      "elapsed_time": 1.324,
+      "kana": "ゆ",
+      "ans": "yu",
+      "correct": true
+    },
+    {
+      "timestamp": 402,
+      "elapsed_time": 5.035,
+      "kana": "ビャ",
+      "ans": "bya",
+      "correct": true
+    },
+    {
+      "timestamp": 403,
+      "elapsed_time": 1.242,
+      "kana": "リ",
+      "ans": "ri",
+      "correct": true
+    },
+    {
+      "timestamp": 405,
+      "elapsed_time": 1.075,
+      "kana": "み",
+      "ans": "mi",
+      "correct": true
+    },
+    {
+      "timestamp": 407,
+      "elapsed_time": 1.091,
+      "kana": "て",
+      "ans": "te",
+      "correct": true
+    },
+    {
+      "timestamp": 409,
+      "elapsed_time": 1.401,
+      "kana": "く",
+      "ans": "ku",
+      "correct": true
+    },
+    {
+      "timestamp": 410,
+      "elapsed_time": 1.227,
+      "kana": "ひ",
+      "ans": "hi",
+      "correct": true
+    },
+    {
+      "timestamp": 414,
+      "elapsed_time": null,
+      "kana": "ぢ",
+      "ans": "chi",
+      "correct": false
+    },
+    {
+      "timestamp": 416,
+      "elapsed_time": 1.194,
+      "kana": "な",
+      "ans": "na",
+      "correct": true
+    },
+    {
+      "timestamp": 419,
+      "elapsed_time": 2.169,
+      "kana": "ひょ",
+      "ans": "hyo",
+      "correct": true
+    },
+    {
+      "timestamp": 422,
+      "elapsed_time": 3.122,
+      "kana": "タ",
+      "ans": "ta",
+      "correct": true
+    },
+    {
+      "timestamp": 425,
+      "elapsed_time": 1.834,
+      "kana": "げ",
+      "ans": "ge",
+      "correct": true
+    },
+    {
+      "timestamp": 428,
+      "elapsed_time": 2.642,
+      "kana": "シュ",
+      "ans": "shu",
+      "correct": true
+    },
+    {
+      "timestamp": 430,
+      "elapsed_time": 1.211,
+      "kana": "も",
+      "ans": "mo",
+      "correct": true
+    },
+    {
+      "timestamp": 431,
+      "elapsed_time": 1.107,
+      "kana": "ム",
+      "ans": "mu",
+      "correct": true
+    },
+    {
+      "timestamp": 433,
+      "elapsed_time": 1.067,
+      "kana": "こ",
+      "ans": "ko",
+      "correct": true
+    },
+    {
+      "timestamp": 437,
+      "elapsed_time": null,
+      "kana": "ぽ",
+      "ans": "ha",
+      "correct": false
+    },
+    {
+      "timestamp": 440,
+      "elapsed_time": 2.602,
+      "kana": "ギュ",
+      "ans": "gyu",
+      "correct": true
+    },
+    {
+      "timestamp": 442,
+      "elapsed_time": 1.386,
+      "kana": "チ",
+      "ans": "chi",
+      "correct": true
+    },
+    {
+      "timestamp": 443,
+      "elapsed_time": 1.018,
+      "kana": "ン",
+      "ans": "n",
+      "correct": true
+    },
+    {
+      "timestamp": 445,
+      "elapsed_time": 1.074,
+      "kana": "よ",
+      "ans": "yo",
+      "correct": true
+    },
+    {
+      "timestamp": 446,
+      "elapsed_time": 1.073,
+      "kana": "ミ",
+      "ans": "mi",
+      "correct": true
+    },
+    {
+      "timestamp": 450,
+      "elapsed_time": null,
+      "kana": "びょ",
+      "ans": "hyo",
+      "correct": false
+    },
+    {
+      "timestamp": 452,
+      "elapsed_time": 1.753,
+      "kana": "チョ",
+      "ans": "cho",
+      "correct": true
+    },
+    {
+      "timestamp": 453,
+      "elapsed_time": null,
+      "kana": "イ",
+      "ans": "e",
+      "correct": false
+    },
+    {
+      "timestamp": 456,
+      "elapsed_time": null,
+      "kana": "きゅ",
+      "ans": "gyu",
+      "correct": false
+    },
+    {
+      "timestamp": 458,
+      "elapsed_time": 1.153,
+      "kana": "ガ",
+      "ans": "ga",
+      "correct": true
+    },
+    {
+      "timestamp": 461,
+      "elapsed_time": null,
+      "kana": "メ",
+      "ans": "te",
+      "correct": false
+    },
+    {
+      "timestamp": 464,
+      "elapsed_time": 2.289,
+      "kana": "ヒュ",
+      "ans": "hyu",
+      "correct": true
+    },
+    {
+      "timestamp": 465,
+      "elapsed_time": 1.21,
+      "kana": "ぎ",
+      "ans": "gi",
+      "correct": true
+    },
+    {
+      "timestamp": 470,
+      "elapsed_time": null,
+      "kana": "ギ",
+      "ans": "ki",
+      "correct": false
+    },
+    {
+      "timestamp": 472,
+      "elapsed_time": 1.68,
+      "kana": "しゅ",
+      "ans": "shu",
+      "correct": true
+    },
+    {
+      "timestamp": 476,
+      "elapsed_time": null,
+      "kana": "じょ",
+      "ans": "jyo",
+      "correct": false
+    },
+    {
+      "timestamp": 477,
+      "elapsed_time": 1.095,
+      "kana": "ニ",
+      "ans": "ni",
+      "correct": true
+    },
+    {
+      "timestamp": 479,
+      "elapsed_time": 1.603,
+      "kana": "にゅ",
+      "ans": "nyu",
+      "correct": true
+    },
+    {
+      "timestamp": 484,
+      "elapsed_time": 4.491,
+      "kana": "ぱ",
+      "ans": "pa",
+      "correct": true
+    },
+    {
+      "timestamp": 491,
+      "elapsed_time": 5.873,
+      "kana": "バ",
+      "ans": "ba",
+      "correct": true
+    },
+    {
+      "timestamp": 495,
+      "elapsed_time": 3.614,
+      "kana": "ピョ",
+      "ans": "pyo",
+      "correct": true
+    },
+    {
+      "timestamp": 499,
+      "elapsed_time": 3.819,
+      "kana": "じゃ",
+      "ans": "ja",
+      "correct": true
+    },
+    {
+      "timestamp": 505,
+      "elapsed_time": 4.835,
+      "kana": "ぴゅ",
+      "ans": "pyu",
+      "correct": true
+    },
+    {
+      "timestamp": 507,
+      "elapsed_time": null,
+      "kana": "び",
+      "ans": "hi",
+      "correct": false
+    },
+    {
+      "timestamp": 508,
+      "elapsed_time": null,
+      "kana": "サ",
+      "ans": "se",
+      "correct": false
+    },
+    {
+      "timestamp": 510,
+      "elapsed_time": 1.321,
+      "kana": "ス",
+      "ans": "su",
+      "correct": true
+    },
+    {
+      "timestamp": 512,
+      "elapsed_time": 1.874,
+      "kana": "きょ",
+      "ans": "kyo",
+      "correct": true
+    },
+    {
+      "timestamp": 515,
+      "elapsed_time": 2.362,
+      "kana": "ぜ",
+      "ans": "ze",
+      "correct": true
+    },
+    {
+      "timestamp": 517,
+      "elapsed_time": 1.274,
+      "kana": "む",
+      "ans": "mu",
+      "correct": true
+    },
+    {
+      "timestamp": 519,
+      "elapsed_time": null,
+      "kana": "モ",
+      "ans": "chi",
+      "correct": false
+    },
+    {
+      "timestamp": 524,
+      "elapsed_time": 4.033,
+      "kana": "びゅ",
+      "ans": "byu",
+      "correct": true
+    },
+    {
+      "timestamp": 525,
+      "elapsed_time": 0.978,
+      "kana": "お",
+      "ans": "o",
+      "correct": true
+    },
+    {
+      "timestamp": 527,
+      "elapsed_time": 1.547,
+      "kana": "ぐ",
+      "ans": "gu",
+      "correct": true
+    },
+    {
+      "timestamp": 529,
+      "elapsed_time": 1.273,
+      "kana": "ち",
+      "ans": "chi",
+      "correct": true
+    },
+    {
+      "timestamp": 533,
+      "elapsed_time": 3.105,
+      "kana": "ペ",
+      "ans": "pe",
+      "correct": true
+    },
+    {
+      "timestamp": 538,
+      "elapsed_time": null,
+      "kana": "ヤ",
+      "ans": "a",
+      "correct": false
+    },
+    {
+      "timestamp": 540,
+      "elapsed_time": 1.658,
+      "kana": "ぞ",
+      "ans": "zo",
+      "correct": true
+    },
+    {
+      "timestamp": 544,
+      "elapsed_time": null,
+      "kana": "ジュ",
+      "ans": "jyu",
+      "correct": false
+    },
+    {
+      "timestamp": 547,
+      "elapsed_time": 2.017,
+      "kana": "キャ",
+      "ans": "kya",
+      "correct": true
+    }
+  ]
+}
